@@ -70,6 +70,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\QLCV.sql" />
     <Content Include="Counter.txt" />
     <Content Include="CTCV.aspx" />
     <Content Include="Dangnhap.aspx" />
@@ -236,7 +237,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Account\" />
-    <Folder Include="App_Data\" />
     <Folder Include="Upload\" />
   </ItemGroup>
   <ItemGroup>
