@@ -1,0 +1,309 @@
+﻿body
+{
+    background: url('Images/Design/bg.jpg') fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+
+#frame
+{
+    width: 960px;
+    text-align: left;
+    background-color: #FFF;
+}
+#header
+{
+    height: 154px;
+    position: relative;
+}
+#banner
+{
+    height: 120px;
+}
+#banner img
+{
+     height:110px;
+    }
+#menu
+{
+    height: 34px;
+    border-radius: 5px;
+    margin-top: 3px;
+    background-image: url('Images/Design/bg_menu.jpg');
+   
+}
+
+#link
+{
+    margin-top : 0px;
+    width: 200px;
+    float: right;
+    border-radius: 5px;
+    margin-right: 65px;
+    height:400px;
+    font-size: 12px;
+    font-family: Tahoma;
+    margin-left: 0px;
+}
+#menu ul
+{
+    list-style: none;
+    margin: 0px;
+    vertical-align: middle;
+    height: 100%;
+}
+
+#menu ul li
+{
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    height: 34px;
+    position: relative;
+}
+
+#menu ul li a
+{
+    color: #FFF;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin-top: 6px;
+    height: 20px;
+    padding-top: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#menu ul li a:hover
+{
+    background-color: #F39035;
+    border-radius: 3px;
+}
+
+#menu ul li ul
+{
+    display: none;
+    list-style: none;
+    margin: 0px 0px 0px -40px;
+    position: absolute;
+    z-index: 5;
+    top: 29px;
+    padding-top: 5px;
+}
+
+#menu ul li:hover ul
+{
+    display: block;
+}
+
+#menu li li
+{
+    border-bottom: 1px solid #CECECE;
+    border-left: 1px solid #CECECE;
+    border-right: 1px solid #CECECE;
+    margin-top: 0px;
+    width: 200px;
+    text-align: left;
+    background-color: RGB(248,250,255);
+    height: 25px;
+    float: none;
+}
+
+#menu li li a
+{
+    margin-top: 0px;
+    padding: 4px 0px 0px 3px;
+    color: #000;
+    font-weight: normal;
+    font-size: 12px;
+    display: block;
+}
+
+#menu li li a:hover
+{
+    color: #F39035;
+    border-radius: 0px;
+    background-color: RGB(248,250,255);
+}
+
+#main
+{
+    height: 900px;
+    position: absolute;
+    position :relative;
+    
+}
+
+#slide
+{
+    height: 240px;
+    width: 960px;
+    margin: 10px 0px;
+    position: absolute;
+    z-index: 2;
+}
+.imgSlide
+{
+    border-radius: 5px;
+    border: 1px solid #CECECE;
+    height: 238px;
+    width: 958px;
+}
+
+#content
+{
+    height: 350px;
+    top: 265px;
+    position: absolute;
+}
+
+.cate
+{
+    width: 304px;
+    border-radius: 5px;
+    border: 1px solid #CECECE;
+    float: left;
+    height: 275px;
+    background: url('Images/Design/bg_cate.gif') repeat-x;
+    text-align: justify;
+    font-size: 12px;
+    font-family: Tahoma;
+}
+.cate h4
+{
+    color: #2E319B;
+    font-family: Tahoma;
+    font-size: 13px;
+    margin: 5px 8px;
+}
+
+#footer
+{
+    height: 200px;
+    background-color: #FAFAFA;
+    color: Gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 1px solid #CECECE;
+    border-left: 1px solid #CECECE;
+    border-right: 1px solid #CECECE;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#footermenu ul li
+{
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    height: 34px;
+    position: relative;
+    list-style: none;
+}
+.imgcate
+{
+    margin-top: 10px;
+    float: left;
+}
+.description
+{
+    clear: right;
+}
+
+.detail
+{
+    margin: 15px 5px;
+}
+
+.detail a
+{
+    color: Blue;
+    text-decoration: none;
+}
+.detail ul
+{
+    margin: 0px;
+}
+.detail li
+{
+    margin: 0px;
+}
+
+
+#login
+{
+    position: absolute;
+    top: -1px;
+    border: 1px solid #CECECE;
+    background-color: #EFEFEF;
+    height: 20px;
+    vertical-align: middle;
+    padding: 5px 5px;
+    width: 250px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    right: 0px;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+#titleRight
+{
+    width: 100%;
+    height: 25px;
+    color: #FFF;
+    background-image: url('Images/Design/bg_menu.jpg');
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: Tahoma;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+#top5News a
+{
+    text-decoration: none;
+}
+
+#top5News ul
+{
+    margin-left: 20px;
+    padding: 0px;
+}
+
+#top5News ul li
+{
+    padding-top: 5px;
+}
+
+.btnLogin
+{
+    width: 254px;
+    height: 38px;
+    color: White;
+    background-color: #359BED;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    margin-left:2px;
+}
+.btnRe
+{
+    width: 100px;
+    height: 30px;
+    color: White;
+    background-color: #359BED;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    text-align: center;

@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="QLCV.master.cs" Inherits="QLCVan.QLCV" %>
+
+<%@ Register Src="UserControl/HitCount.ascx" TagName="HitCount" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Quản lý công văn</title>
+    <link href="Main.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <center>
+        <div id="frame">
+            <div id="header">
+                <div id="banner"><img src="Images/banner01.gif" />
+                </div>
+                <div id="login">
+                <asp:LinkButton ID="lbtLogIn" runat="server" onclick="lbtLogIn_Click">Đăng nhập</asp:LinkButton>
+                    <asp:Label ID="lblWelcome" runat="server" Font-Bold="True" ForeColor="#006600" Text="Xin chào: "></asp:Label>
+                    &nbsp;
+                    <asp:LinkButton ID="lbtLogOut" runat="server" OnClick="lbtLogOut_Click">Thoát</asp:LinkButton>
+                </div>
+                <div id="menu" style="float: left;">
+                    <ul>
+                        <asp:Repeater ID="rptMenu" runat="server">
+                            <ItemTemplate>
+                                <asp:HiddenField ID="hdCateID" Value='<%# Eval("MenuID") %>' runat="server"></asp:HiddenField>
+                                <li><a href='<%# Eval("MenuURL") %>' style="text-decoration: none;">
+                                    <%# Eval("MenuName") %></a> </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </ul>
+                </div>
+                <%--    <div id="link">   
+                <ul>
+                        <asp:Repeater ID="rptlienket" runat="server">
+                            <ItemTemplate>
+                                <li id="lienket1"><a href='<%# Eval("LinkUrl") %>'>
+                                    <img src='<%# Eval("Image") %>' style="width: 227px; height: 115px; border-radius: 5px;" />
+                                </a></li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </ul></div>--%>
+            </div>
+            <div id="main">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="footer">
+                <div id="footermenu">
+                    <div style="text-align:center">
+                    <ul >
+                        <uc1:HitCount ID="HitCount1" runat="server" />
+                        </ul>
+                        </div>
+                    <div>
+                        <ul>
+                        <asp:Repeater ID="rptMenu2" runat="server">
+
+                            <ItemTemplate>
+                                <asp:HiddenField ID="hdCateID" Value='<%# Eval("MenuID") %>' runat="server"></asp:HiddenField>
+                                <li><a href='<%# Eval("MenuURL") %>'>
+                                    <%# Eval("MenuName") %></a> </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </ul>
+                        </div>
+                    <div>
+                    <span>
+                    <center>
+                      
+                           <br /><br />
+
+
+                            Bản quyền thuộc về Trung tâm phát triển phần mềm SEVN<br />
+                            Địa chỉ: Dân Tiến - Khoái Châu - Hưng Yên<br />
+                            Email: contact@congnghephanmem.vn - Điện thoại: 0912.188.636</center>
+                        <br />
+                    </span>
+                </div>
+                </div>
+               
+            </div>
+        </div>
+    </center>
+    </form>
+</body>
+</html>
