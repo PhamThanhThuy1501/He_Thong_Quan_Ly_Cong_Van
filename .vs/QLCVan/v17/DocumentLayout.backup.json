@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlcv.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlcv.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\trangchu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\trangchu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -63,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\dangnhap.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlcv.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlcv.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -90,19 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DanhBaEmail.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx.cs",
-              "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx.cs",
-              "RelativeToolTip": "QLCVan\\DanhBaEmail.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T03:35:30.801Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Dangnhap.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.designer.cs",
               "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx.designer.cs",
@@ -114,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Web.config",
               "RelativeDocumentMoniker": "QLCVan\\Web.config",
@@ -127,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Main.css",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Main.css",
               "RelativeDocumentMoniker": "QLCVan\\Main.css",
@@ -139,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Trangchu.aspx",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx",
               "RelativeDocumentMoniker": "QLCVan\\Trangchu.aspx",
@@ -152,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "DanhBaEmail.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx.designer.cs",
               "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx.designer.cs",
@@ -164,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Trangchu.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx.cs",
               "RelativeDocumentMoniker": "QLCVan\\Trangchu.aspx.cs",
@@ -177,7 +165,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "QLCV.Master.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.cs",
+              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.cs",
+              "RelativeToolTip": "QLCVan\\QLCV.Master.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwBgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T03:57:33.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DanhBaEmail.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx.cs",
+              "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx.cs",
+              "RelativeToolTip": "QLCVan\\DanhBaEmail.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T03:35:30.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Timkiem.aspx",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Timkiem.aspx",
               "RelativeDocumentMoniker": "QLCVan\\Timkiem.aspx",
@@ -189,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "QLCV.Master",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master",
               "RelativeDocumentMoniker": "QLCVan\\QLCV.Master",
@@ -202,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Gioithieu.aspx",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Gioithieu.aspx",
               "RelativeDocumentMoniker": "QLCVan\\Gioithieu.aspx",
@@ -213,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "QLCV.sql",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\App_Data\\QLCV.sql",
               "RelativeDocumentMoniker": "QLCVan\\App_Data\\QLCV.sql",
@@ -224,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Counter.txt",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Counter.txt",
               "RelativeDocumentMoniker": "QLCVan\\Counter.txt",
@@ -236,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "QLCVan\\Properties\\AssemblyInfo.cs",
@@ -248,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Dangnhap.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.cs",
               "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx.cs",
@@ -260,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Dangnhap.aspx",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx",
               "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx",
@@ -268,18 +281,6 @@
               "RelativeToolTip": "QLCVan\\Dangnhap.aspx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-09-27T03:28:54.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "QLCV.Master.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.cs",
-              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.cs",
-              "RelativeToolTip": "QLCVan\\QLCV.Master.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T03:57:33.711Z"
             },
             {
               "$type": "Document",
