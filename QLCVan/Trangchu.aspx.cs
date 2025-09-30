@@ -233,7 +233,10 @@ namespace QLCVan
 
         }
 
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 
 }

@@ -1,66 +1,74 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\QLCVan\\QLCVan\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|d:\\qlcvan\\qlcvan\\qlcvan\\counter.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\counter.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|d:\\qlcvan\\qlcvan\\qlcvan\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|d:\\qlcvan\\qlcvan\\qlcvan\\trangchu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\trangchu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCVan\\QLCVan\\qlcvan\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|d:\\qlcvan\\qlcvan\\qlcvan\\app_data\\qlcv.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\app_data\\qlcv.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCVan\\QLCVan\\qlcvan\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCVan\\QLCVan\\qlcvan\\gioithieu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\gioithieu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCVan\\QLCVan\\qlcvan\\danhbaemail.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\danhbaemail.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCVan\\QLCVan\\qlcvan\\danhbaemail.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\danhbaemail.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCVan\\QLCVan\\qlcvan\\dangnhap.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\dangnhap.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCVan\\QLCVan\\qlcvan\\dangnhap.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\dangnhap.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCVan\\QLCVan\\qlcvan\\dangnhap.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\dangnhap.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCVan\\QLCVan\\qlcvan\\qlcv.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlcv.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlcv.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCVan\\QLCVan\\qlcvan\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\trangchu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\trangchu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|d:\\qlcvan\\qlcvan\\qlcvan\\app_data\\qlcv.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\app_data\\qlcv.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|c:\\users\\administrator\\desktop\\new folder\\he_thong_quan_ly_cong_van\\qlcvan\\trangchu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\trangchu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\timkiem.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\timkiem.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlcv.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlcv.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\counter.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\counter.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\app_data\\qlcv.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\app_data\\qlcv.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\gioithieu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\gioithieu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\danhbaemail.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\danhbaemail.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\danhbaemail.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\danhbaemail.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\dangnhap.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\dangnhap.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\dangnhap.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\dangnhap.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\dangnhap.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\dangnhap.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,85 +90,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Counter.txt",
-              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Counter.txt",
-              "RelativeDocumentMoniker": "QLCVan\\Counter.txt",
-              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\Counter.txt",
-              "RelativeToolTip": "QLCVan\\Counter.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-09-27T10:45:18.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Properties\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "QLCVan\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\Properties\\AssemblyInfo.cs",
-              "RelativeToolTip": "QLCVan\\Properties\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T10:44:34.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "QLCV.sql ",
-              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\App_Data\\QLCV.sql",
-              "RelativeDocumentMoniker": "QLCVan\\App_Data\\QLCV.sql",
-              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\App_Data\\QLCV.sql",
-              "RelativeToolTip": "QLCVan\\App_Data\\QLCV.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-09-27T10:19:54.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Gioithieu.aspx",
-              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Gioithieu.aspx",
-              "RelativeDocumentMoniker": "QLCVan\\Gioithieu.aspx",
-              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\Gioithieu.aspx",
-              "RelativeToolTip": "QLCVan\\Gioithieu.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-27T03:35:41.365Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DanhBaEmail.aspx.designer.cs",
-              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\DanhBaEmail.aspx.designer.cs",
-              "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx.designer.cs",
-              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\DanhBaEmail.aspx.designer.cs",
-              "RelativeToolTip": "QLCVan\\DanhBaEmail.aspx.designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T03:35:35.981Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DanhBaEmail.aspx.cs",
-              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\DanhBaEmail.aspx.cs",
-              "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx.cs",
-              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\DanhBaEmail.aspx.cs",
-              "RelativeToolTip": "QLCVan\\DanhBaEmail.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T03:35:30.801Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Dangnhap.aspx.designer.cs",
-              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.designer.cs",
               "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx.designer.cs",
-              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.designer.cs",
               "RelativeToolTip": "QLCVan\\Dangnhap.aspx.designer.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -168,48 +102,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Dangnhap.aspx.cs",
-              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx.cs",
-              "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx.cs",
-              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx.cs",
-              "RelativeToolTip": "QLCVan\\Dangnhap.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T03:29:01.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Dangnhap.aspx",
-              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx",
-              "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx",
-              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx",
-              "RelativeToolTip": "QLCVan\\Dangnhap.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-27T03:28:54.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Web.config",
-              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Web.config",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Web.config",
               "RelativeDocumentMoniker": "QLCVan\\Web.config",
-              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\Web.config",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Web.config",
               "RelativeToolTip": "QLCVan\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAABcAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-09-22T03:58:38.077Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Main.css",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Main.css",
+              "RelativeDocumentMoniker": "QLCVan\\Main.css",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Main.css",
+              "RelativeToolTip": "QLCVan\\Main.css",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAsBAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-27T03:44:59.858Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Trangchu.aspx",
-              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Trangchu.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx",
               "RelativeDocumentMoniker": "QLCVan\\Trangchu.aspx",
-              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\Trangchu.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx",
               "RelativeToolTip": "QLCVan\\Trangchu.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -218,35 +140,155 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Main.css",
-              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Main.css",
-              "RelativeDocumentMoniker": "QLCVan\\Main.css",
-              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\Main.css",
-              "RelativeToolTip": "QLCVan\\Main.css",
+              "DocumentIndex": 11,
+              "Title": "DanhBaEmail.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx.designer.cs",
+              "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx.designer.cs",
+              "RelativeToolTip": "QLCVan\\DanhBaEmail.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-27T03:44:59.858Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T03:35:35.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Trangchu.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx.cs",
+              "RelativeDocumentMoniker": "QLCVan\\Trangchu.aspx.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx.cs",
+              "RelativeToolTip": "QLCVan\\Trangchu.aspx.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAqwOsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T10:38:14.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QLCV.Master.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.cs",
+              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.cs",
+              "RelativeToolTip": "QLCVan\\QLCV.Master.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwBgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T03:57:33.711Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "QLCV.Master.cs",
-              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\QLCV.Master.cs",
-              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master.cs",
-              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\QLCV.Master.cs",
-              "RelativeToolTip": "QLCVan\\QLCV.Master.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "Title": "DanhBaEmail.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx.cs",
+              "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx.cs",
+              "RelativeToolTip": "QLCVan\\DanhBaEmail.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T03:57:33.711Z"
+              "WhenOpened": "2025-09-27T03:35:30.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Timkiem.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Timkiem.aspx",
+              "RelativeDocumentMoniker": "QLCVan\\Timkiem.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Timkiem.aspx",
+              "RelativeToolTip": "QLCVan\\Timkiem.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-09-30T10:34:54.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QLCV.Master",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master",
+              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master",
+              "RelativeToolTip": "QLCVan\\QLCV.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-09-30T10:35:02.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Gioithieu.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Gioithieu.aspx",
+              "RelativeDocumentMoniker": "QLCVan\\Gioithieu.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Gioithieu.aspx",
+              "RelativeToolTip": "QLCVan\\Gioithieu.aspx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-09-27T03:35:41.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "QLCV.sql",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\App_Data\\QLCV.sql",
+              "RelativeDocumentMoniker": "QLCVan\\App_Data\\QLCV.sql",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\App_Data\\QLCV.sql",
+              "RelativeToolTip": "QLCVan\\App_Data\\QLCV.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-09-27T10:19:54.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Counter.txt",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Counter.txt",
+              "RelativeDocumentMoniker": "QLCVan\\Counter.txt",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Counter.txt",
+              "RelativeToolTip": "QLCVan\\Counter.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-27T10:45:18.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "QLCVan\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "QLCVan\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T10:44:34.439Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "Dangnhap.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.cs",
+              "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.cs",
+              "RelativeToolTip": "QLCVan\\Dangnhap.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T03:29:01.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Dangnhap.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx",
+              "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx",
+              "RelativeToolTip": "QLCVan\\Dangnhap.aspx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-09-27T03:28:54.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Global.asax.cs",
-              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Global.asax.cs",
               "RelativeDocumentMoniker": "QLCVan\\Global.asax.cs",
-              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\New folder\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Global.asax.cs",
               "RelativeToolTip": "QLCVan\\Global.asax.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
