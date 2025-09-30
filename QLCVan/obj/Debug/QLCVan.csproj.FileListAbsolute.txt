@@ -82,3 +82,19 @@ D:\QLCVan\QLCVan\QLCVan\obj\Debug\QLCVan.csproj.CoreCompileInputs.cache
 D:\QLCVan\QLCVan\QLCVan\obj\Debug\QLCVan.csproj.Up2Date
 D:\QLCVan\QLCVan\QLCVan\obj\Debug\QLCVan.dll
 D:\QLCVan\QLCVan\QLCVan\obj\Debug\QLCVan.pdb
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\QLCVan.dll.config
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\QLCVan.dll
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\QLCVan.pdb
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.csproj.Up2Date
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.dll
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.pdb
+C:\Users\Admin\OneDrive\Documents\Base_thuctap\QLCVan\bin\QLCVan.dll.config
+C:\Users\Admin\OneDrive\Documents\Base_thuctap\QLCVan\bin\QLCVan.dll
+C:\Users\Admin\OneDrive\Documents\Base_thuctap\QLCVan\bin\QLCVan.pdb
+C:\Users\Admin\OneDrive\Documents\Base_thuctap\QLCVan\obj\Debug\QLCVan.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Documents\Base_thuctap\QLCVan\obj\Debug\QLCVan.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Documents\Base_thuctap\QLCVan\obj\Debug\QLCVan.csproj.Up2Date
+C:\Users\Admin\OneDrive\Documents\Base_thuctap\QLCVan\obj\Debug\QLCVan.dll
+C:\Users\Admin\OneDrive\Documents\Base_thuctap\QLCVan\obj\Debug\QLCVan.pdb

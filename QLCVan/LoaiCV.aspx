@@ -1,77 +1,72 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/QLCV.Master" AutoEventWireup="true"
+﻿<%@ Page Title="Quản lý Loại Công văn" Language="C#" MasterPageFile="~/QLCV.Master" AutoEventWireup="true"
     CodeBehind="LoaiCV.aspx.cs" Inherits="QLCVan.LoaiCV" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        .table { border-collapse: collapse; width: 70%; margin: 0 auto; background: #fff; }
+        .table th, .table td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+        .table th { background-color: #990000; color: #fff; }
+        .action-btn { margin: 0 5px; font-size: 16px; cursor: pointer; }
+    </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   
-    <center>
-        <h3>
-            &nbsp;<b>QUẢN LÝ LOẠI CÔNG VĂN</b></h3>
-        <p>
-            <asp:HiddenField ID="hdfID" runat="server" />
-        </p>
-<%--        <div>
-            <asp:UpdatePanel ID="UpdatePanel1" runat="server" ChildrenAsTriggers="true">
-                <ContentTemplate>--%>
-                    <asp:GridView ID="grvLoaiCV" runat="server" ShowFooter="True" AutoGenerateColumns="False"
-                        CellPadding="4" ForeColor="#333333" OnRowDeleting="rowDeleting" Width="48%" OnRowCancelingEdit="rowCancelingEdit"
-                        OnRowEditing="rowEditing" OnRowUpdating="rowUpdating" OnRowCommand="rowCommand"
-                        DataKeyNames="MaLoaiCV" GridLines="None">
-                        <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                        <Columns>
-                            <asp:TemplateField HeaderText="Mã Loại" ItemStyle-HorizontalAlign="Center">
-                                <ItemTemplate>
-                                    <asp:Label ID="Label1" runat="server" Text='<%# Eval("MaLoaiCV") %>'></asp:Label>
-                                </ItemTemplate>
 
-<ItemStyle HorizontalAlign="Center"></ItemStyle>
-                            </asp:TemplateField>
-                            <asp:TemplateField HeaderText="Tên Loại">
-                                <ItemTemplate>
-                                    <asp:Label ID="Label6" runat="server" Text='<%#Eval("TenLoaiCV") %>'></asp:Label>
-                                </ItemTemplate>
-                                <EditItemTemplate>
-                                    <asp:TextBox ID="txtTenLoai" onKeyup="js_Validate(this.value)" runat="server" Text='<%#Eval("TenLoaiCV") %>'></asp:TextBox>
-                                </EditItemTemplate>
-                                <FooterTemplate>
-                                    <asp:TextBox ID="TxtTenLoai" onKeyup="js_Validate(this.value)" runat="server"></asp:TextBox>
-                                </FooterTemplate>
-                            </asp:TemplateField>
-                            <asp:TemplateField HeaderText="" ShowHeader="False">
-                                <EditItemTemplate>
-                                    <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update"
-                                        Text="Cập nhật"></asp:LinkButton>
-                                    <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel"
-                                        Text="Hủy"></asp:LinkButton>
-                                </EditItemTemplate>
-                                <FooterTemplate>
-                                    <asp:LinkButton ID="LinkButton4" runat="server" CausesValidation="False" CommandName="AddNew"
-                                        Text="Thêm mới"></asp:LinkButton>
-                                </FooterTemplate>
-                                <ItemTemplate>
-                                    <asp:LinkButton ID="LinkButton5" runat="server" CausesValidation="False" CommandArgument='<%#Eval("MaLoaiCV") %>'
-                                        CommandName="Edit" Text="Sửa"></asp:LinkButton>
-                                    <asp:LinkButton ID="LinkButton3" runat="server" CausesValidation="False" CommandName="Delete"
-                                        Text="Xóa"></asp:LinkButton>
-                                </ItemTemplate>
-                            </asp:TemplateField>
-                        </Columns>
-                        <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
-                        <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
-                        <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
-                        <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                        <AlternatingRowStyle BackColor="White" />
-                        <SortedAscendingCellStyle BackColor="#FDF5AC" />
-                        <SortedAscendingHeaderStyle BackColor="#4D0000" />
-                        <SortedDescendingCellStyle BackColor="#FCF6C0" />
-                        <SortedDescendingHeaderStyle BackColor="#820000" />
-                    </asp:GridView>
-                    </center>
-          <%--      </ContentTemplate>
-                <Triggers>
-                    <asp:AsyncPostBackTrigger ControlID="grvLoaiCV" />
-                </Triggers>
-            </asp:UpdatePanel>
-        </div>--%>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <center>
+        <h3><b>QUẢN LÝ LOẠI CÔNG VĂN</b></h3>
+        <asp:GridView ID="grvLoaiCV" runat="server" ShowFooter="True" AutoGenerateColumns="False"
+            CssClass="table" DataKeyNames="MaLoaiCV"
+            OnRowDeleting="rowDeleting" OnRowCancelingEdit="rowCancelingEdit"
+            OnRowEditing="rowEditing" OnRowUpdating="rowUpdating">
+            <Columns>
+                <asp:TemplateField HeaderText="Mã Loại">
+                    <ItemTemplate>
+                        <asp:Label ID="lblMaLoai" runat="server" Text='<%# Eval("MaLoaiCV") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+
+                <asp:TemplateField HeaderText="Tên Loại">
+                    <ItemTemplate>
+                        <asp:Label ID="lblTenLoai" runat="server" Text='<%# Eval("TenLoaiCV") %>'></asp:Label>
+                    </ItemTemplate>
+                    <EditItemTemplate>
+                        <asp:TextBox ID="txtTenLoai" runat="server" Text='<%# Eval("TenLoaiCV") %>' CssClass="form-control"></asp:TextBox>
+                    </EditItemTemplate>
+                    <FooterTemplate>
+                        <asp:TextBox ID="txtTenLoaiNew" runat="server" CssClass="form-control"></asp:TextBox>
+                    </FooterTemplate>
+                </asp:TemplateField>
+
+                <asp:TemplateField HeaderText="Thao tác">
+                    <ItemTemplate>
+                        <asp:LinkButton ID="btnEdit" runat="server" CommandName="Edit" ToolTip="Sửa" CausesValidation="False">
+                            <i class="fa fa-edit" style="color:blue;"></i>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnDelete" runat="server" CommandName="Delete" ToolTip="Xóa" CausesValidation="False"
+                            OnClientClick="return confirm('Bạn có chắc chắn muốn xóa loại công văn này không?');">
+                            <i class="fa fa-trash" style="color:red;"></i>
+                        </asp:LinkButton>
+                    </ItemTemplate>
+                    <EditItemTemplate>
+                        <asp:LinkButton ID="btnUpdate" runat="server" CommandName="Update" ToolTip="Cập nhật" CausesValidation="False">
+                            <i class="fa fa-check" style="color:green;"></i>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnCancel" runat="server" CommandName="Cancel" ToolTip="Hủy" CausesValidation="False">
+                            <i class="fa fa-times" style="color:gray;"></i>
+                        </asp:LinkButton>
+                    </EditItemTemplate>
+
+                   <FooterTemplate>
+    <asp:LinkButton ID="btnAdd" runat="server" ToolTip="Thêm mới"
+        OnClick="btnAdd_Click" CausesValidation="False">
+        <i class="fa fa-plus-circle" style="color:green;"></i>
+    </asp:LinkButton>
+</FooterTemplate>
+
+
+
+                </asp:TemplateField>
+            </Columns>
+        </asp:GridView>
+    </center>
 </asp:Content>
