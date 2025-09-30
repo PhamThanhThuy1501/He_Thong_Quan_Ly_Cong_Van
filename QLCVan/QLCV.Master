@@ -17,7 +17,8 @@
         <center>
         <div id="frame">
             <div id="header">
-                <div id="banner"><img src="Images/banner01.gif" />
+                <div id="banner">
+                    <img src="Images/94471c42569cdcc2858d.jpg" align="middle" height="200" />
                 </div>
                 <div id="login">
                 <asp:LinkButton ID="lbtLogIn" runat="server" onclick="lbtLogIn_Click">Đăng nhập</asp:LinkButton>

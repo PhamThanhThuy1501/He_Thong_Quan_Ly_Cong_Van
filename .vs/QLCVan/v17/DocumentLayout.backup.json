@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\QLCVan\\QLCVan\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|d:\\qlcvan\\qlcvan\\qlcvan\\counter.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\counter.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|d:\\qlcvan\\qlcvan\\qlcvan\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|d:\\qlcvan\\qlcvan\\qlcvan\\trangchu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\trangchu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
@@ -62,15 +70,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Counter.txt",
+              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Counter.txt",
+              "RelativeDocumentMoniker": "QLCVan\\Counter.txt",
+              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\Counter.txt",
+              "RelativeToolTip": "QLCVan\\Counter.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-27T10:45:18.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "QLCVan\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "D:\\QLCVan\\QLCVan\\QLCVan\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "QLCVan\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T10:44:34.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "QLCV.sql ",
               "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\App_Data\\QLCV.sql",
               "RelativeDocumentMoniker": "QLCVan\\App_Data\\QLCV.sql",
@@ -82,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Gioithieu.aspx",
               "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Gioithieu.aspx",
               "RelativeDocumentMoniker": "QLCVan\\Gioithieu.aspx",
@@ -94,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "DanhBaEmail.aspx.designer.cs",
               "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\DanhBaEmail.aspx.designer.cs",
               "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx.designer.cs",
@@ -106,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "DanhBaEmail.aspx.cs",
               "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\DanhBaEmail.aspx.cs",
               "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx.cs",
@@ -118,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Dangnhap.aspx.designer.cs",
               "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx.designer.cs",
               "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx.designer.cs",
@@ -130,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Dangnhap.aspx.cs",
               "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx.cs",
               "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx.cs",
@@ -142,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Dangnhap.aspx",
               "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx",
               "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx",
@@ -154,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Web.config",
               "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Web.config",
               "RelativeDocumentMoniker": "QLCVan\\Web.config",
@@ -167,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Trangchu.aspx",
               "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Trangchu.aspx",
               "RelativeDocumentMoniker": "QLCVan\\Trangchu.aspx",
@@ -180,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Main.css",
               "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Main.css",
               "RelativeDocumentMoniker": "QLCVan\\Main.css",
@@ -192,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "QLCV.Master.cs",
               "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\QLCV.Master.cs",
               "RelativeDocumentMoniker": "QLCVan\\QLCV.Master.cs",
@@ -204,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Global.asax.cs",
               "DocumentMoniker": "D:\\QLCVan\\QLCVan\\QLCVan\\Global.asax.cs",
               "RelativeDocumentMoniker": "QLCVan\\Global.asax.cs",

@@ -76,6 +76,7 @@
     <Content Include="Dangnhap.aspx" />
     <Content Include="DanhBaEmail.aspx" />
     <Content Include="Gioithieu.aspx" />
+    <Content Include="Images\94471c42569cdcc2858d.jpg" />
     <Content Include="Images\avatar.jpg" />
     <Content Include="Images\banner01.gif" />
     <Content Include="Images\Car.png" />
@@ -97,6 +98,7 @@
     <Content Include="Images\Product\2.png" />
     <Content Include="Images\Product\3.png" />
     <Content Include="Images\sanpham.png" />
+    <Content Include="Images\search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" />
     <Content Include="Images\Slides\1.jpg" />
     <Content Include="Images\Slides\2.jpg" />
     <Content Include="Images\Slides\3.jpg" />
