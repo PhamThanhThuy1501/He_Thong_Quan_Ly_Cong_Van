@@ -18,7 +18,9 @@
         <div id="frame">
             <div id="header">
                 <div id="banner">
-                    <img src="Images/94471c42569cdcc2858d.jpg" align="middle" height="200" />
+                    <img src="Images/logoA.png" align="middle" height="200" />
+                    <h4 style="margin : 5px ;">TRƯỜNG QUÂN SỰ QUÂN KHU 2 </h4>
+                    <h6 style="margin : 5px ;"> MILITARY SCHOOL OF MILITARY REGION 2</h6>
                 </div>
                 <div id="login">
                 <asp:LinkButton ID="lbtLogIn" runat="server" onclick="lbtLogIn_Click">Đăng nhập</asp:LinkButton>

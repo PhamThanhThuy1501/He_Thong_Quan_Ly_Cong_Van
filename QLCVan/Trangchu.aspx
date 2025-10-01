@@ -117,12 +117,17 @@
     <div class="section-header">XEM CÔNG VĂN</div>
     <!-- Thanh chữ chạy -->
     <div style="background: #c00; color: #fff; padding: 6px 10px; font-weight: bold;">
-        <marquee behavior="scroll" direction="left" scrollamount="4">Chào mừng bạn đến với hệ thống Quản lý Công Văn điện tử . </marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="4">
+    Chào mừng bạn đến với hệ thống Quản lý Công Văn điện tử&nbsp;&nbsp;&nbsp;&nbsp;
+    Trung thành - Chủ động - Sáng tạo&nbsp;&nbsp;&nbsp;&nbsp;
+    Dạy tốt - Học tốt&nbsp;&nbsp;&nbsp;&nbsp;
+    Đoàn kết - Kỷ luật
+</marquee>
     </div>
     <div style="margin: 15px 0; display: flex; justify-content: center;">
-        <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" placeholder="Nhập từ khóa tìm kiếm công văn..." Style="width: 350px; padding: 6px; border: 1px solid #ccc; border-radius: 3px;" />
+<%--        <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" placeholder="Nhập từ khóa tìm kiếm công văn..." Style="width: 350px; padding: 6px; border: 1px solid #ccc; border-radius: 3px;" />
         <asp:Button ID="btnSearch" Text="Tìm Kiếm" runat="server"  OnClick="btnSearch_Click" style=" background: url('Images/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg') ;margin-left: 5px; padding: 6px 12px; border: none; border-radius: 3px; cursor: pointer;" /> </div>
-```
+```--%>
         <div class="filter-box">
             <asp:RadioButton ID="rdpCVDen" runat="server" Text="Công văn đến" AutoPostBack="True"
                 GroupName="Search" OnCheckedChanged="rdpCVDen_CheckedChanged" />
@@ -135,11 +140,12 @@
         <div class="notice">Click vào "Xem" để xem chi tiết</div>
 
         <asp:UpdatePanel ID="UpdatePanel1" runat="server" ChildrenAsTriggers="true">
-            <ContentTemplate>
-                <asp:GridView ID="GridView1" runat="server" CssClass="gridview" AutoGenerateColumns="False"
-                    Width="100%" AllowPaging="True" PageSize="5"
-                    OnPageIndexChanging="GridView1_PageIndexChanging1"
-                    ShowFooter="False" GridLines="None">
+    <ContentTemplate>
+        <asp:GridView ID="GridView1" runat="server" CssClass="gridview" AutoGenerateColumns="False"
+            Width="100%" AllowPaging="True" PageSize="5"
+            OnPageIndexChanging="GridView1_PageIndexChanging1"
+            ShowFooter="False" GridLines="None"
+            DataKeyNames="MaCV">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:TemplateField SortExpression="SoCV" HeaderText="Số CV">
@@ -170,27 +176,48 @@
                             </ItemTemplate>
                             <ItemStyle Width="300px" />
                         </asp:TemplateField>
-                        <asp:TemplateField HeaderText="Chi tiết" ItemStyle-HorizontalAlign="Center">
+<%--                        <asp:TemplateField HeaderText="Chi tiết" ItemStyle-HorizontalAlign="Center">
                             <ItemTemplate>
-                                <a href='CTCV.aspx?id=<%#Eval("MaCV")%>'>Xem</a>
+                                <a href='CTCV.aspx?id=<%#Eval("MaCV")%>'>
+                                    
+                                     <img style="width:16px;height:16px;vertical-align:middle;" src="Images/Icons/article_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" />
+                                   
+                                    Xem
+
+                                </a>
                             </ItemTemplate>
                             <ItemStyle Width="60px" />
-                        </asp:TemplateField>
-                        <asp:TemplateField HeaderText="Xóa" ItemStyle-HorizontalAlign="Center">
-                            <ItemTemplate>
-                                <asp:LinkButton ID="lnk_Xoa" runat="server" OnClick="lnk_Xoa_Click"
-                                    OnClientClick="return confirm('Bạn có chắc chắn muốn xóa công văn này không?')"
-                                    CommandArgument='<%# Eval("Macv") %>'>Xóa</asp:LinkButton>
-                            </ItemTemplate>
-                            <ItemStyle Width="60px" />
-                        </asp:TemplateField>
+                        </asp:TemplateField>--%>
+<asp:TemplateField HeaderText="Chi tiết" ItemStyle-HorizontalAlign="Center">
+    <ItemTemplate>
+        <asp:LinkButton ID="lnkView" runat="server" 
+            CommandArgument='<%# Eval("TenFile") %>'
+            OnClick ="lnkView_Click" OnClientClick="lnkView_Click">
+            <img style="width:16px;height:16px;vertical-align:middle;" 
+                 src="Images/Icons/article_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" />
+            Xem
+        </asp:LinkButton>
+    </ItemTemplate>
+    <ItemStyle Width="60px" />
+</asp:TemplateField>
+
+
+
+            <asp:TemplateField HeaderText="Xóa" ItemStyle-HorizontalAlign="Center">
+                <ItemTemplate>
+                    <asp:LinkButton ID="lnk_Xoa" runat="server" OnClick="lnk_Xoa_Click"
+                        OnClientClick="return confirm('Bạn có chắc chắn muốn xóa công văn này không?')"
+                        CommandArgument='<%# Eval("MaCV") %>'>
+                        <img style="width:16px;height:16px;vertical-align:middle;" src="Images/Icons/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" />
+                        Xóa
+                    </asp:LinkButton>
+                </ItemTemplate>
+                <ItemStyle Width="60px" />
+            </asp:TemplateField>
                     </Columns>
                     <PagerStyle CssClass="pager" />
                 </asp:GridView>
             </ContentTemplate>
-            <Triggers>
-                <asp:AsyncPostBackTrigger ControlID="GridView1" />
-            </Triggers>
         </asp:UpdatePanel>
     ```
 

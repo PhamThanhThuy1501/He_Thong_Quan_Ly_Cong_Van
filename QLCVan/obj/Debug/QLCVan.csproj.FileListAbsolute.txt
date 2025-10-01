@@ -90,3 +90,13 @@ C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\D
 C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.csproj.Up2Date
 C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.dll
 C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.pdb
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\GroupDocs.Viewer.dll
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\System.Buffers.dll
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\System.Memory.dll
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\System.Numerics.Vectors.dll
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\System.Text.Encodings.Web.dll
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\System.Text.Json.dll
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\Administrator\Desktop\New folder\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\System.ValueTuple.dll

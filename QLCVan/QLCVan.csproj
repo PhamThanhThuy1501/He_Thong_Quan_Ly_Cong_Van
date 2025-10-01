@@ -90,6 +90,10 @@
     <Content Include="Images\Design\Slide.jpg" />
     <Content Include="Images\edu.net.jpg" />
     <Content Include="Images\giaiphap.png" />
+    <Content Include="Images\Icons\article_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" />
+    <Content Include="Images\Icons\delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" />
+    <Content Include="Images\Icons\download_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" />
+    <Content Include="Images\logoA.png" />
     <Content Include="Images\News\box.jpg" />
     <Content Include="Images\News\windows8.png" />
     <Content Include="Images\nhung-hinh-anh-dep-ve-thien-nhien-khi-mua-thu-toi-4.jpg" />
@@ -98,7 +102,7 @@
     <Content Include="Images\Product\2.png" />
     <Content Include="Images\Product\3.png" />
     <Content Include="Images\sanpham.png" />
-    <Content Include="Images\search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" />
+    <Content Include="Images\Icons\search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" />
     <Content Include="Images\Slides\1.jpg" />
     <Content Include="Images\Slides\2.jpg" />
     <Content Include="Images\Slides\3.jpg" />
@@ -134,6 +138,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="WebView.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CTCV.aspx.cs">
@@ -236,6 +241,13 @@
     <Compile Include="UserControl\HitCount.ascx.designer.cs">
       <DependentUpon>HitCount.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebView.aspx.cs">
+      <DependentUpon>WebView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebView.aspx.designer.cs">
+      <DependentUpon>WebView.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Account\" />
@@ -259,6 +271,11 @@
     <None Include="Info.dbml.layout">
       <DependentUpon>Info.dbml</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GroupDocs.Viewer">
+      <Version>18.9.0</Version>
+    </PackageReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
