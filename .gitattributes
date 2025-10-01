@@ -1,1 +1,2 @@
+*.dll filter=lfs diff=lfs merge=lfs -text
 QLCVan/bin/GroupDocs.Viewer.dll filter=lfs diff=lfs merge=lfs -text
