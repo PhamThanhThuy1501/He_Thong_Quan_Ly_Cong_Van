@@ -98,3 +98,11 @@ C:\Users\Admin\OneDrive\Documents\Base_thuctap\QLCVan\obj\Debug\QLCVan.csproj.Co
 C:\Users\Admin\OneDrive\Documents\Base_thuctap\QLCVan\obj\Debug\QLCVan.csproj.Up2Date
 C:\Users\Admin\OneDrive\Documents\Base_thuctap\QLCVan\obj\Debug\QLCVan.dll
 C:\Users\Admin\OneDrive\Documents\Base_thuctap\QLCVan\obj\Debug\QLCVan.pdb
+C:\Users\quyet\source\repos\PhamThanhThuy1501\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\QLCVan.dll.config
+C:\Users\quyet\source\repos\PhamThanhThuy1501\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\QLCVan.dll
+C:\Users\quyet\source\repos\PhamThanhThuy1501\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\QLCVan.pdb
+C:\Users\quyet\source\repos\PhamThanhThuy1501\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.csproj.AssemblyReference.cache
+C:\Users\quyet\source\repos\PhamThanhThuy1501\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.csproj.CoreCompileInputs.cache
+C:\Users\quyet\source\repos\PhamThanhThuy1501\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.csproj.Up2Date
+C:\Users\quyet\source\repos\PhamThanhThuy1501\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.dll
+C:\Users\quyet\source\repos\PhamThanhThuy1501\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.pdb
