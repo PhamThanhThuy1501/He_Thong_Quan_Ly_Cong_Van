@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace QLCVan
@@ -10,94 +7,82 @@ namespace QLCVan
     public partial class LoaiCV : System.Web.UI.Page
     {
         InfoDataContext db = new InfoDataContext();
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!(Session["TenDN"] != null))
+            if (Session["TenDN"] == null)
             {
                 Response.Redirect("Dangnhap.aspx");
             }
-            if (Session["QuyenHan"].ToString().Trim() == "User")
+            if (Session["QuyenHan"] != null && Session["QuyenHan"].ToString().Trim() == "User")
             {
-                Response.Write("<script type='text/javascript'>");
-                Response.Write("alert('Bạn không có quyền truy cập trang này !');");
-                Response.Write("document.location.href='Trangchu.aspx';");
-                Response.Write("</script>");
+                Response.Write("<script>alert('Bạn không có quyền truy cập trang này!');document.location.href='Trangchu.aspx';</script>");
             }
             if (!IsPostBack)
             {
                 load_LoaiCV();
             }
         }
+
         private void load_LoaiCV()
         {
-            var list = (from p in db.tblLoaiCVs select p).ToList();
-            grvLoaiCV.DataSource = list;
+            grvLoaiCV.DataSource = db.tblLoaiCVs.ToList();
             grvLoaiCV.DataBind();
         }
-        protected void rowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
-            tblLoaiCV pd = new tblLoaiCV();
-            int idex = e.RowIndex;
-            string key = grvLoaiCV.DataKeys[idex].Value.ToString();
-            tblLoaiCV xoa = db.tblLoaiCVs.SingleOrDefault(p => p.MaLoaiCV == Convert.ToInt32(key));
-            db.tblLoaiCVs.DeleteOnSubmit(xoa);
-            db.SubmitChanges();
-            load_LoaiCV();
 
-        }
         protected void rowEditing(object sender, GridViewEditEventArgs e)
         {
-
             grvLoaiCV.EditIndex = e.NewEditIndex;
             load_LoaiCV();
         }
 
-        protected void rowUpdating(object sender, GridViewUpdateEventArgs e)
-        {
-            using (InfoDataContext db1 = new InfoDataContext())
-            {
-
-                int index = e.RowIndex;
-                //string i = Session["ID"].ToString();
-
-                tblLoaiCV pr = db.tblLoaiCVs.SingleOrDefault(p => p.MaLoaiCV == Convert.ToInt32(hdfID.Value));
-                TextBox txtTenNhom = (TextBox)grvLoaiCV.Rows[e.RowIndex].FindControl("txtTenLoai");
-                pr.TenLoaiCV = txtTenNhom.Text;
-                db.SubmitChanges();
-                grvLoaiCV.EditIndex = -1;
-                load_LoaiCV();
-            }
-
-
-
-        }
         protected void rowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
         {
             grvLoaiCV.EditIndex = -1;
             load_LoaiCV();
         }
 
-        protected void rowCommand(object sender, GridViewCommandEventArgs e)
+        protected void rowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            if (e.CommandName.Equals("Edit"))
-            {
-                //Session["ID"] = Convert.ToString(e.CommandArgument.ToString());
-                hdfID.Value = Convert.ToString(e.CommandArgument.ToString());
+            int id = Convert.ToInt32(grvLoaiCV.DataKeys[e.RowIndex].Value);
+            TextBox txtTenLoai = grvLoaiCV.Rows[e.RowIndex].FindControl("txtTenLoai") as TextBox;
 
+            if (txtTenLoai != null)
+            {
+                var pr = db.tblLoaiCVs.SingleOrDefault(p => p.MaLoaiCV == id);
+                if (pr != null)
+                {
+                    pr.TenLoaiCV = txtTenLoai.Text;
+                    db.SubmitChanges();
+                }
             }
 
-            if (e.CommandName.Equals("AddNew"))
-            {
+            grvLoaiCV.EditIndex = -1;
+            load_LoaiCV();
+        }
 
-                TextBox TxtTenLoai = (TextBox)grvLoaiCV.FooterRow.FindControl("txtTenLoai");
-                tblLoaiCV pr = new tblLoaiCV();
-                pr.TenLoaiCV = TxtTenLoai.Text;
+        protected void rowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            int id = Convert.ToInt32(grvLoaiCV.DataKeys[e.RowIndex].Value);
+            var xoa = db.tblLoaiCVs.SingleOrDefault(p => p.MaLoaiCV == id);
+            if (xoa != null)
+            {
+                db.tblLoaiCVs.DeleteOnSubmit(xoa);
+                db.SubmitChanges();
+            }
+            load_LoaiCV();
+        }
+        protected void btnAdd_Click(object sender, EventArgs e)
+        {
+            TextBox txtTenLoaiFooter = grvLoaiCV.FooterRow.FindControl("txtTenLoaiFooter") as TextBox;
+            if (txtTenLoaiFooter != null && !string.IsNullOrWhiteSpace(txtTenLoaiFooter.Text))
+            {
+                tblLoaiCV pr = new tblLoaiCV { TenLoaiCV = txtTenLoaiFooter.Text };
                 db.tblLoaiCVs.InsertOnSubmit(pr);
                 db.SubmitChanges();
 
                 grvLoaiCV.EditIndex = -1;
                 load_LoaiCV();
-
             }
         }
     }

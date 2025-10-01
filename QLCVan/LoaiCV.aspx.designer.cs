@@ -7,20 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLCVan {
-    
-    
-    public partial class LoaiCV {
-        
-        /// <summary>
-        /// hdfID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdfID;
-        
+namespace QLCVan
+{
+
+
+    public partial class LoaiCV
+    {
+
         /// <summary>
         /// grvLoaiCV control.
         /// </summary>
