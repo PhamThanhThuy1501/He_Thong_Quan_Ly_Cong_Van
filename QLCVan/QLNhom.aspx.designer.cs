@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLCVan {
-    
-    
-    public partial class QLNhom1 {
-        
+namespace QLCVan
+{
+
+
+    public partial class QLNhom1
+    {
+
         /// <summary>
         /// hdfID control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdfID;
-        
+
         /// <summary>
         /// gvQLNhom control.
         /// </summary>
@@ -29,5 +31,23 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvQLNhom;
+
+        /// <summary>
+        /// txtTenNhomMoi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTenNhomMoi;
+
+        /// <summary>
+        /// btnSave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSave;
     }
 }
