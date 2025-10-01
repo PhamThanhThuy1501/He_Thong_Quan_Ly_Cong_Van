@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLCVan {
-    
-    
-    public partial class QLnguoidung {
-        
+namespace QLCVan
+{
+
+
+    public partial class QLnguoidung
+    {
+
         /// <summary>
         /// Label1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-        
+
         /// <summary>
         /// txtMaNguoiDung control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMaNguoiDung;
-        
+
         /// <summary>
         /// txtHoTen control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtHoTen;
-        
+
         /// <summary>
         /// txtEmail control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
-        
+
         /// <summary>
         /// ddlQuyen control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlQuyen;
-        
+
         /// <summary>
         /// cbl1 control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBoxList cbl1;
-        
+
         /// <summary>
         /// txtTenDN control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTenDN;
-        
+
         /// <summary>
         /// txtMatkhau control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMatkhau;
-        
+
         /// <summary>
         /// txtMatkhau1 control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMatkhau1;
-        
+
         /// <summary>
         /// rblTrangThai control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList rblTrangThai;
-        
+
         /// <summary>
         /// btnThem control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnThem;
-        
+
         /// <summary>
         /// btnTaoMoi control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnTaoMoi;
-        
+
         /// <summary>
         /// lblAlert control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal lblAlert;
-        
+
         /// <summary>
         /// UpdatePanel1 control.
         /// </summary>
@@ -137,7 +139,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanel1;
-        
+
         /// <summary>
         /// GridView2 control.
         /// </summary>
@@ -146,7 +148,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView2;
-        
+
         /// <summary>
         /// LinqDataSource2 control.
         /// </summary>
@@ -155,14 +157,5 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinqDataSource LinqDataSource2;
-        
-        /// <summary>
-        /// LinqDataSource1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinqDataSource LinqDataSource1;
     }
 }
