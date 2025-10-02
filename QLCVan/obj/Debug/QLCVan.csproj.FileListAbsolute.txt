@@ -106,3 +106,11 @@ C:\Users\quyet\source\repos\PhamThanhThuy1501\He_Thong_Quan_Ly_Cong_Van\QLCVan\o
 C:\Users\quyet\source\repos\PhamThanhThuy1501\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.csproj.Up2Date
 C:\Users\quyet\source\repos\PhamThanhThuy1501\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.dll
 C:\Users\quyet\source\repos\PhamThanhThuy1501\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.pdb
+D:\QLCV_TT\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.csproj.AssemblyReference.cache
+D:\QLCV_TT\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.csproj.CoreCompileInputs.cache
+D:\QLCV_TT\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.dll
+D:\QLCV_TT\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.pdb
+D:\QLCV_TT\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\QLCVan.dll.config
+D:\QLCV_TT\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\QLCVan.dll
+D:\QLCV_TT\He_Thong_Quan_Ly_Cong_Van\QLCVan\bin\QLCVan.pdb
+D:\QLCV_TT\He_Thong_Quan_Ly_Cong_Van\QLCVan\obj\Debug\QLCVan.csproj.Up2Date

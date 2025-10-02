@@ -19,9 +19,22 @@
         <center>
         <div id="frame">
             <div id="header">
-                <div id="banner">
-                    <img src="Images/94471c42569cdcc2858d.jpg" align="middle" height="200" />
-                </div>
+               <div id="banner" style="display: flex; align-items: center; justify-content: center; padding : 10px;">
+    <!-- Logo bên trái -->
+    <div style="margin-right: 15px;">
+        <img src="Images/logoA.jpg" height="120" />
+    </div>
+
+    <!-- Chữ bên phải -->
+    <div>
+        <div style="font-size: 28px; font-weight: bold; color: #003366; margin:0;">
+            TRƯỜNG QUÂN SỰ QUÂN KHU 2
+        </div>
+        <div style="font-size: 20px; font-style: italic; color: #555; margin:0 ;padding-left:30px;">
+            MILITARY SCHOOL OF MILITARY REGION 2
+        </div>
+    </div>
+</div>
                 <div id="login">
                 <asp:LinkButton ID="lbtLogIn" runat="server" onclick="lbtLogIn_Click">Đăng nhập</asp:LinkButton>
                     <asp:Label ID="lblWelcome" runat="server" Font-Bold="True" ForeColor="#006600" Text="Xin chào: "></asp:Label>
@@ -39,6 +52,7 @@
                         </asp:Repeater>
                     </ul>
                 </div>
+
                 <%--    <div id="link">   
                 <ul>
                         <asp:Repeater ID="rptlienket" runat="server">
@@ -90,6 +104,7 @@
                
             </div>
         </div>
+            <a href="QLCV.Master">QLCV.Master</a>
     </center>
     </form>
 </body>

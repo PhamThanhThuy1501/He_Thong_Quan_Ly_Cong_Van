@@ -26,8 +26,19 @@ namespace QLCVan
 
         private void load_LoaiCV()
         {
-            grvLoaiCV.DataSource = db.tblLoaiCVs.ToList();
+            // Sắp xếp để hiển thị ổn định
+            var data = db.tblLoaiCVs
+                         .OrderBy(p => p.MaLoaiCV)
+                         .ToList();
+
+            grvLoaiCV.DataSource = data;
             grvLoaiCV.DataBind();
+        }
+
+        protected void grvLoaiCV_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            grvLoaiCV.PageIndex = e.NewPageIndex;
+            load_LoaiCV();
         }
 
         protected void rowEditing(object sender, GridViewEditEventArgs e)
@@ -52,7 +63,7 @@ namespace QLCVan
                 var pr = db.tblLoaiCVs.SingleOrDefault(p => p.MaLoaiCV == id);
                 if (pr != null)
                 {
-                    pr.TenLoaiCV = txtTenLoai.Text;
+                    pr.TenLoaiCV = txtTenLoai.Text.Trim();
                     db.SubmitChanges();
                 }
             }
@@ -72,17 +83,25 @@ namespace QLCVan
             }
             load_LoaiCV();
         }
+
         protected void btnAdd_Click(object sender, EventArgs e)
         {
-            TextBox txtTenLoaiFooter = grvLoaiCV.FooterRow.FindControl("txtTenLoaiFooter") as TextBox;
-            if (txtTenLoaiFooter != null && !string.IsNullOrWhiteSpace(txtTenLoaiFooter.Text))
-            {
-                tblLoaiCV pr = new tblLoaiCV { TenLoaiCV = txtTenLoaiFooter.Text };
-                db.tblLoaiCVs.InsertOnSubmit(pr);
-                db.SubmitChanges();
+            // ĐÚNG ID textbox theo ASPX: txtTenLoaiNew
+            TextBox txtTenLoaiNew = grvLoaiCV.FooterRow.FindControl("txtTenLoaiNew") as TextBox;
 
-                grvLoaiCV.EditIndex = -1;
-                load_LoaiCV();
+            if (txtTenLoaiNew != null)
+            {
+                var ten = txtTenLoaiNew.Text.Trim();
+                if (!string.IsNullOrWhiteSpace(ten))
+                {
+                    tblLoaiCV pr = new tblLoaiCV { TenLoaiCV = ten };
+                    db.tblLoaiCVs.InsertOnSubmit(pr);
+                    db.SubmitChanges();
+
+                    grvLoaiCV.EditIndex = -1;
+                    load_LoaiCV();
+                    txtTenLoaiNew.Text = string.Empty;
+                }
             }
         }
     }

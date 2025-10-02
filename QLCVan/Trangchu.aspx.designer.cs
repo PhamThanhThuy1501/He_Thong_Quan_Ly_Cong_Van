@@ -33,31 +33,40 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.Button btnSearch;
 
         /// <summary>
-        /// rdpCVDen control.
+        /// chkCVDen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdpCVDen;
+        protected global::System.Web.UI.WebControls.CheckBox chkCVDen;
 
         /// <summary>
-        /// rdoCVdi control.
+        /// chkCVdi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdoCVdi;
+        protected global::System.Web.UI.WebControls.CheckBox chkCVdi;
 
         /// <summary>
-        /// rdoCVmoi control.
+        /// chkCVmoi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdoCVmoi;
+        protected global::System.Web.UI.WebControls.CheckBox chkCVmoi;
+
+        /// <summary>
+        /// chkTatCa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkTatCa;
 
         /// <summary>
         /// UpdatePanel1 control.

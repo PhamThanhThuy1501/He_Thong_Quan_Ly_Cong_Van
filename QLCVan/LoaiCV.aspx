@@ -14,17 +14,30 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <center>
         <h3><b>QUẢN LÝ LOẠI CÔNG VĂN</b></h3>
+
         <asp:GridView ID="grvLoaiCV" runat="server" ShowFooter="True" AutoGenerateColumns="False"
             CssClass="table" DataKeyNames="MaLoaiCV"
+            AllowPaging="True" PageSize="10"
+            OnPageIndexChanging="grvLoaiCV_PageIndexChanging"
             OnRowDeleting="rowDeleting" OnRowCancelingEdit="rowCancelingEdit"
             OnRowEditing="rowEditing" OnRowUpdating="rowUpdating">
+
             <Columns>
+                <%-- STT (index) --%>
+                <asp:TemplateField HeaderText="STT">
+                    <ItemTemplate>
+                        <%# (grvLoaiCV.PageIndex * grvLoaiCV.PageSize) + ((GridViewRow)Container).RowIndex + 1 %>
+                    </ItemTemplate>
+                </asp:TemplateField>
+
+                <%-- Mã Loại (ID thực từ DB) --%>
                 <asp:TemplateField HeaderText="Mã Loại">
                     <ItemTemplate>
                         <asp:Label ID="lblMaLoai" runat="server" Text='<%# Eval("MaLoaiCV") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
 
+                <%-- Tên Loại --%>
                 <asp:TemplateField HeaderText="Tên Loại">
                     <ItemTemplate>
                         <asp:Label ID="lblTenLoai" runat="server" Text='<%# Eval("TenLoaiCV") %>'></asp:Label>
@@ -37,6 +50,7 @@
                     </FooterTemplate>
                 </asp:TemplateField>
 
+                <%-- Thao tác --%>
                 <asp:TemplateField HeaderText="Thao tác">
                     <ItemTemplate>
                         <asp:LinkButton ID="btnEdit" runat="server" CommandName="Edit" ToolTip="Sửa" CausesValidation="False">
@@ -56,15 +70,12 @@
                         </asp:LinkButton>
                     </EditItemTemplate>
 
-                   <FooterTemplate>
-    <asp:LinkButton ID="btnAdd" runat="server" ToolTip="Thêm mới"
-        OnClick="btnAdd_Click" CausesValidation="False">
-        <i class="fa fa-plus-circle" style="color:green;"></i>
-    </asp:LinkButton>
-</FooterTemplate>
-
-
-
+                    <FooterTemplate>
+                        <asp:LinkButton ID="btnAdd" runat="server" ToolTip="Thêm mới"
+                            OnClick="btnAdd_Click" CausesValidation="False">
+                            <i class="fa fa-plus-circle" style="color:green;"></i>
+                        </asp:LinkButton>
+                    </FooterTemplate>
                 </asp:TemplateField>
             </Columns>
         </asp:GridView>

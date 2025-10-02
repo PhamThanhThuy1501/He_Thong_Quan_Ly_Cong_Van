@@ -70,7 +70,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\QLCV.sql" />
+    <Content Include="App_Data\SQLQuery1.sql" />
     <Content Include="Counter.txt" />
     <Content Include="CTCV.aspx" />
     <Content Include="Dangnhap.aspx" />

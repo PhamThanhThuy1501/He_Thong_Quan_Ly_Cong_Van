@@ -122,15 +122,17 @@
     <div style="margin: 15px 0; display: flex; justify-content: center;">
         <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" placeholder="Nhập từ khóa tìm kiếm công văn..." Style="width: 350px; padding: 6px; border: 1px solid #ccc; border-radius: 3px;" />
         <asp:Button ID="btnSearch" Text="Tìm Kiếm" runat="server"  OnClick="btnSearch_Click" style=" background: url('Images/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg') ;margin-left: 5px; padding: 6px 12px; border: none; border-radius: 3px; cursor: pointer;" /> </div>
-```
-        <div class="filter-box">
-            <asp:RadioButton ID="rdpCVDen" runat="server" Text="Công văn đến" AutoPostBack="True"
-                GroupName="Search" OnCheckedChanged="rdpCVDen_CheckedChanged" />
-            <asp:RadioButton ID="rdoCVdi" runat="server" Text="Công văn đi" AutoPostBack="True"
-                GroupName="Search" OnCheckedChanged="rdoCVdi_CheckedChanged" />
-            <asp:RadioButton ID="rdoCVmoi" runat="server" Text="Công văn chờ" AutoPostBack="True"
-                GroupName="Search" OnCheckedChanged="rdoCVmoi_CheckedChanged" />
-        </div>
+
+       <div class="filter-box">
+    <asp:CheckBox ID="chkCVDen" runat="server" Text="Công văn đến" AutoPostBack="True"
+        OnCheckedChanged="chkCVDen_CheckedChanged" />
+    <asp:CheckBox ID="chkCVdi" runat="server" Text="Công văn đi" AutoPostBack="True"
+        OnCheckedChanged="chkCVdi_CheckedChanged" />
+    <asp:CheckBox ID="chkCVmoi" runat="server" Text="Công văn chờ" AutoPostBack="True"
+        OnCheckedChanged="chkCVmoi_CheckedChanged" />
+    <asp:CheckBox ID="chkTatCa" runat="server" Text="Xem tất cả công văn" AutoPostBack="True"
+        OnCheckedChanged="chkTatCa_CheckedChanged" />
+</div>
 
         <div class="notice">Click vào "Xem" để xem chi tiết</div>
 
@@ -192,6 +194,6 @@
                 <asp:AsyncPostBackTrigger ControlID="GridView1" />
             </Triggers>
         </asp:UpdatePanel>
-    ```
+    
 
 </asp:Content>
