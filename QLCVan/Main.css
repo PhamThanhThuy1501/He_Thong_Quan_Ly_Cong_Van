@@ -1,348 +1,49 @@
-﻿/*body {
-    height: 100vh;*/ /* full chiều cao màn hình */
-/*width: 100vw;*/ /* full chiều rộng */
-/*margin: 0;
-    padding: 0;
-    background: none;*/ /* loại bỏ background */
-/*font-family: Tahoma, sans-serif;
-}*/
-
-/*#main {
-    margin-top: 100px;
-    min-height: 100vh;*/ /* full màn hình */
-/*width: 100%;
-    position: relative;
-}*/
-
-/*#frame {
-    width: 100%;*/ /* thay vì 960px */
-/*max-width: 1400px;*/ /* giới hạn nếu cần */
-/*margin: 0 auto;*/ /* căn giữa nếu có max-width */
-/*text-align: left;
-    background-color: #FFF;*/ /* nền trắng */
-/*}*/
-/*#main, #frame {
-    overflow: visible;*/ /* Đảm bảo nội dung không bị ẩn */
-/*}*/
-
-/*#header {
-    width: 100%;
-    position: relative;
-    border-bottom: 2px solid #c00;*/ /* viền đỏ dưới banner */
-/*background-color: #fff;
-    font-family: Tahoma, sans-serif;
-}*/
-
-/* Banner (logo ở giữa) */
-/*{align-items: center;*/ /* căn giữa theo chiều dọc */
-/*justify-content: center;*/ /* căn giữa cả khối */
-/*gap: 15px;*/ /* khoảng cách giữa chữ và logo */
-/*padding: 10px;
-}*/
-
-/*#banner .text {
-        text-align: right;*/ /* chữ căn phải, sát logo */
-/*}
-
-        #banner .text h1 {
-            font-size: 28px;
-            font-weight: bold;
-            color: #003366;
-            margin: 0;
-        }
-
-        #banner .text h2 {
-            font-size: 20px;
-            font-style: italic;
-            color: #555;
-            margin: 5px 0 0;
-        }
-
-    #banner .logo img {
-        height: 120px;
-    }*/
-
-/* ===== Layout cơ bản ===== */
-body {
-    min-height: 100vh;
-    width: 100%; /* tránh tràn ngang do 100vw */
+﻿body {
+    height: 100vh; /* full chiều cao màn hình */
+    width: 100vw; /* full chiều rộng */
     margin: 0;
     padding: 0;
-    background: none;
+    background: none; /* loại bỏ background */
     font-family: Tahoma, sans-serif;
-    overflow-x: hidden;
 }
 
 #main {
     margin-top: 100px;
-    min-height: 100vh;
+    min-height: 100vh; /* full màn hình */
     width: 100%;
     position: relative;
 }
 
 #frame {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 100%; /* thay vì 960px */
+    max-width: 1400px; /* giới hạn nếu cần */
+    margin: 0 auto; /* căn giữa nếu có max-width */
     text-align: left;
-    background-color: #FFF;
+    background-color: #FFF; /* nền trắng */
 }
 
 #header {
     width: 100%;
     position: relative;
-    border-bottom: 2px solid #c00;
+    border-bottom: 2px solid #c00; /* viền đỏ dưới banner */
     background-color: #fff;
     font-family: Tahoma, sans-serif;
 }
 
-/* ===== Banner (logo + chữ) ===== */
+/* Banner (logo ở giữa) */
 #banner {
-    display: flex;
-    align-items: center; /* căn giữa theo chiều dọc */
-    justify-content: center; /* căn giữa cả khối */
-    gap: 15px; /* khoảng cách giữa chữ và logo */
-    padding: 10px;
-}
-
-    #banner .text {
-        text-align: left;
-    }
-
-        #banner .text h1 {
-            font-size: 28px;
-            font-weight: bold;
-            color: #003366;
-            margin: 0;
-        }
-
-        #banner .text h2 {
-            font-size: 20px;
-            font-style: italic;
-            color: #555;
-            margin: 5px 0 0;
-        }
-
-    #banner .logo img {
-        height: 120px;
-        display: block;
-    }
-
-/* ===== Panel link phải (nếu dùng) ===== */
-#link {
-    margin-top: 0;
-    top: 0;
-    width: 200px;
-    float: right;
-    border-radius: 5px;
-    margin-right: 65px;
-    height: 400px;
-    font-size: 12px;
-    font-family: Tahoma, sans-serif;
-    margin-left: 0;
-}
-
-.txtdn {
-    border-radius: 30px;
-}
-
-/* ===== MENU ngang ===== */
-#menu {
-    width: 100%;
-    background-color: white;
     text-align: center;
-    margin: 20px 0 10px; /* gọn lại */
-    padding: 0;
+    padding: 15px 0;
 }
 
-    #menu ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: inline-block;
-    }
-
-        #menu ul li {
-            display: inline-block;
-        }
-
-            #menu ul li a {
-                position: relative;
-                display: block;
-                padding: 10px 20px;
-                color: black;
-                font-weight: bold;
-                font-size: 14px;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-                #menu ul li a::after {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    bottom: 5px;
-                    width: 0%;
-                    height: 3px;
-                    background: red;
-                    transition: width 0.3s ease;
-                }
-
-                #menu ul li a:hover::after {
-                    width: 100%;
-                }
-
-/* ===== Slide ===== */
-#slide {
-    width: 100%;
-    max-width: 1400px;
-    margin: 10px auto;
-    height: auto;
-    position: relative;
-    z-index: 2;
-}
-
-.imgSlide {
-    border-radius: 5px;
-    border: 1px solid #CECECE;
-    width: 100%;
-    height: auto;
-}
-
-/* ===== Content ===== */
-#content {
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    position: relative;
-}
-
-.cate {
-    width: 304px;
-    border-radius: 5px;
-    border: 1px solid #CECECE;
-    float: left;
-    height: 275px;
-    background: url('Images/Design/bg_cate.gif') repeat-x;
-    text-align: justify;
-    font-size: 12px;
-    font-family: Tahoma, sans-serif;
-}
-
-    .cate h4 {
-        color: #2E319B;
-        font-family: Tahoma, sans-serif;
-        font-size: 13px;
-        margin: 5px 8px;
-    }
-
-/* ===== Footer ===== */
-#footer {
-    min-height: 200px;
-    background-color: #FAFAFA;
-    color: Gray;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-top: 1px solid #CECECE;
-    border-left: 1px solid #CECECE;
-    border-right: 1px solid #CECECE;
-    text-align: center;
-    padding-top: 10px;
-}
-
-#footermenu ul li {
-    float: left;
-    padding: 0 5px;
-    text-align: center;
-    height: 34px;
-    position: relative;
-    list-style: none;
-}
-
-/* ===== Misc ===== */
-.imgcate {
-    margin-top: 10px;
-    float: left;
-}
-
-.description {
-    clear: right;
-}
-
-.detail {
-    margin: 15px 5px;
-}
-
-    .detail a {
-        color: Blue;
-        text-decoration: none;
-    }
-
-    .detail ul {
-        margin: 0;
-    }
-
-    .detail li {
-        margin: 0;
-    }
-
-/* ===== Login góc phải header ===== */
-#login {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    font-size: 13px;
-    background: none;
-    border: none;
-    width: auto;
-    height: auto;
-    padding: 0;
-}
-
-    #login a {
-        color: #c00;
-        text-decoration: none;
-        margin-left: 10px;
-        font-weight: bold;
-    }
-
-        #login a:hover {
-            text-decoration: underline;
-        }
-
-/* ===== Tiêu đề khối phải ===== */
-#titleRight {
-    width: 100%;
-    height: 25px;
-    color: #FFF;
-    background-image: url('Images/Design/bg_menu.jpg');
-    border-radius: 5px;
-    margin-top: 10px;
-    font-family: Tahoma, sans-serif;
-    font-size: 14px;
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 5px;
-}
-
-/* ===== Top 5 news ===== */
-#top5News a {
-    text-decoration: none;
-}
-
-#top5News ul {
-    margin-left: 20px;
-    padding: 0;
-}
-
-    #top5News ul li {
-        padding-top: 5px;
+    #banner img {
+        max-height: 120px;
+        height: auto;
     }
 
 
 #link {
     margin-top: 0px;
-    top: 0px;
     width: 200px;
     float: right;
     border-radius: 5px;
@@ -427,6 +128,37 @@ body {
     position: relative;
 }
 
+.cate {
+    width: 304px;
+    border-radius: 5px;
+    border: 1px solid #CECECE;
+    float: left;
+    height: 275px;
+    background: url('Images/Design/bg_cate.gif') repeat-x;
+    text-align: justify;
+    font-size: 12px;
+    font-family: Tahoma;
+}
+
+    .cate h4 {
+        color: #2E319B;
+        font-family: Tahoma;
+        font-size: 13px;
+        margin: 5px 8px;
+    }
+
+#footer {
+    height: 200px;
+    background-color: #FAFAFA;
+    color: Gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 1px solid #CECECE;
+    border-left: 1px solid #CECECE;
+    border-right: 1px solid #CECECE;
+    text-align: center;
+    padding-top: 10px;
+}
 
 #footermenu ul li {
     float: left;

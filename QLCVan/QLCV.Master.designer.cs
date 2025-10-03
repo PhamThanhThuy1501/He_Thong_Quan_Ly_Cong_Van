@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLCVan {
-    
-    
-    public partial class QLCV {
-        
+namespace QLCVan
+{
+
+
+    public partial class QLCV
+    {
+
         /// <summary>
         /// head control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-        
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// ScriptManager1 control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.ScriptManager ScriptManager1;
-        
+
         /// <summary>
         /// lbtLogIn control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lbtLogIn;
-        
+
         /// <summary>
         /// lblWelcome control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblWelcome;
-        
+
         /// <summary>
         /// lbtLogOut control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lbtLogOut;
-        
+
         /// <summary>
         /// rptMenu control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptMenu;
-        
+
         /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
-        
+
         /// <summary>
         /// HitCount1 control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace QLCVan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::QLCVan.UserControl.HitCount HitCount1;
-        
+
         /// <summary>
         /// rptMenu2 control.
         /// </summary>

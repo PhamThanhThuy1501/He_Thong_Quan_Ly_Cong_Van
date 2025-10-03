@@ -34,6 +34,7 @@ namespace QLCVan
 
         protected void btnThem_Click(object sender, EventArgs e)
         {
+            // Kiểm tra các trường bắt buộc
             if (txtMaNguoiDung.Text == "")
             {
                 lblAlert.Text = "Mã người dùng không được để trống";
@@ -60,26 +61,65 @@ namespace QLCVan
                 return;
             }
 
+            // Lưu thông tin người dùng
             tblNguoiDung nd = new tblNguoiDung();
             nd.MaNguoiDung = txtMaNguoiDung.Text;
             nd.HoTen = txtHoTen.Text;
             nd.Email = txtEmail.Text;
-            nd.MaNhom = int.Parse(cbl1.SelectedValue.ToString());
-
-            if (rblTrangThai.SelectedIndex == 0)
-            {
-                nd.TrangThai = 0;
-            }
-            else nd.TrangThai = 1;
             nd.QuyenHan = ddlQuyen.SelectedItem.ToString();
             nd.TenDN = txtTenDN.Text;
-            nd.MatKhau = (txtMatkhau.Text);
+            nd.MatKhau = txtMatkhau.Text;  // Lưu mật khẩu
+            nd.TrangThai = rblTrangThai.SelectedIndex == 0 ? 0 : 1;  // Kiểm tra trạng thái
+
+            // Thêm người dùng vào bảng tblNguoiDungs
             db.tblNguoiDungs.InsertOnSubmit(nd);
             db.SubmitChanges();
 
-            Response.Redirect("QLnguoidung.aspx");
+            // Lưu nhóm người dùng (nếu có)
+         /*   foreach (ListItem item in cbl1.Items)
+            {
+                if (item.Selected)  // Kiểm tra nếu nhóm đã được chọn
+                {
+                    tblNguoiDungNhom ndNhom = new tblNguoiDungNhom
+                    {
+                        MaNguoiDung = txtMaNguoiDung.Text,  // Mã người dùng
+                        MaNhom = int.Parse(item.Value)  // Mã nhóm đã chọn
+                    };
+                    db.tblNguoiDungNhom.InsertOnSubmit(ndNhom);  // Thêm vào bảng liên kết
+                }
+            }*/
 
+            // Lưu thay đổi vào cơ sở dữ liệu
+            db.SubmitChanges();
+
+            // Thông báo thành công
+            lblAlert.Text = "Thông tin người dùng đã được thêm thành công!";
+
+            // Reset form sau khi thêm thành công
+            ResetForm();
         }
+
+        private void ResetForm()
+        {
+            // Reset các trường
+            txtMaNguoiDung.Text = "";
+            txtHoTen.Text = "";
+            txtEmail.Text = "";
+            txtTenDN.Text = "";
+            txtMatkhau.Text = "";
+            txtMatkhau1.Text = "";
+
+            // Deselect checkbox
+            foreach (ListItem item in cbl1.Items)
+            {
+                item.Selected = false;
+            }
+
+            // Reset radio button
+            rblTrangThai.ClearSelection();
+            ddlQuyen.SelectedIndex = 0;  // Set quyền mặc định là User
+        }
+
 
         //private string encryptpass(string pass)
         //{
@@ -93,8 +133,9 @@ namespace QLCVan
             txtMaNguoiDung.Text = "";
             txtHoTen.Text = "";
             txtEmail.Text = "";
-            txtMatkhau.Text = "";
             txtTenDN.Text = "";
+            txtMatkhau.Text = "";
+            txtMatkhau1.Text = "";
         }
 
     }

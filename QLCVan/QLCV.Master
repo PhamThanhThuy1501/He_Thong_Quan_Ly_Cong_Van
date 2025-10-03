@@ -42,6 +42,19 @@
                     <asp:LinkButton ID="lbtLogOut" runat="server" OnClick="lbtLogOut_Click">Thoát</asp:LinkButton>
                 </div>
                 <div id="menu" style="float: left;">
+    <ul>
+        <asp:Repeater ID="rptMenu" runat="server">
+            <ItemTemplate>
+                <asp:HiddenField ID="hdCateID" Value='<%# Eval("MenuID") %>' runat="server"></asp:HiddenField>
+                <!-- Loại bỏ mục tìm kiếm công văn bằng cách kiểm tra MenuName -->
+                <li><a href='<%# Eval("MenuURL") %>' style="text-decoration: none;">
+                    <%# Eval("MenuName") %></a> </li>
+            </ItemTemplate>
+        </asp:Repeater>
+    </ul>
+</div>
+
+                   <%--    <div id="menu" style="float: left;">
                     <ul>
                         <asp:Repeater ID="rptMenu" runat="server">
                             <ItemTemplate>
@@ -52,6 +65,7 @@
                         </asp:Repeater>
                     </ul>
                 </div>
+
 
                 <%--    <div id="link">   
                 <ul>

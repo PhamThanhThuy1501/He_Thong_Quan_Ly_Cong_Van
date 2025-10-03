@@ -15,22 +15,49 @@ namespace QLCVan
     {
 
         /// <summary>
-        /// txtSearch control.
+        /// TextBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearch;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
         /// <summary>
-        /// btnSearch control.
+        /// ddlLoai control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearch;
+        protected global::System.Web.UI.WebControls.DropDownList ddlLoai;
+
+        /// <summary>
+        /// txtFromDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFromDate;
+
+        /// <summary>
+        /// txtToDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtToDate;
+
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
         /// chkCVDen control.
@@ -51,22 +78,22 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.CheckBox chkCVdi;
 
         /// <summary>
-        /// chkCVmoi control.
+        /// chkCVDuThao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkCVmoi;
+        protected global::System.Web.UI.WebControls.CheckBox chkCVDuThao;
 
         /// <summary>
-        /// chkTatCa control.
+        /// chkCVNoiBo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkTatCa;
+        protected global::System.Web.UI.WebControls.CheckBox chkCVNoiBo;
 
         /// <summary>
         /// UpdatePanel1 control.

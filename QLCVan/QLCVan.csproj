@@ -90,6 +90,7 @@
     <Content Include="Images\Design\Slide.jpg" />
     <Content Include="Images\edu.net.jpg" />
     <Content Include="Images\giaiphap.png" />
+    <Content Include="Images\logoA.jpg" />
     <Content Include="Images\News\box.jpg" />
     <Content Include="Images\News\windows8.png" />
     <Content Include="Images\nhung-hinh-anh-dep-ve-thien-nhien-khi-mua-thu-toi-4.jpg" />
@@ -124,7 +125,6 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
-    <Content Include="Timkiem.aspx" />
     <Content Include="Trangchu.aspx" />
     <Content Include="UserControl\HitCount.ascx" />
     <Content Include="Web.config" />
@@ -214,13 +214,6 @@
     </Compile>
     <Compile Include="QLNhom.aspx.designer.cs">
       <DependentUpon>QLNhom.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Timkiem.aspx.cs">
-      <DependentUpon>Timkiem.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Timkiem.aspx.designer.cs">
-      <DependentUpon>Timkiem.aspx</DependentUpon>
     </Compile>
     <Compile Include="Trangchu.aspx.cs">
       <DependentUpon>Trangchu.aspx</DependentUpon>

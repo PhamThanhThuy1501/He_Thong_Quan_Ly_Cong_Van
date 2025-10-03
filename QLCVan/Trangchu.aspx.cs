@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
 namespace QLCVan
 {
     public partial class Trangchu : System.Web.UI.Page
@@ -24,6 +23,7 @@ namespace QLCVan
                 LoadData();
             }
         }
+
         private void LoadData()
         {
             var data = from g in db.tblNoiDungCVs
@@ -47,15 +47,15 @@ namespace QLCVan
                            g.GuiHayNhan
                        };
 
-            // Nếu chọn "Xem tất cả" thì bỏ lọc
-            if (!chkTatCa.Checked)
+            // Nếu không chọn "Nội bộ" thì lọc theo check
+            if (!chkCVNoiBo.Checked)
             {
                 if (chkCVDen.Checked)
                     data = data.Where(x => x.GuiHayNhan == 1); // công văn đến
                 if (chkCVdi.Checked)
                     data = data.Where(x => x.GuiHayNhan == 0); // công văn đi
-                if (chkCVmoi.Checked)
-                    data = data.Where(x => x.TrangThai == false); // công văn mới
+                if (chkCVDuThao.Checked)
+                    data = data.Where(x => x.TrangThai == false); // dự thảo (trước là công văn chờ)
             }
 
             GridView1.DataSource = data;
@@ -96,8 +96,8 @@ namespace QLCVan
             if (chkCVDen.Checked)
             {
                 chkCVdi.Checked = false;
-                chkCVmoi.Checked = false;
-                chkTatCa.Checked = false;
+                chkCVDuThao.Checked = false;
+                chkCVNoiBo.Checked = false;
             }
             LoadData();
         }
@@ -107,30 +107,30 @@ namespace QLCVan
             if (chkCVdi.Checked)
             {
                 chkCVDen.Checked = false;
-                chkCVmoi.Checked = false;
-                chkTatCa.Checked = false;
+                chkCVDuThao.Checked = false;
+                chkCVNoiBo.Checked = false;
             }
             LoadData();
         }
 
-        protected void chkCVmoi_CheckedChanged(object sender, EventArgs e)
+        protected void chkCVDuThao_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkCVmoi.Checked)
+            if (chkCVDuThao.Checked)
             {
                 chkCVDen.Checked = false;
                 chkCVdi.Checked = false;
-                chkTatCa.Checked = false;
+                chkCVNoiBo.Checked = false;
             }
             LoadData();
         }
 
-        protected void chkTatCa_CheckedChanged(object sender, EventArgs e)
+        protected void chkCVNoiBo_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkTatCa.Checked)
+            if (chkCVNoiBo.Checked)
             {
                 chkCVDen.Checked = false;
                 chkCVdi.Checked = false;
-                chkCVmoi.Checked = false;
+                chkCVDuThao.Checked = false;
             }
 
             var lay = from g in db.tblNoiDungCVs
@@ -168,8 +168,56 @@ namespace QLCVan
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            // bạn có thể bổ sung code search ở đây
+            string keyword = TextBox1.Text.Trim();
+            string loai = ddlLoai.SelectedValue;
+            DateTime fromDate, toDate;
+
+            var data = from g in db.tblNoiDungCVs
+                       from h in db.tblLoaiCVs
+                       where g.MaLoaiCV == h.MaLoaiCV
+                       select new
+                       {
+                           g.MaCV,
+                           g.SoCV,
+                           h.TenLoaiCV,
+                           g.NgayGui,
+                           TieuDeCV = g.TieuDeCV.Length > 50 ? g.TieuDeCV.Substring(0, 50) + "..." : g.TieuDeCV,
+                           g.CoQuanBanHanh,
+                           g.GhiChu,
+                           g.NgayBanHanh,
+                           g.NguoiKy,
+                           g.NoiNhan,
+                           TrichYeuND = g.TrichYeuND.Length > 200 ? g.TrichYeuND.Substring(0, 200) + "..." : g.TrichYeuND,
+                           g.TrangThai,
+                           g.GuiHayNhan
+                       };
+
+            // Tìm theo số CV
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                data = data.Where(x => x.SoCV.Contains(keyword));
+            }
+
+            // Lọc theo loại công văn (DDL trên cùng)
+            if (!string.IsNullOrEmpty(loai))
+            {
+                int loaiCV = int.Parse(loai);
+                data = data.Where(x => x.GuiHayNhan == loaiCV);
+            }
+
+            // Lọc theo khoảng ngày
+            if (DateTime.TryParse(txtFromDate.Text.Trim(), out fromDate))
+            {
+                data = data.Where(x => x.NgayGui >= fromDate);
+            }
+            if (DateTime.TryParse(txtToDate.Text.Trim(), out toDate))
+            {
+                data = data.Where(x => x.NgayGui <= toDate);
+            }
+
+            // Bind dữ liệu
+            GridView1.DataSource = data.OrderByDescending(x => x.NgayGui);
+            GridView1.DataBind();
         }
     }
 }
-

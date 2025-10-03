@@ -20,15 +20,20 @@ namespace QLCVan
                 lblWelcome.Text = "Xin chào: " + Session["TenDN"].ToString();
             }
 
-
-            rptMenu.DataSource = db.tblMenus.Where(c => c.MenuID.ToString() == "1" || c.MenuID.ToString() == "7" || c.MenuID.ToString() == "6" || c.MenuID.ToString() == "4" || c.MenuID.ToString() == "5" || c.MenuID.ToString() == "5" || c.MenuID.ToString() == "2" || c.MenuID.ToString() == "3");
+            // Loại bỏ mục "Danh bạ email" và "Tìm kiếm công văn" khỏi menu
+            rptMenu.DataSource = db.tblMenus.Where(c => c.MenuID.ToString() == "1" || c.MenuID.ToString() == "7" ||
+                                                        c.MenuID.ToString() == "6" || c.MenuID.ToString() == "4" ||
+                                                        c.MenuID.ToString() == "5" || c.MenuID.ToString() == "2" ||
+                                                        c.MenuID.ToString() == "3")
+                                             .Where(c => c.MenuName != "Danh bạ email" && c.MenuName != "Tìm kiếm công văn");  // Loại bỏ cả "Danh bạ email" và "Tìm kiếm công văn"
             rptMenu.DataBind();
 
-            rptMenu2.DataSource = db.tblMenus.Where(c => c.MenuID.ToString() == "2" || c.MenuID.ToString() == "7" || c.MenuID.ToString() == "3" || c.MenuID.ToString() == "4");
+            rptMenu2.DataSource = db.tblMenus.Where(c => c.MenuID.ToString() == "2" || c.MenuID.ToString() == "7" ||
+                                                         c.MenuID.ToString() == "3" || c.MenuID.ToString() == "4");
             rptMenu2.DataBind();
-            rptMenu2.DataBind();
-            
         }
+
+
         protected void lbtLogOut_Click(object sender, EventArgs e)
         {
             Session.Abandon();
