@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\trangchu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\counter.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\counter.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\trangchu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\trangchu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -95,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\usercontrol\\hitcount.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\counter.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\counter.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\info.dbml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\info.dbml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -121,10 +125,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlemail.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlemail.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\gioithieu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -158,7 +158,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 218,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -167,6 +167,119 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "QLCV.Master",
+              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master",
+              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master",
+              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master",
+              "RelativeToolTip": "QLCVan\\QLCV.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-09-30T10:35:02.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "QLCV.Master.cs",
+              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.cs",
+              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master.cs",
+              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.cs",
+              "RelativeToolTip": "QLCVan\\QLCV.Master.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T03:57:33.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Trangchu.aspx.cs",
+              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx.cs",
+              "RelativeDocumentMoniker": "QLCVan\\Trangchu.aspx.cs",
+              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx.cs",
+              "RelativeToolTip": "QLCVan\\Trangchu.aspx.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAD4vzIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T10:38:14.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Web.config",
+              "RelativeDocumentMoniker": "QLCVan\\Web.config",
+              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Web.config",
+              "RelativeToolTip": "QLCVan\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-09-22T03:58:38.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dangnhap.aspx",
+              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx",
+              "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx",
+              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx",
+              "RelativeToolTip": "QLCVan\\Dangnhap.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000192|",
+              "WhenOpened": "2025-09-27T03:28:54.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dangnhap.aspx.cs",
+              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.cs",
+              "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx.cs",
+              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.cs",
+              "RelativeToolTip": "QLCVan\\Dangnhap.aspx.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwCIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2025-09-27T03:29:01.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QLNhom.aspx",
+              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLNhom.aspx",
+              "RelativeDocumentMoniker": "QLCVan\\QLNhom.aspx",
+              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLNhom.aspx",
+              "RelativeToolTip": "QLCVan\\QLNhom.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000192|",
+              "WhenOpened": "2025-10-03T09:02:31.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Global.asax.cs",
+              "RelativeDocumentMoniker": "QLCVan\\Global.asax.cs",
+              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Global.asax.cs",
+              "RelativeToolTip": "QLCVan\\Global.asax.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T03:57:05.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Counter.txt",
+              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Counter.txt",
+              "RelativeDocumentMoniker": "QLCVan\\Counter.txt",
+              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Counter.txt",
+              "RelativeToolTip": "QLCVan\\Counter.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-27T10:45:18.795Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -182,20 +295,12 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LoaiCV.aspx",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\LoaiCV.aspx",
-              "RelativeDocumentMoniker": "QLCVan\\LoaiCV.aspx",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\LoaiCV.aspx",
-              "RelativeToolTip": "QLCVan\\LoaiCV.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-10-02T15:06:16.552Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "QLnguoidung.aspx.cs",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLnguoidung.aspx.cs",
               "RelativeDocumentMoniker": "QLCVan\\QLnguoidung.aspx.cs",
@@ -207,97 +312,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "QLCV.Master",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master",
-              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master",
-              "RelativeToolTip": "QLCVan\\QLCV.Master",
+              "DocumentIndex": 15,
+              "Title": "LoaiCV.aspx",
+              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\LoaiCV.aspx",
+              "RelativeDocumentMoniker": "QLCVan\\LoaiCV.aspx",
+              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\LoaiCV.aspx",
+              "RelativeToolTip": "QLCVan\\LoaiCV.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-30T10:35:02.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T15:06:16.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "QLCV.Master.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.cs",
-              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.cs",
-              "RelativeToolTip": "QLCVan\\QLCV.Master.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T03:57:33.711Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Trangchu.aspx.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx.cs",
-              "RelativeDocumentMoniker": "QLCVan\\Trangchu.aspx.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx.cs",
-              "RelativeToolTip": "QLCVan\\Trangchu.aspx.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAIwJ4AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T10:38:14.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Web.config",
-              "RelativeDocumentMoniker": "QLCVan\\Web.config",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Web.config",
-              "RelativeToolTip": "QLCVan\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-09-22T03:58:38.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Dangnhap.aspx",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx",
-              "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx",
-              "RelativeToolTip": "QLCVan\\Dangnhap.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-27T03:28:54.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dangnhap.aspx.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.cs",
-              "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.cs",
-              "RelativeToolTip": "QLCVan\\Dangnhap.aspx.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAIwCIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T03:29:01.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QLNhom.aspx",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLNhom.aspx",
-              "RelativeDocumentMoniker": "QLCVan\\QLNhom.aspx",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLNhom.aspx",
-              "RelativeToolTip": "QLCVan\\QLNhom.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-10-03T09:02:31.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "QLNhom.aspx.cs",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLNhom.aspx.cs",
               "RelativeDocumentMoniker": "QLCVan\\QLNhom.aspx.cs",
@@ -309,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "QLnguoidung.aspx.designer.cs",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLnguoidung.aspx.designer.cs",
               "RelativeDocumentMoniker": "QLCVan\\QLnguoidung.aspx.designer.cs",
@@ -321,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "QLCV.Master.designer.cs",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.designer.cs",
               "RelativeDocumentMoniker": "QLCVan\\QLCV.Master.designer.cs",
@@ -333,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Info.designer.cs",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Info.designer.cs",
               "RelativeDocumentMoniker": "QLCVan\\Info.designer.cs",
@@ -345,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Info.dbml.layout",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Info.dbml.layout",
               "RelativeDocumentMoniker": "QLCVan\\Info.dbml.layout",
@@ -357,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "LoaiCV.aspx.cs",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\LoaiCV.aspx.cs",
               "RelativeDocumentMoniker": "QLCVan\\LoaiCV.aspx.cs",
@@ -369,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "NhapNDCV.aspx.cs",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\NhapNDCV.aspx.cs",
               "RelativeDocumentMoniker": "QLCVan\\NhapNDCV.aspx.cs",
@@ -381,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "NhapNDCV.aspx.designer.cs",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\NhapNDCV.aspx.designer.cs",
               "RelativeDocumentMoniker": "QLCVan\\NhapNDCV.aspx.designer.cs",
@@ -393,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "QLNhom.aspx.designer.cs",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLNhom.aspx.designer.cs",
               "RelativeDocumentMoniker": "QLCVan\\QLNhom.aspx.designer.cs",
@@ -405,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Trangchu.aspx.designer.cs",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx.designer.cs",
               "RelativeDocumentMoniker": "QLCVan\\Trangchu.aspx.designer.cs",
@@ -418,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "DanhBaEmail.aspx",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx",
               "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx",
@@ -430,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "CTCV.aspx",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\CTCV.aspx",
               "RelativeDocumentMoniker": "QLCVan\\CTCV.aspx",
@@ -442,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "HitCount.ascx",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\UserControl\\HitCount.ascx",
               "RelativeDocumentMoniker": "QLCVan\\UserControl\\HitCount.ascx",
@@ -454,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "LoaiCV.aspx.designer.cs",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\LoaiCV.aspx.designer.cs",
               "RelativeDocumentMoniker": "QLCVan\\LoaiCV.aspx.designer.cs",
@@ -466,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "NhapNDCV.aspx",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\NhapNDCV.aspx",
               "RelativeDocumentMoniker": "QLCVan\\NhapNDCV.aspx",
@@ -478,19 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Counter.txt",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Counter.txt",
-              "RelativeDocumentMoniker": "QLCVan\\Counter.txt",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Counter.txt",
-              "RelativeToolTip": "QLCVan\\Counter.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-09-27T10:45:18.795Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Info.dbml",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Info.dbml",
               "RelativeDocumentMoniker": "QLCVan\\Info.dbml",
@@ -502,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Main.css",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Main.css",
               "RelativeDocumentMoniker": "QLCVan\\Main.css",
@@ -514,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "QLnguoidung.aspx",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLnguoidung.aspx",
               "RelativeDocumentMoniker": "QLCVan\\QLnguoidung.aspx",
@@ -526,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "QLEmail.aspx",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLEmail.aspx",
               "RelativeDocumentMoniker": "QLCVan\\QLEmail.aspx",
@@ -561,18 +576,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Global.asax.cs",
-              "RelativeDocumentMoniker": "QLCVan\\Global.asax.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Global.asax.cs",
-              "RelativeToolTip": "QLCVan\\Global.asax.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T03:57:05.177Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 36,
               "Title": "Dangnhap.aspx.designer.cs",
               "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.designer.cs",
@@ -582,10 +585,6 @@
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-27T03:29:22.187Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Document",

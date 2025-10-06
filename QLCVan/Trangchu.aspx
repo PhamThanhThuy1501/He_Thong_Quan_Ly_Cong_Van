@@ -288,7 +288,8 @@
                             <asp:TemplateField HeaderText="Thao tác">
                                 <ItemTemplate>
                                     <div class="actions">
-                                        <a href='CTCV.aspx?id=<%# Eval("MaCV") %>' class="action-pill action-view">Xem</a>
+                                        <%--<a href='CTCV.aspx?id=<%# Eval("MaCV") %>' class="action-pill action-view">Xem</a>--%>
+                                        <a href='ViewFile.aspx?id=<%#Eval("MaCV")%>' class="action-pill action-view">Xem</a>
                                         <a href='SuaCV.aspx?id=<%# Eval("MaCV") %>' class="action-pill action-edit">Sửa</a>
                                         <asp:LinkButton ID="lnk_Xoa" runat="server"
                                             CssClass="action-pill action-del"
