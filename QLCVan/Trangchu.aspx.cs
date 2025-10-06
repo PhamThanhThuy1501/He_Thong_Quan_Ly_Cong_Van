@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -13,7 +11,7 @@ namespace QLCVan
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!(Session["TenDN"] != null))
+            if (Session["TenDN"] == null)
             {
                 Response.Redirect("Dangnhap.aspx");
             }
@@ -26,37 +24,29 @@ namespace QLCVan
 
         private void LoadData()
         {
-            var data = from g in db.tblNoiDungCVs
-                       from h in db.tblLoaiCVs
-                       where g.MaLoaiCV == h.MaLoaiCV
-                       orderby g.NgayGui descending
-                       select new
-                       {
-                           g.MaCV,
-                           g.SoCV,
-                           h.TenLoaiCV,
-                           g.NgayGui,
-                           TieuDeCV = g.TieuDeCV.Length > 50 ? g.TieuDeCV.Substring(0, 50) + "..." : g.TieuDeCV,
-                           g.CoQuanBanHanh,
-                           g.GhiChu,
-                           g.NgayBanHanh,
-                           g.NguoiKy,
-                           g.NoiNhan,
-                           TrichYeuND = g.TrichYeuND.Length > 200 ? g.TrichYeuND.Substring(0, 200) + "..." : g.TrichYeuND,
-                           g.TrangThai,
-                           g.GuiHayNhan
-                       };
+            // Không lọc gì, chỉ lấy mới nhất
+            var q = from g in db.tblNoiDungCVs
+                    join h in db.tblLoaiCVs on g.MaLoaiCV equals h.MaLoaiCV
+                    select new { g, h };
 
-            // Nếu không chọn "Nội bộ" thì lọc theo check
-            if (!chkCVNoiBo.Checked)
-            {
-                if (chkCVDen.Checked)
-                    data = data.Where(x => x.GuiHayNhan == 1); // công văn đến
-                if (chkCVdi.Checked)
-                    data = data.Where(x => x.GuiHayNhan == 0); // công văn đi
-                if (chkCVDuThao.Checked)
-                    data = data.Where(x => x.TrangThai == false); // dự thảo (trước là công văn chờ)
-            }
+            var data = q
+                .OrderByDescending(x => x.g.NgayGui)
+                .Select(x => new
+                {
+                    x.g.MaCV,
+                    x.g.SoCV,
+                    TenLoaiCV = x.h.TenLoaiCV,
+                    x.g.NgayGui,
+                    TieuDeCV = x.g.TieuDeCV.Length > 50 ? x.g.TieuDeCV.Substring(0, 50) + "..." : x.g.TieuDeCV,
+                    x.g.CoQuanBanHanh,
+                    x.g.GhiChu,
+                    x.g.NgayBanHanh,
+                    x.g.NguoiKy,
+                    x.g.NoiNhan,
+                    TrichYeuND = x.g.TrichYeuND.Length > 200 ? x.g.TrichYeuND.Substring(0, 200) + "..." : x.g.TrichYeuND,
+                    x.g.TrangThai,
+                    x.g.GuiHayNhan
+                });
 
             GridView1.DataSource = data;
             GridView1.DataBind();
@@ -64,17 +54,21 @@ namespace QLCVan
 
         protected void lnk_Xoa_Click(object sender, EventArgs e)
         {
-            string permisson = Session["QuyenHan"].ToString().Trim();
-            if (permisson == "Admin")
+            string permisson = (Session["QuyenHan"] as string)?.Trim();
+
+            if (string.Equals(permisson, "Admin", StringComparison.OrdinalIgnoreCase))
             {
                 LinkButton lnk = sender as LinkButton;
-                string str = lnk.CommandArgument;
+                string maCv = lnk.CommandArgument;
 
-                foreach (tblFileDinhKem item in db.tblFileDinhKems.Where(f => f.MaCV == str))
+                // Xóa file đính kèm
+                foreach (tblFileDinhKem item in db.tblFileDinhKems.Where(f => f.MaCV == maCv))
                 {
                     db.tblFileDinhKems.DeleteOnSubmit(item);
                 }
-                tblNoiDungCV cv = db.tblNoiDungCVs.SingleOrDefault(t => t.MaCV == str);
+
+                // Xóa nội dung công văn
+                tblNoiDungCV cv = db.tblNoiDungCVs.SingleOrDefault(t => t.MaCV == maCv);
                 if (cv != null)
                 {
                     db.tblNoiDungCVs.DeleteOnSubmit(cv);
@@ -82,78 +76,13 @@ namespace QLCVan
                     LoadData();
                 }
             }
+            // Không phải Admin -> bỏ qua (tránh NullReference)
         }
 
         protected void GridView1_PageIndexChanging1(object sender, GridViewPageEventArgs e)
         {
             GridView1.PageIndex = e.NewPageIndex;
-            LoadData();
-        }
-
-        // Sự kiện cho CheckBox
-        protected void chkCVDen_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkCVDen.Checked)
-            {
-                chkCVdi.Checked = false;
-                chkCVDuThao.Checked = false;
-                chkCVNoiBo.Checked = false;
-            }
-            LoadData();
-        }
-
-        protected void chkCVdi_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkCVdi.Checked)
-            {
-                chkCVDen.Checked = false;
-                chkCVDuThao.Checked = false;
-                chkCVNoiBo.Checked = false;
-            }
-            LoadData();
-        }
-
-        protected void chkCVDuThao_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkCVDuThao.Checked)
-            {
-                chkCVDen.Checked = false;
-                chkCVdi.Checked = false;
-                chkCVNoiBo.Checked = false;
-            }
-            LoadData();
-        }
-
-        protected void chkCVNoiBo_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkCVNoiBo.Checked)
-            {
-                chkCVDen.Checked = false;
-                chkCVdi.Checked = false;
-                chkCVDuThao.Checked = false;
-            }
-
-            var lay = from g in db.tblNoiDungCVs
-                      from h in db.tblLoaiCVs
-                      where g.MaLoaiCV == h.MaLoaiCV
-                      orderby g.NgayGui descending
-                      select new
-                      {
-                          g.MaCV,
-                          g.SoCV,
-                          h.TenLoaiCV,
-                          g.NgayGui,
-                          g.TieuDeCV,
-                          g.CoQuanBanHanh,
-                          g.GhiChu,
-                          g.NgayBanHanh,
-                          g.NguoiKy,
-                          g.NoiNhan,
-                          TrichYeuND = g.TrichYeuND.Substring(0, 200) + "..."
-                      };
-
-            GridView1.DataSource = lay;
-            GridView1.DataBind();
+            LoadData(); // đơn giản: chuyển trang dùng danh sách mặc định
         }
 
         public string kttrangthai(object obj)
@@ -168,55 +97,66 @@ namespace QLCVan
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            string keyword = TextBox1.Text.Trim();
-            string loai = ddlLoai.SelectedValue;
+            string keyword = TextBox1.Text.Trim();     // Số CV
+            string tieuDe = txtTieuDe.Text.Trim();     // Tiêu đề
+            string loai = ddlLoai.SelectedValue;       // 1: đến, 0: đi, 2: dự thảo, 3: nội bộ (= tất cả)
             DateTime fromDate, toDate;
 
-            var data = from g in db.tblNoiDungCVs
-                       from h in db.tblLoaiCVs
-                       where g.MaLoaiCV == h.MaLoaiCV
-                       select new
-                       {
-                           g.MaCV,
-                           g.SoCV,
-                           h.TenLoaiCV,
-                           g.NgayGui,
-                           TieuDeCV = g.TieuDeCV.Length > 50 ? g.TieuDeCV.Substring(0, 50) + "..." : g.TieuDeCV,
-                           g.CoQuanBanHanh,
-                           g.GhiChu,
-                           g.NgayBanHanh,
-                           g.NguoiKy,
-                           g.NoiNhan,
-                           TrichYeuND = g.TrichYeuND.Length > 200 ? g.TrichYeuND.Substring(0, 200) + "..." : g.TrichYeuND,
-                           g.TrangThai,
-                           g.GuiHayNhan
-                       };
+            var q = from g in db.tblNoiDungCVs
+                    join h in db.tblLoaiCVs on g.MaLoaiCV equals h.MaLoaiCV
+                    select new { g, h };
 
-            // Tìm theo số CV
             if (!string.IsNullOrEmpty(keyword))
-            {
-                data = data.Where(x => x.SoCV.Contains(keyword));
-            }
+                q = q.Where(x => x.g.SoCV.Contains(keyword));
 
-            // Lọc theo loại công văn (DDL trên cùng)
+            if (!string.IsNullOrEmpty(tieuDe))
+                q = q.Where(x => x.g.TieuDeCV.Contains(tieuDe));
+
             if (!string.IsNullOrEmpty(loai))
             {
-                int loaiCV = int.Parse(loai);
-                data = data.Where(x => x.GuiHayNhan == loaiCV);
+                if (loai == "2")
+                {
+                    // Dự thảo
+                    q = q.Where(x => x.g.TrangThai == false);
+                }
+                else if (loai == "3")
+                {
+                    // Nội bộ -> không lọc thêm (giữ đúng ý "tất cả")
+                }
+                else
+                {
+                    // 1: Công văn đến, 0: Công văn đi
+                    int loaiCV = int.Parse(loai);
+                    q = q.Where(x => x.g.GuiHayNhan == loaiCV);
+                }
             }
 
-            // Lọc theo khoảng ngày
             if (DateTime.TryParse(txtFromDate.Text.Trim(), out fromDate))
-            {
-                data = data.Where(x => x.NgayGui >= fromDate);
-            }
-            if (DateTime.TryParse(txtToDate.Text.Trim(), out toDate))
-            {
-                data = data.Where(x => x.NgayGui <= toDate);
-            }
+                q = q.Where(x => x.g.NgayGui >= fromDate);
 
-            // Bind dữ liệu
-            GridView1.DataSource = data.OrderByDescending(x => x.NgayGui);
+            if (DateTime.TryParse(txtToDate.Text.Trim(), out toDate))
+                q = q.Where(x => x.g.NgayGui <= toDate);
+
+            var data = q
+                .OrderByDescending(x => x.g.NgayGui)
+                .Select(x => new
+                {
+                    x.g.MaCV,
+                    x.g.SoCV,
+                    TenLoaiCV = x.h.TenLoaiCV,
+                    x.g.NgayGui,
+                    TieuDeCV = x.g.TieuDeCV.Length > 50 ? x.g.TieuDeCV.Substring(0, 50) + "..." : x.g.TieuDeCV,
+                    x.g.CoQuanBanHanh,
+                    x.g.GhiChu,
+                    x.g.NgayBanHanh,
+                    x.g.NguoiKy,
+                    x.g.NoiNhan,
+                    TrichYeuND = x.g.TrichYeuND.Length > 200 ? x.g.TrichYeuND.Substring(0, 200) + "..." : x.g.TrichYeuND,
+                    x.g.TrangThai,
+                    x.g.GuiHayNhan
+                });
+
+            GridView1.DataSource = data;
             GridView1.DataBind();
         }
     }

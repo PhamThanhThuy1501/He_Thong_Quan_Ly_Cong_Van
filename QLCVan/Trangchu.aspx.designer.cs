@@ -24,6 +24,15 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
         /// <summary>
+        /// txtTieuDe control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTieuDe;
+
+        /// <summary>
         /// ddlLoai control.
         /// </summary>
         /// <remarks>
@@ -58,42 +67,6 @@ namespace QLCVan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
-
-        /// <summary>
-        /// chkCVDen control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkCVDen;
-
-        /// <summary>
-        /// chkCVdi control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkCVdi;
-
-        /// <summary>
-        /// chkCVDuThao control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkCVDuThao;
-
-        /// <summary>
-        /// chkCVNoiBo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkCVNoiBo;
 
         /// <summary>
         /// UpdatePanel1 control.
