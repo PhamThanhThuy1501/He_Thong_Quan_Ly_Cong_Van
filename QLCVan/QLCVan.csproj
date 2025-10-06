@@ -125,8 +125,30 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\viewerjs-0.5.8\AGPL-3.0.txt" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\compatibility.js" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\example.local.css" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\kogmbh.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\nlnet.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\texture.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-download.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-fullscreen.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-menuArrows.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-pageDown.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-pageUp.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-presentation.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-zoomIn.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-zoomOut.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\index.html" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\pdf.js" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\pdf.worker.js" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\pdfjsversion.js" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\text_layer_builder.js" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\ui_utils.js" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\webodf.js" />
     <Content Include="Trangchu.aspx" />
     <Content Include="UserControl\HitCount.ascx" />
+    <Content Include="ViewFile.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -228,6 +250,13 @@
     </Compile>
     <Compile Include="UserControl\HitCount.ascx.designer.cs">
       <DependentUpon>HitCount.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFile.aspx.cs">
+      <DependentUpon>ViewFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewFile.aspx.designer.cs">
+      <DependentUpon>ViewFile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

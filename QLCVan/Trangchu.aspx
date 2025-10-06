@@ -203,7 +203,8 @@
 
                     <asp:TemplateField HeaderText="Chi tiết" ItemStyle-HorizontalAlign="Center">
                         <ItemTemplate>
-                            <a href='CTCV.aspx?id=<%#Eval("MaCV")%>'>Xem</a>
+                            <%--<a href='CTCV.aspx?id=<%#Eval("MaCV")%>'>Xem</a>--%>
+                           <a href='ViewFile.aspx?id=<%#Eval("MaCV")%>' target="_blank">Xem</a>
                         </ItemTemplate>
                         <ItemStyle Width="60px" />
                     </asp:TemplateField>

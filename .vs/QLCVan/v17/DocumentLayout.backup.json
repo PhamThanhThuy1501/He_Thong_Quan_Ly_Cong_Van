@@ -1,153 +1,161 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|d:\\qlcv_tt\\he_thong_quan_ly_cong_van\\qlcvan\\trangchu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\trangchu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|c:\\users\\administrator\\documents\\he-thong-quan-ly-cong-van\\qlcvan\\qlcvan\\qlcvan\\viewfile.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\viewfile.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\trangchu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|c:\\users\\administrator\\documents\\he-thong-quan-ly-cong-van\\qlcvan\\qlcvan\\qlcvan\\viewfile.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\viewfile.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\trangchu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\trangchu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlcv.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlcv.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlcv.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlcv.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlcv.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlcv.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlnguoidung.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlnguoidung.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlnguoidung.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlnguoidung.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlnhom.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlnhom.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlnhom.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlnhom.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlnhom.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlnhom.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\loaicv.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\loaicv.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\info.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\info.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\info.dbml.layout||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\info.dbml.layout||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\loaicv.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\loaicv.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\nhapndcv.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\nhapndcv.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\nhapndcv.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\nhapndcv.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\trangchu.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\trangchu.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\trangchu.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\danhbaemail.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\danhbaemail.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|c:\\users\\administrator\\documents\\he-thong-quan-ly-cong-van\\qlcvan\\qlcvan\\qlcvan\\trangchu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\trangchu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\dangnhap.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\dangnhap.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\ctcv.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\ctcv.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\usercontrol\\hitcount.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\usercontrol\\hitcount.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\counter.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\counter.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\info.dbml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\info.dbml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\loaicv.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\loaicv.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\nhapndcv.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\nhapndcv.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlnguoidung.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlnguoidung.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\qlemail.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlemail.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\gioithieu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\gioithieu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\app_data\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\app_data\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\qlnhom.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlnhom.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\qlcv.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlcv.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\qlcv.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlcv.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\qlcv.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlcv.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\qlnguoidung.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlnguoidung.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\qlnguoidung.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlnguoidung.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\qlnhom.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlnhom.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\qlnhom.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlnhom.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\loaicv.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\loaicv.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\info.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\info.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\info.dbml.layout||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\info.dbml.layout||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\loaicv.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\loaicv.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\nhapndcv.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\nhapndcv.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\nhapndcv.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\nhapndcv.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\danhbaemail.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\danhbaemail.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\dangnhap.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\dangnhap.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\ctcv.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\ctcv.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\usercontrol\\hitcount.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\usercontrol\\hitcount.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\counter.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\counter.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\info.dbml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\info.dbml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\loaicv.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\loaicv.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\nhapndcv.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\nhapndcv.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\qlnguoidung.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlnguoidung.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\qlemail.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\qlemail.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\gioithieu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\gioithieu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\app_data\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\app_data\\sqlquery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\danhbaemail.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\danhbaemail.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\danhbaemail.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\danhbaemail.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\danhbaemail.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\danhbaemail.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\dangnhap.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\dangnhap.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\dangnhap.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\qlcvan\\dangnhap.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\qlcvan\\dangnhap.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96CAB4C9-FEBB-45A7-9289-BECD2B004858}|QLCVan\\QLCVan.csproj|solutionrelative:qlcvan\\dangnhap.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -158,8 +166,12 @@
       "DocumentGroups": [
         {
           "DockedHeight": 218,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -171,10 +183,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ViewFile.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\ViewFile.aspx.cs",
+              "RelativeDocumentMoniker": "QLCVan\\ViewFile.aspx.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\ViewFile.aspx.cs",
+              "RelativeToolTip": "QLCVan\\ViewFile.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T12:02:12.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Trangchu.aspx",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Trangchu.aspx",
               "RelativeDocumentMoniker": "QLCVan\\Trangchu.aspx",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx*",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Trangchu.aspx*",
               "RelativeToolTip": "QLCVan\\Trangchu.aspx*",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -183,193 +208,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "QLCV.Master.designer.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.designer.cs",
-              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master.designer.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.designer.cs",
-              "RelativeToolTip": "QLCVan\\QLCV.Master.designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAwGsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T10:24:29.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "QLnguoidung.aspx.designer.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLnguoidung.aspx.designer.cs",
-              "RelativeDocumentMoniker": "QLCVan\\QLnguoidung.aspx.designer.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLnguoidung.aspx.designer.cs",
-              "RelativeToolTip": "QLCVan\\QLnguoidung.aspx.designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T10:23:50.313Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "QLNhom.aspx.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLNhom.aspx.cs",
-              "RelativeDocumentMoniker": "QLCVan\\QLNhom.aspx.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLNhom.aspx.cs",
-              "RelativeToolTip": "QLCVan\\QLNhom.aspx.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T10:23:42.974Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoaiCV.aspx",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\LoaiCV.aspx",
-              "RelativeDocumentMoniker": "QLCVan\\LoaiCV.aspx",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\LoaiCV.aspx",
-              "RelativeToolTip": "QLCVan\\LoaiCV.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-10-02T15:06:16.552Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "QLnguoidung.aspx.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLnguoidung.aspx.cs",
-              "RelativeDocumentMoniker": "QLCVan\\QLnguoidung.aspx.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLnguoidung.aspx.cs",
-              "RelativeToolTip": "QLCVan\\QLnguoidung.aspx.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAYwFgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T15:09:49.341Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "QLCV.Master",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master",
-              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master",
-              "RelativeToolTip": "QLCVan\\QLCV.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-30T10:35:02.747Z",
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Web.config",
+              "RelativeDocumentMoniker": "QLCVan\\Web.config",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Web.config",
+              "RelativeToolTip": "QLCVan\\Web.config",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-09-22T03:58:38.077Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "QLCV.Master.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.cs",
-              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLCV.Master.cs",
-              "RelativeToolTip": "QLCVan\\QLCV.Master.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T03:57:33.711Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Trangchu.aspx.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Trangchu.aspx.cs",
               "RelativeDocumentMoniker": "QLCVan\\Trangchu.aspx.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Trangchu.aspx.cs",
               "RelativeToolTip": "QLCVan\\Trangchu.aspx.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAAwN8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-30T10:38:14.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Info.designer.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Info.designer.cs",
-              "RelativeDocumentMoniker": "QLCVan\\Info.designer.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Info.designer.cs",
-              "RelativeToolTip": "QLCVan\\Info.designer.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAEIAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T10:15:44.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Info.dbml.layout",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Info.dbml.layout",
-              "RelativeDocumentMoniker": "QLCVan\\Info.dbml.layout",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Info.dbml.layout",
-              "RelativeToolTip": "QLCVan\\Info.dbml.layout",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAAAGsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-03T10:15:42.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LoaiCV.aspx.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\LoaiCV.aspx.cs",
-              "RelativeDocumentMoniker": "QLCVan\\LoaiCV.aspx.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\LoaiCV.aspx.cs",
-              "RelativeToolTip": "QLCVan\\LoaiCV.aspx.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAADwv2wAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T15:06:48.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "NhapNDCV.aspx.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\NhapNDCV.aspx.cs",
-              "RelativeDocumentMoniker": "QLCVan\\NhapNDCV.aspx.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\NhapNDCV.aspx.cs",
-              "RelativeToolTip": "QLCVan\\NhapNDCV.aspx.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwH4BAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T15:08:16.142Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "NhapNDCV.aspx.designer.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\NhapNDCV.aspx.designer.cs",
-              "RelativeDocumentMoniker": "QLCVan\\NhapNDCV.aspx.designer.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\NhapNDCV.aspx.designer.cs",
-              "RelativeToolTip": "QLCVan\\NhapNDCV.aspx.designer.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAwA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T15:14:14.107Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "QLNhom.aspx",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLNhom.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLNhom.aspx",
               "RelativeDocumentMoniker": "QLCVan\\QLNhom.aspx",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLNhom.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLNhom.aspx",
               "RelativeToolTip": "QLCVan\\QLNhom.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-10-03T09:02:31.862Z"
+              "WhenOpened": "2025-10-03T09:02:31.862Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "QLNhom.aspx.designer.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLNhom.aspx.designer.cs",
-              "RelativeDocumentMoniker": "QLCVan\\QLNhom.aspx.designer.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLNhom.aspx.designer.cs",
-              "RelativeToolTip": "QLCVan\\QLNhom.aspx.designer.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T10:17:01.071Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 3,
               "Title": "Trangchu.aspx.designer.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Trangchu.aspx.designer.cs",
               "RelativeDocumentMoniker": "QLCVan\\Trangchu.aspx.designer.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Trangchu.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Trangchu.aspx.designer.cs",
               "RelativeToolTip": "QLCVan\\Trangchu.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -378,107 +260,297 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DanhBaEmail.aspx",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx",
-              "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx",
-              "RelativeToolTip": "QLCVan\\DanhBaEmail.aspx",
+              "DocumentIndex": 1,
+              "Title": "ViewFile.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\ViewFile.aspx",
+              "RelativeDocumentMoniker": "QLCVan\\ViewFile.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\ViewFile.aspx",
+              "RelativeToolTip": "QLCVan\\ViewFile.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-10-03T09:04:59.893Z"
+              "WhenOpened": "2025-10-06T11:59:16.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "QLnguoidung.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLnguoidung.aspx.cs",
+              "RelativeDocumentMoniker": "QLCVan\\QLnguoidung.aspx.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLnguoidung.aspx.cs",
+              "RelativeToolTip": "QLCVan\\QLnguoidung.aspx.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwFgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T15:09:49.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoaiCV.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\LoaiCV.aspx",
+              "RelativeDocumentMoniker": "QLCVan\\LoaiCV.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\LoaiCV.aspx",
+              "RelativeToolTip": "QLCVan\\LoaiCV.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-10-02T15:06:16.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "QLNhom.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLNhom.aspx.cs",
+              "RelativeDocumentMoniker": "QLCVan\\QLNhom.aspx.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLNhom.aspx.cs",
+              "RelativeToolTip": "QLCVan\\QLNhom.aspx.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T10:23:42.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "QLnguoidung.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLnguoidung.aspx.designer.cs",
+              "RelativeDocumentMoniker": "QLCVan\\QLnguoidung.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLnguoidung.aspx.designer.cs",
+              "RelativeToolTip": "QLCVan\\QLnguoidung.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T10:23:50.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "QLCV.Master.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLCV.Master.designer.cs",
+              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master.designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLCV.Master.designer.cs",
+              "RelativeToolTip": "QLCVan\\QLCV.Master.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T10:24:29.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "QLCV.Master",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLCV.Master",
+              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLCV.Master",
+              "RelativeToolTip": "QLCVan\\QLCV.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-09-30T10:35:02.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QLCV.Master.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLCV.Master.cs",
+              "RelativeDocumentMoniker": "QLCVan\\QLCV.Master.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLCV.Master.cs",
+              "RelativeToolTip": "QLCVan\\QLCV.Master.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T03:57:33.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Info.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Info.designer.cs",
+              "RelativeDocumentMoniker": "QLCVan\\Info.designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Info.designer.cs",
+              "RelativeToolTip": "QLCVan\\Info.designer.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAEIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T10:15:44.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Info.dbml.layout",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Info.dbml.layout",
+              "RelativeDocumentMoniker": "QLCVan\\Info.dbml.layout",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Info.dbml.layout",
+              "RelativeToolTip": "QLCVan\\Info.dbml.layout",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAAGsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-03T10:15:42.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoaiCV.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\LoaiCV.aspx.cs",
+              "RelativeDocumentMoniker": "QLCVan\\LoaiCV.aspx.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\LoaiCV.aspx.cs",
+              "RelativeToolTip": "QLCVan\\LoaiCV.aspx.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAADwv2wAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T15:06:48.15Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Dangnhap.aspx",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx",
-              "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx",
-              "RelativeToolTip": "QLCVan\\Dangnhap.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-27T03:28:54.796Z"
+              "Title": "NhapNDCV.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\NhapNDCV.aspx.cs",
+              "RelativeDocumentMoniker": "QLCVan\\NhapNDCV.aspx.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\NhapNDCV.aspx.cs",
+              "RelativeToolTip": "QLCVan\\NhapNDCV.aspx.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwH4BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T15:08:16.142Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "CTCV.aspx",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\CTCV.aspx",
-              "RelativeDocumentMoniker": "QLCVan\\CTCV.aspx",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\CTCV.aspx",
-              "RelativeToolTip": "QLCVan\\CTCV.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-10-03T09:04:44.62Z"
+              "Title": "NhapNDCV.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\NhapNDCV.aspx.designer.cs",
+              "RelativeDocumentMoniker": "QLCVan\\NhapNDCV.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\NhapNDCV.aspx.designer.cs",
+              "RelativeToolTip": "QLCVan\\NhapNDCV.aspx.designer.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T15:14:14.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "QLNhom.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLNhom.aspx.designer.cs",
+              "RelativeDocumentMoniker": "QLCVan\\QLNhom.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLNhom.aspx.designer.cs",
+              "RelativeToolTip": "QLCVan\\QLNhom.aspx.designer.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T10:17:01.071Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "HitCount.ascx",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\UserControl\\HitCount.ascx",
-              "RelativeDocumentMoniker": "QLCVan\\UserControl\\HitCount.ascx",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\UserControl\\HitCount.ascx",
-              "RelativeToolTip": "QLCVan\\UserControl\\HitCount.ascx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
-              "WhenOpened": "2025-10-03T10:16:31.685Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "LoaiCV.aspx.designer.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\LoaiCV.aspx.designer.cs",
-              "RelativeDocumentMoniker": "QLCVan\\LoaiCV.aspx.designer.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\LoaiCV.aspx.designer.cs",
-              "RelativeToolTip": "QLCVan\\LoaiCV.aspx.designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T10:15:18.64Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "NhapNDCV.aspx",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\NhapNDCV.aspx",
-              "RelativeDocumentMoniker": "QLCVan\\NhapNDCV.aspx",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\NhapNDCV.aspx",
-              "RelativeToolTip": "QLCVan\\NhapNDCV.aspx",
+              "Title": "DanhBaEmail.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\DanhBaEmail.aspx",
+              "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\DanhBaEmail.aspx",
+              "RelativeToolTip": "QLCVan\\DanhBaEmail.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-10-02T15:07:21.354Z"
+              "WhenOpened": "2025-10-03T09:04:59.893Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "Counter.txt",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Counter.txt",
-              "RelativeDocumentMoniker": "QLCVan\\Counter.txt",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Counter.txt",
-              "RelativeToolTip": "QLCVan\\Counter.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-09-27T10:45:18.795Z"
+              "Title": "Dangnhap.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx",
+              "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx",
+              "RelativeToolTip": "QLCVan\\Dangnhap.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-09-27T03:28:54.796Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "Info.dbml",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Info.dbml",
-              "RelativeDocumentMoniker": "QLCVan\\Info.dbml",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Info.dbml",
-              "RelativeToolTip": "QLCVan\\Info.dbml",
+              "Title": "CTCV.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\CTCV.aspx",
+              "RelativeDocumentMoniker": "QLCVan\\CTCV.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\CTCV.aspx",
+              "RelativeToolTip": "QLCVan\\CTCV.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-10-03T09:04:44.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "HitCount.ascx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\UserControl\\HitCount.ascx",
+              "RelativeDocumentMoniker": "QLCVan\\UserControl\\HitCount.ascx",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\UserControl\\HitCount.ascx",
+              "RelativeToolTip": "QLCVan\\UserControl\\HitCount.ascx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "WhenOpened": "2025-10-03T10:16:31.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LoaiCV.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\LoaiCV.aspx.designer.cs",
+              "RelativeDocumentMoniker": "QLCVan\\LoaiCV.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\LoaiCV.aspx.designer.cs",
+              "RelativeToolTip": "QLCVan\\LoaiCV.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-03T09:42:20.578Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T10:15:18.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "NhapNDCV.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\NhapNDCV.aspx",
+              "RelativeDocumentMoniker": "QLCVan\\NhapNDCV.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\NhapNDCV.aspx",
+              "RelativeToolTip": "QLCVan\\NhapNDCV.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-10-02T15:07:21.354Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
+              "Title": "Counter.txt",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Counter.txt",
+              "RelativeDocumentMoniker": "QLCVan\\Counter.txt",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Counter.txt",
+              "RelativeToolTip": "QLCVan\\Counter.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-27T10:45:18.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Info.dbml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Info.dbml",
+              "RelativeDocumentMoniker": "QLCVan\\Info.dbml",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Info.dbml",
+              "RelativeToolTip": "QLCVan\\Info.dbml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-03T09:42:20.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "Main.css",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Main.css",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Main.css",
               "RelativeDocumentMoniker": "QLCVan\\Main.css",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Main.css",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Main.css",
               "RelativeToolTip": "QLCVan\\Main.css",
               "ViewState": "AgIAABwAAAAAAAAAAAAAAAkBAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -486,139 +558,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "QLnguoidung.aspx",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLnguoidung.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLnguoidung.aspx",
               "RelativeDocumentMoniker": "QLCVan\\QLnguoidung.aspx",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLnguoidung.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLnguoidung.aspx",
               "RelativeToolTip": "QLCVan\\QLnguoidung.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-10-02T15:09:16.56Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "QLEmail.aspx",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLEmail.aspx",
-              "RelativeDocumentMoniker": "QLCVan\\QLEmail.aspx",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\QLEmail.aspx",
-              "RelativeToolTip": "QLCVan\\QLEmail.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-10-03T09:42:53.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Gioithieu.aspx",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Gioithieu.aspx",
-              "RelativeDocumentMoniker": "QLCVan\\Gioithieu.aspx",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Gioithieu.aspx",
-              "RelativeToolTip": "QLCVan\\Gioithieu.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-09-27T03:35:41.365Z"
+              "WhenOpened": "2025-10-02T15:09:16.56Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 30,
-              "Title": "SQLQuery1.sql ",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\App_Data\\SQLQuery1.sql",
-              "RelativeDocumentMoniker": "QLCVan\\App_Data\\SQLQuery1.sql",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\App_Data\\SQLQuery1.sql",
-              "RelativeToolTip": "QLCVan\\App_Data\\SQLQuery1.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-10-02T15:20:03.188Z"
+              "Title": "QLEmail.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLEmail.aspx",
+              "RelativeDocumentMoniker": "QLCVan\\QLEmail.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\QLEmail.aspx",
+              "RelativeToolTip": "QLCVan\\QLEmail.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-10-03T09:42:53.471Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Global.asax.cs",
-              "RelativeDocumentMoniker": "QLCVan\\Global.asax.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Global.asax.cs",
-              "RelativeToolTip": "QLCVan\\Global.asax.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T03:57:05.177Z"
+              "DocumentIndex": 32,
+              "Title": "Gioithieu.aspx",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Gioithieu.aspx",
+              "RelativeDocumentMoniker": "QLCVan\\Gioithieu.aspx",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Gioithieu.aspx",
+              "RelativeToolTip": "QLCVan\\Gioithieu.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-09-27T03:35:41.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "SQLQuery1.sql",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\App_Data\\SQLQuery1.sql",
+              "RelativeDocumentMoniker": "QLCVan\\App_Data\\SQLQuery1.sql",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\App_Data\\SQLQuery1.sql",
+              "RelativeToolTip": "QLCVan\\App_Data\\SQLQuery1.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-10-02T15:20:03.188Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Web.config",
-              "RelativeDocumentMoniker": "QLCVan\\Web.config",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Web.config",
-              "RelativeToolTip": "QLCVan\\Web.config",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAAAkAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-09-22T03:58:38.077Z",
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Global.asax.cs",
+              "RelativeDocumentMoniker": "QLCVan\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Global.asax.cs",
+              "RelativeToolTip": "QLCVan\\Global.asax.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T03:57:05.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Dangnhap.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx.designer.cs",
+              "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx.designer.cs",
+              "RelativeToolTip": "QLCVan\\Dangnhap.aspx.designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T03:29:22.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DanhBaEmail.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\DanhBaEmail.aspx.designer.cs",
+              "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\DanhBaEmail.aspx.designer.cs",
+              "RelativeToolTip": "QLCVan\\DanhBaEmail.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T03:35:35.981Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 36,
-              "Title": "Dangnhap.aspx.designer.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.designer.cs",
-              "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx.designer.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.designer.cs",
-              "RelativeToolTip": "QLCVan\\Dangnhap.aspx.designer.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T03:29:22.187Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "DanhBaEmail.aspx.designer.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx.designer.cs",
-              "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx.designer.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx.designer.cs",
-              "RelativeToolTip": "QLCVan\\DanhBaEmail.aspx.designer.cs",
+              "Title": "DanhBaEmail.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\DanhBaEmail.aspx.cs",
+              "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\DanhBaEmail.aspx.cs",
+              "RelativeToolTip": "QLCVan\\DanhBaEmail.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T03:35:35.981Z"
+              "WhenOpened": "2025-09-27T03:35:30.801Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 34,
-              "Title": "DanhBaEmail.aspx.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx.cs",
-              "RelativeDocumentMoniker": "QLCVan\\DanhBaEmail.aspx.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\DanhBaEmail.aspx.cs",
-              "RelativeToolTip": "QLCVan\\DanhBaEmail.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T03:35:30.801Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Properties\\AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "QLCVan\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Properties\\AssemblyInfo.cs",
               "RelativeToolTip": "QLCVan\\Properties\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T10:44:34.439Z"
+              "WhenOpened": "2025-09-27T10:44:34.439Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "Dangnhap.aspx.cs",
-              "DocumentMoniker": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx.cs",
               "RelativeDocumentMoniker": "QLCVan\\Dangnhap.aspx.cs",
-              "ToolTip": "D:\\QLCV_TT\\He_Thong_Quan_Ly_Cong_Van\\QLCVan\\Dangnhap.aspx.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\He-thong-quan-ly-cong-van\\QLCVan\\QLCVan\\QLCVan\\Dangnhap.aspx.cs",
               "RelativeToolTip": "QLCVan\\Dangnhap.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T03:29:01.217Z"
+              "WhenOpened": "2025-09-27T03:29:01.217Z",
+              "EditorCaption": ""
             }
           ]
         },
