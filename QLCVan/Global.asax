@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="QLCVan.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="QLCVan.Global"     Language="C#" %>

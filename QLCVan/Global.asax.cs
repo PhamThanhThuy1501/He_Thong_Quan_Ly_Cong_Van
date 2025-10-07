@@ -25,7 +25,7 @@ namespace QLCVan
 
         protected void Session_Start(object sender, EventArgs e)
         {
-          
+
             Session["User"] = "";
             Application["HitOnline"] = int.Parse(Application["HitOnline"].ToString()) + 1;
             Application.Lock();
