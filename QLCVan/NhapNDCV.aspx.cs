@@ -251,68 +251,96 @@ namespace QLCVan
 
         protected void btnsua_Click(object sender, EventArgs e)
         {
-
             if (Request.QueryString["macv"] != null)
             {
                 tblNoiDungCV cv1 = db.tblNoiDungCVs.SingleOrDefault(t => t.MaCV.ToString() == (Request.QueryString["macv"].ToString()));
                 if (cv1 != null)
                 {
+                    // ✅ XỬ LÝ NGÀY KIỂU dd/MM/yyyy AN TOÀN
+                    DateTime ngayGui, ngayBanHanh;
+                    if (!DateTime.TryParseExact(
+                        txtngayracv.Text.Trim(),
+                        "dd/MM/yyyy",
+                        System.Globalization.CultureInfo.InvariantCulture,
+                        System.Globalization.DateTimeStyles.None,
+                        out ngayGui))
                     {
-                        cv1.SoCV = txtsocv.Text;
-                        cv1.NgayGui = new DateTime(
-                Convert.ToInt32(txtngayracv.Text.Split('-')[2]),
-                Convert.ToInt32(txtngayracv.Text.Split('-')[1]),
-                Convert.ToInt32(txtngayracv.Text.Split('-')[0]));
-                        cv1.TieuDeCV = txttieude.Text;
-                        cv1.MaLoaiCV = int.Parse(ddlLoaiCV.SelectedValue.ToString());
-                        cv1.CoQuanBanHanh = txtcqbh.Text;
-                        cv1.TrichYeuND = txttrichyeu.InnerText;
-                        cv1.NgayBanHanh = new DateTime(
-               Convert.ToInt32(txtngayracv.Text.Split('-')[2]),
-               Convert.ToInt32(txtngayracv.Text.Split('-')[1]),
-               Convert.ToInt32(txtngayracv.Text.Split('-')[0]));
-                        if (RadioButtonList1.SelectedIndex == 0)
-                        {
-                            cv1.GuiHayNhan = 1;
-                        }
-                        else
-                            cv1.GuiHayNhan = 0;
-                        for (int i = 0; i < ListBox1.Items.Count; i++)
-                        {
-                            var files = db.tblFileDinhKems.Where(t => t.MaCV.ToString() == (Request.QueryString["macv"].ToString()));
-                            bool check = true;
-                            foreach (var item in files)
-                            {
-                                if (ListBox1.Items[i].Text == item.TenFile)
-                                {
-                                    check = false;
-                                    break;
-                                }
-                            }
-
-                            if (check)
-                            {
-                                tblFileDinhKem file = new tblFileDinhKem();
-                                file.FileID = Guid.NewGuid().ToString();
-                                file.Url = ListBox1.Items[i].Value.ToString();
-                                file.TenFile = (ListBox1.Items[i].Text);
-                                file.DateUpload = DateTime.Now.ToShortDateString();
-                                file.MaCV = cv1.MaCV;
-                                db.tblFileDinhKems.InsertOnSubmit(file);
-                                db.SubmitChanges();
-                            }
-
-                        }
-                        db.SubmitChanges();
-
+                        // Nếu lỗi format ngày thì không lưu
+                        return;
                     }
+
+                    if (!DateTime.TryParseExact(
+                        txtngaynhancv.Text.Trim(),
+                        "dd/MM/yyyy",
+                        System.Globalization.CultureInfo.InvariantCulture,
+                        System.Globalization.DateTimeStyles.None,
+                        out ngayBanHanh))
+                    {
+                        return;
+                    }
+
+                    // ✅ GÁN GIÁ TRỊ AN TOÀN
+                    cv1.SoCV = txtsocv.Text;
+                    cv1.NgayGui = ngayGui;
+                    cv1.TieuDeCV = txttieude.Text;
+                    cv1.MaLoaiCV = int.Parse(ddlLoaiCV.SelectedValue.ToString());
+                    cv1.CoQuanBanHanh = txtcqbh.Text;
+                    cv1.TrichYeuND = txttrichyeu.InnerText;
+                    cv1.NgayBanHanh = ngayBanHanh;
+
+                    if (RadioButtonList1.SelectedIndex == 0)
+                    {
+                        cv1.GuiHayNhan = 1;
+                    }
+                    else
+                        cv1.GuiHayNhan = 0;
+
+                    // ✅ XỬ LÝ FILE AN TOÀN
+                    for (int i = 0; i < ListBox1.Items.Count; i++)
+                    {
+                        var files = db.tblFileDinhKems.Where(t => t.MaCV.ToString() == (Request.QueryString["macv"].ToString()));
+                        bool check = true;
+                        foreach (var item in files)
+                        {
+                            if (ListBox1.Items[i].Text == item.TenFile)
+                            {
+                                check = false;
+                                break;
+                            }
+                        }
+
+                        if (check &&
+                            !string.IsNullOrEmpty(ListBox1.Items[i].Value) &&
+                            !string.IsNullOrEmpty(ListBox1.Items[i].Text))
+                        {
+                            tblFileDinhKem file = new tblFileDinhKem();
+                            file.FileID = Guid.NewGuid().ToString();
+                            file.Url = ListBox1.Items[i].Value.ToString();
+                            file.TenFile = (ListBox1.Items[i].Text);
+                            file.DateUpload = DateTime.Now.ToShortDateString();
+                            file.MaCV = cv1.MaCV;
+                            db.tblFileDinhKems.InsertOnSubmit(file);
+                        }
+                    }
+
+                    // ✅ CHẶN LỖI Ở SubmitChanges
+                    try
+                    {
+                        db.SubmitChanges();
+                    }
+                    catch (Exception ex)
+                    {
+                        Response.Write(ex.Message);
+                        return;
+                    }
+
                     Response.Redirect("NhapNDCV.aspx");
                     btnthem.Visible = true;
                     btnsua.Visible = false;
-
                 }
             }
         }
+
 
         protected void btnlammoi_Click(object sender, EventArgs e)
         {
