@@ -20,11 +20,8 @@
       background:#fafafa; border:1px solid var(--border); border-radius:12px; padding:18px 20px;
     }
     .formTable{ width:100%; border-collapse:separate; border-spacing:0 10px; }
-    .formTable td{ vertical-align:middle; }  /* GIỮ NGANG HÀNG */
+    .formTable td{ vertical-align:middle; }
     .formTable .lbl{ width:180px; text-align:right; color:var(--ink); font-weight:700; padding:0 12px 0 0; white-space:nowrap; }
-
-    /* NEW: dùng cho hàng “Nhóm:” để dính với dòng checkbox đầu */
-    .lbl-group{ padding-top:6px; }  /* tùy UI có thể chỉnh 4–8px */
 
     .input-lg{
       width:100%; box-sizing:border-box; height:42px; padding:9px 12px;
@@ -34,12 +31,6 @@
     .input-lg:focus{ outline:none; border-color:var(--primary); box-shadow:0 0 0 2px rgba(11,87,208,.15); }
     .req{ color:#dc2626; }
 
-    /* CheckBoxList 2 cột gọn */
-    .cbl-2col{ border-collapse:separate !important; border-spacing:0 8px !important; }
-    .cbl-2col td{ padding:4px 28px 4px 0; }
-    .cbl-2col input{ margin-right:8px; }
-
-    /* Nút: canh GIỮA */
     .actions{ display:flex; gap:12px; margin-top:6px; justify-content:center; }
     .btn{
       display:inline-flex; align-items:center; justify-content:center; gap:8px;
@@ -70,35 +61,13 @@
       .formTable .lbl{ text-align:left; display:block; padding:0 0 6px; }
       .gridInner{ padding:0 10px; }
     }
-    /* ===== Nhóm: canh ngang checkbox đầu tiên ===== */
-.lbl-group{ vertical-align: top;  } /* chữ "Nhóm:" dính với dòng checkbox đầu */
-
-/* CheckBoxList 2 cột gọn gàng */
-.cbl-2col{ border-collapse:separate !important; border-spacing:0 8px !important; }
-.cbl-2col td{ padding:4px 28px 4px 0; }
-.cbl-2col input{ margin-right:8px; }
-
-/* Nút hành động ở GIỮA */
-.actions{ display:flex; gap:12px; margin-top:8px; justify-content:center; }
-
-/* ===== Grid full width bằng banner ===== */
-.gridWrapper{ width:100vw; margin-left:calc(50% - 50vw); margin-top:22px; }
-.gridInner{ max-width:1100px; margin:0 auto; padding:0 14px; } /* khớp .page ở trên */
-.grid{ width:100%; border-collapse:collapse; table-layout:fixed; }
-.grid-header th{ background:#c62828; color:#fff; font-weight:800; padding:12px 10px; text-align:left; border:1px solid #e6e6e6; }
-.grid-row td, .grid-alt td{ padding:12px 10px; border:1px solid #e6e6e6; }
-.grid-alt{ background:#fafafa; }
-.grid-footer{ background:#c62828; color:#fff; }
-
   </style>
 </asp:Content>
-
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   <div class="page">
     <h3 class="page-title"><b>QUẢN LÝ NGƯỜI DÙNG</b></h3>
 
-    <!-- FORM -->
     <div class="form-card">
       <!-- Cột trái -->
       <div>
@@ -124,18 +93,13 @@
               </asp:DropDownList>
             </td>
           </tr>
-         <tr>
- <tr>
-  <td class="lbl lbl-group">Nhóm:</td>
-  <td>
-    <asp:CheckBoxList ID="cbl1" runat="server"
-        RepeatLayout="Table"
-        RepeatDirection="Vertical"
-        RepeatColumns="2"
-        CssClass="cbl-2col" />
-  </td>
-</tr>
-
+          <!-- ✅ Thay CheckBoxList bằng DropDownList -->
+          <tr>
+            <td class="lbl">Nhóm:</td>
+            <td>
+              <asp:DropDownList ID="ddlNhom" runat="server" CssClass="input-lg" />
+            </td>
+          </tr>
         </table>
       </div>
 
@@ -166,7 +130,7 @@
         </table>
 
         <div class="actions">
-          <asp:Button ID="btnThem"   runat="server" Text="Thêm"   OnClick="btnThem_Click"   CssClass="btn btn-primary" />
+          <asp:Button ID="btnThem" runat="server" Text="Thêm" OnClick="btnThem_Click" CssClass="btn btn-primary" />
           <asp:Button ID="btnTaoMoi" runat="server" Text="Tạo mới" OnClick="btnTaoMoi_Click" CssClass="btn btn-outline" />
         </div>
 
@@ -176,7 +140,7 @@
 
     <!-- GRID -->
     <div class="gridWrapper">
-      <div class="gridInner"><!-- giữ đúng bề rộng như form/banner -->
+      <div class="gridInner">
         <asp:UpdatePanel ID="UpdatePanel1" runat="server" ChildrenAsTriggers="true">
           <ContentTemplate>
             <asp:GridView ID="GridView2" runat="server"
@@ -218,9 +182,6 @@
                                 EnableDelete="True" EnableInsert="True" EnableUpdate="True"
                                 TableName="tblNguoiDungs" />
           </ContentTemplate>
-          <Triggers>
-            <asp:AsyncPostBackTrigger ControlID="GridView2" />
-          </Triggers>
         </asp:UpdatePanel>
       </div>
     </div>

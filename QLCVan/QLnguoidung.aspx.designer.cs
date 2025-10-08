@@ -51,13 +51,13 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.DropDownList ddlQuyen;
 
         /// <summary>
-        /// cbl1 control.
+        /// ddlNhom control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList cbl1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlNhom;
 
         /// <summary>
         /// txtTenDN control.
