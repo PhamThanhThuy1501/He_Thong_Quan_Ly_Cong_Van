@@ -15,6 +15,33 @@ namespace QLCVan
     {
 
         /// <summary>
+        /// btnOpenAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnOpenAdd;
+
+        /// <summary>
+        /// btnShowPopupTarget control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnShowPopupTarget;
+
+        /// <summary>
+        /// mpeAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.ModalPopupExtender mpeAdd;
+
+        /// <summary>
         /// grvLoaiCV control.
         /// </summary>
         /// <remarks>
@@ -24,30 +51,71 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.GridView grvLoaiCV;
 
         /// <summary>
+<<<<<<< HEAD
         /// txtMaLoaiNew control.
+=======
+        /// <summary>
+        /// pnlPopup control.
+>>>>>>> origin/main
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.TextBox txtMaLoaiNew;
 
         /// <summary>
         /// txtTenLoaiNew control.
+=======
+        protected global::System.Web.UI.WebControls.Panel pnlPopup;
+
+        /// <summary>
+        /// txtMaLoaiCV control.
+>>>>>>> origin/main
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.TextBox txtTenLoaiNew;
 
         /// <summary>
         /// btnAdd control.
+=======
+        protected global::System.Web.UI.WebControls.TextBox txtMaLoaiCV;
+
+        /// <summary>
+        /// txtTenLoaiCV control.
+>>>>>>> origin/main
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.Button btnAdd;
+=======
+        protected global::System.Web.UI.WebControls.TextBox txtTenLoaiCV;
+
+        /// <summary>
+        /// btnLuu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnLuu;
+
+        /// <summary>
+        /// btnHuy control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnHuy;
+>>>>>>> origin/main
     }
 }
