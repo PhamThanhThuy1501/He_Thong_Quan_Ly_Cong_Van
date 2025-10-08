@@ -1,5 +1,10 @@
 ﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+# .gitignore for Visual Studio project (prepared for QLCVan)
 ################################################################################
 
-/.vs/QLCVan/FileContentIndex/90d67969-1798-4dbe-b2d0-85b331d10617.vsidx
+.vs/
+.idea/
+*.user
+*.suo
+bin/
+obj/

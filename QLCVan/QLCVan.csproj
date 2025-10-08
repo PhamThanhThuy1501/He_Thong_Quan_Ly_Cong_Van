@@ -48,8 +48,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AjaxControlToolkit, Version=4.1.60919.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -125,8 +125,30 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\viewerjs-0.5.8\AGPL-3.0.txt" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\compatibility.js" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\example.local.css" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\kogmbh.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\nlnet.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\texture.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-download.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-fullscreen.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-menuArrows.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-pageDown.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-pageUp.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-presentation.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-zoomIn.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\images\toolbarButton-zoomOut.png" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\index.html" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\pdf.js" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\pdf.worker.js" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\pdfjsversion.js" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\text_layer_builder.js" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\ui_utils.js" />
+    <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\webodf.js" />
     <Content Include="Trangchu.aspx" />
     <Content Include="UserControl\HitCount.ascx" />
+    <Content Include="ViewFile.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -166,6 +188,9 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <DependentUpon>Info.dbml</DependentUpon>
     </Compile>
     <Compile Include="Info.designer.cs">
       <AutoGen>True</AutoGen>
@@ -229,6 +254,13 @@
     <Compile Include="UserControl\HitCount.ascx.designer.cs">
       <DependentUpon>HitCount.ascx</DependentUpon>
     </Compile>
+    <Compile Include="ViewFile.aspx.cs">
+      <DependentUpon>ViewFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewFile.aspx.designer.cs">
+      <DependentUpon>ViewFile.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Account\" />
@@ -244,6 +276,7 @@
       <LastGenOutput>Info.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
