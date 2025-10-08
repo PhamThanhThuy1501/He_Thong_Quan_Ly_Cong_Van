@@ -23,7 +23,7 @@
         }
         .cv-headbar{height:12px; background:var(--red); margin:8px 0 14px; border-radius:2px}
 
-                     /* banner đỏ -> chữ chạy (CSS animation, không dùng <marquee>) */
+              /* banner đỏ -> chữ chạy (CSS animation, không dùng <marquee>) */
 .cv-banner{
     background:var(--red);
     color:#fff;
@@ -237,9 +237,10 @@
         <div class="cv-head">XEM CÔNG VĂN</div>
       
 
-            <div class="cv-banner">
+     <div class="cv-banner">
     <div class="marquee">Chào mừng bạn đến với hệ thống Quản lý Công Văn điện tử.</div>
 </div>
+
 
         <!-- TÌM KIẾM VĂN BẢN -->
         <div class="cv-box">
@@ -317,8 +318,7 @@
                             <asp:TemplateField HeaderText="Thao tác">
                                 <ItemTemplate>
                                     <div class="actions">
-                                        <%--<a href='CTCV.aspx?id=<%# Eval("MaCV") %>' class="action-pill action-view">Xem</a>--%>
-                                        <a href='ViewFile.aspx?id=<%#Eval("MaCV")%>' class="action-pill action-view">Xem</a>
+                                        <a href='CTCV.aspx?id=<%# Eval("MaCV") %>' class="action-pill action-view">Xem</a>
                                         <a href='SuaCV.aspx?id=<%# Eval("MaCV") %>' class="action-pill action-edit">Sửa</a>
                                         <asp:LinkButton ID="lnk_Xoa" runat="server"
                                             CssClass="action-pill action-del"
