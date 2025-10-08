@@ -111,5 +111,11 @@ namespace QLCVan
             // Đóng modal sau khi thêm
             ScriptManager.RegisterStartupScript(this, this.GetType(), "HideModal", "$('#addModal').modal('hide');", true);
         }
+        protected void gvQLNhom_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gvQLNhom.PageIndex = e.NewPageIndex; // chuyển đến trang mới
+            load_Nhom(); // gọi lại hàm load dữ liệu
+        }
+
     }
 }

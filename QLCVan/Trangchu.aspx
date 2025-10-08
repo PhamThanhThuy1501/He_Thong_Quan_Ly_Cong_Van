@@ -23,12 +23,39 @@
         }
         .cv-headbar{height:12px; background:var(--red); margin:8px 0 14px; border-radius:2px}
 
-        /* banner đỏ (không chạy chữ) */
-        .cv-banner{
-            background:var(--red); color:#fff; font-weight:bold;
-            padding:8px 12px; border-radius:3px; margin-bottom:12px;
-            text-align:center;
-        }
+                     /* banner đỏ -> chữ chạy (CSS animation, không dùng <marquee>) */
+.cv-banner{
+    background:var(--red);
+    color:#fff;
+    font-weight:700;
+    padding:8px 12px;
+    border-radius:3px;
+    margin-bottom:12px;
+    overflow:hidden;              /* ẩn phần tràn */
+    position:relative;
+    height:15px;                  /* chỉnh cao nếu cần */
+    display:flex;
+    align-items:center;
+}
+
+/* phần chứa chữ chạy */
+.cv-banner .marquee {
+    display:inline-block;
+    white-space:nowrap;
+    will-change:transform;
+    animation: scroll-left 12s linear infinite; /* sửa 12s để nhanh/chậm */
+    font-size:16px;
+}
+
+/* khi rê chuột vào sẽ tạm dừng chạy */
+.cv-banner:hover .marquee { 
+    animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
 
         /* box tìm kiếm */
        /* CHỈ khối tìm kiếm nhỏ lại và nằm giữa */
@@ -210,7 +237,9 @@
         <div class="cv-head">XEM CÔNG VĂN</div>
       
 
-        <div class="cv-banner">Chào mừng bạn đến với hệ thống Quản lý Công Văn điện tử.</div>
+            <div class="cv-banner">
+    <div class="marquee">Chào mừng bạn đến với hệ thống Quản lý Công Văn điện tử.</div>
+</div>
 
         <!-- TÌM KIẾM VĂN BẢN -->
         <div class="cv-box">
