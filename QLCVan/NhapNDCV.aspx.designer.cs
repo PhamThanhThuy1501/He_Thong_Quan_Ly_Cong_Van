@@ -33,13 +33,13 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.TextBox txtsocv;
 
         /// <summary>
-        /// ddlLoaiCV control.
+        /// txtloaiCV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLoaiCV;
+        protected global::System.Web.UI.WebControls.TextBox txtloaiCV;
 
         /// <summary>
         /// txtcqbh control.
@@ -51,13 +51,13 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.TextBox txtcqbh;
 
         /// <summary>
-        /// txtloaiCV control.
+        /// ddlLoaiCV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtloaiCV;
+        protected global::System.Web.UI.WebControls.DropDownList ddlLoaiCV;
 
         /// <summary>
         /// txtngayracv control.

@@ -110,7 +110,7 @@
             <!-- Tiêu đề -->
             <div class="row mb-3 align-items-center">
                 <label class="col-md-2 fw-semibold text-nowrap">
-                    <i class="fa-solid fa-heading me-2 text-primary"></i>Tiêu đề
+                    Tiêu đề
                 </label>
                 <div class="col-md-10">
                     <asp:TextBox ID="txttieude" CssClass="form-control" runat="server" placeholder="Nhập tiêu đề văn bản..." />
@@ -121,7 +121,7 @@
             <!-- Số công văn + Tên loại công văn -->
             <div class="row mb-3 align-items-center">
                 <label class="col-md-2 fw-semibold text-nowrap">
-                    <i class="fa-solid fa-hashtag me-2 text-primary"></i>Số công văn
+                    Số công văn
                 </label>
                 <div class="col-md-4">
                     <asp:TextBox ID="txtsocv" CssClass="form-control" runat="server" placeholder="VD: 334/TB-ĐHSPKTHY" />
@@ -129,8 +129,29 @@
                 </div>
 
                 <label class="col-md-2 fw-semibold text-nowrap">
-                    <i class="fa-solid fa-building me-2 text-primary"></i>Tên loại công văn
+                    Tên loại công văn
                 </label>
+
+                <div class="col-md-4">
+                    <asp:TextBox ID="txtloaiCV" CssClass="form-control" runat="server" placeholder="Nhập loại công văn" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtloaiCV" ErrorMessage="* Nhập loại công văn" CssClass="text-danger small" />
+                </div>
+            </div>
+
+            <!-- Cơ quan ban hành + Loại công văn -->
+            <div class="row mb-3 align-items-center">
+                <label class="col-md-2 fw-semibold text-nowrap">
+                    Cơ quan ban hành
+                </label>
+                <div class="col-md-4">
+                    <asp:TextBox ID="txtcqbh" CssClass="form-control" runat="server" placeholder="Tên cơ quan ban hành" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtcqbh" ErrorMessage="* Nhập cơ quan ban hành" CssClass="text-danger small" />
+                </div>
+
+                <label class="col-md-2 fw-semibold text-nowrap">
+                    Loại công văn
+                </label>
+
                 <div class="col-md-4">
                     <asp:DropDownList ID="ddlLoaiCV" CssClass="form-select" runat="server">
                         <asp:ListItem Text="-- Chọn loại --" Value="" />
@@ -139,29 +160,10 @@
                 </div>
             </div>
 
-            <!-- Cơ quan ban hành + Loại công văn -->
-            <div class="row mb-3 align-items-center">
-                <label class="col-md-2 fw-semibold text-nowrap">
-                    <i class="fa-solid fa-building me-2 text-primary"></i>Cơ quan ban hành
-                </label>
-                <div class="col-md-4">
-                    <asp:TextBox ID="txtcqbh" CssClass="form-control" runat="server" placeholder="Tên cơ quan ban hành" />
-                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtcqbh" ErrorMessage="* Nhập cơ quan ban hành" CssClass="text-danger small" />
-                </div>
-
-                <label class="col-md-2 fw-semibold text-nowrap">
-                    <i class="fa-solid fa-folder-tree me-2 text-primary"></i>Loại công văn
-                </label>
-                <div class="col-md-4">
-                    <asp:TextBox ID="txtloaiCV" CssClass="form-control" runat="server" placeholder="Nhập loại công văn" />
-                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtloaiCV" ErrorMessage="* Nhập loại công văn" CssClass="text-danger small" />
-                </div>
-            </div>
-
             <!-- Ngày ban hành + Ngày kết thúc -->
             <div class="row mb-3 align-items-center">
                 <label class="col-md-2 fw-semibold text-nowrap">
-                    <i class="fa-solid fa-calendar-day me-2 text-primary"></i>Ngày ban hành
+                    Ngày ban hành
                 </label>
                 <div class="col-md-4">
                     <asp:TextBox ID="txtngayracv" CssClass="form-control" runat="server" placeholder="dd/mm/yyyy" />
@@ -169,7 +171,7 @@
                 </div>
 
                 <label class="col-md-2 fw-semibold text-nowrap">
-                    <i class="fa-solid fa-calendar-xmark me-2 text-primary"></i>Ngày kết thúc
+                    Ngày kết thúc
                 </label>
                 <div class="col-md-4">
                     <asp:TextBox ID="txtngaynhancv" CssClass="form-control" runat="server" placeholder="dd/mm/yyyy" />
@@ -180,7 +182,7 @@
             <!-- Trích yếu -->
             <div class="row mb-3 align-items-center">
                 <label class="col-md-2 fw-semibold text-nowrap">
-                    <i class="fa-solid fa-align-left me-2 text-primary"></i>Trích yếu
+                    Trích yếu
                 </label>
                 <div class="col-md-10">
                     <textarea id="txttrichyeu" runat="server" rows="4" class="form-control" placeholder="Tóm tắt nội dung văn bản..."></textarea>
@@ -191,7 +193,7 @@
             <!-- File nếu có -->
             <div class="row mb-3 align-items-center">
                 <label class="col-md-2 fw-semibold text-nowrap">
-                    <i class="fa-solid fa-file-arrow-up me-2 text-primary"></i>File (nếu có)
+                    File (nếu có)
                 </label>
                 <div class="col-md-10">
                     <div class="input-group">
@@ -205,7 +207,7 @@
             <!-- Danh sách file -->
             <div class="row mb-3 align-items-center">
                 <label class="col-md-2 fw-semibold text-nowrap">
-                    <i class="fa-solid fa-paperclip me-2 text-primary"></i>Danh sách file
+                    Danh sách file
                 </label>
                 <div class="col-md-10">
                     <asp:ListBox ID="ListBox1" runat="server" CssClass="form-control mb-2" Height="140px" SelectionMode="Multiple" />
