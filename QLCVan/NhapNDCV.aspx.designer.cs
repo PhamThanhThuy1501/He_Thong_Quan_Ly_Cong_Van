@@ -15,24 +15,6 @@ namespace QLCVan
     {
 
         /// <summary>
-        /// lbl1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl1;
-
-        /// <summary>
-        /// tableSoan control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTable tableSoan;
-
-        /// <summary>
         /// txttieude control.
         /// </summary>
         /// <remarks>
@@ -51,6 +33,15 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.TextBox txtsocv;
 
         /// <summary>
+        /// txtloaiCV control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtloaiCV;
+
+        /// <summary>
         /// txtcqbh control.
         /// </summary>
         /// <remarks>
@@ -67,15 +58,6 @@ namespace QLCVan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlLoaiCV;
-
-        /// <summary>
-        /// RadioButtonList1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
 
         /// <summary>
         /// txtngayracv control.
@@ -114,13 +96,13 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
 
         /// <summary>
-        /// Button1 control.
+        /// btnUpload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnUpload;
 
         /// <summary>
         /// lblchuachonfile control.
@@ -141,22 +123,13 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.ListBox ListBox1;
 
         /// <summary>
-        /// btnRemove control.
+        /// btnDelete control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRemove;
-
-        /// <summary>
-        /// btnReAll control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnReAll;
+        protected global::System.Web.UI.WebControls.Button btnDelete;
 
         /// <summary>
         /// lblloi control.
@@ -201,7 +174,7 @@ namespace QLCVan
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        protected global::AjaxControlToolkit.UpdatePanel UpdatePanel1;
 
         /// <summary>
         /// gvnhapcnden control.
