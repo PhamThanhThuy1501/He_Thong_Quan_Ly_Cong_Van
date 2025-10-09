@@ -11,7 +11,7 @@ namespace QLCVan
 {
 
 
-    public partial class QLNhom1
+    public partial class QLNhom
     {
 
         /// <summary>
@@ -24,6 +24,33 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.HiddenField hdfID;
 
         /// <summary>
+        /// txtSearchMa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSearchMa;
+
+        /// <summary>
+        /// txtSearchTen control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSearchTen;
+
+        /// <summary>
+        /// btnSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSearch;
+
+        /// <summary>
         /// gvQLNhom control.
         /// </summary>
         /// <remarks>
@@ -33,13 +60,22 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.GridView gvQLNhom;
 
         /// <summary>
-        /// txtTenNhomMoi control.
+        /// txtTenDonVi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTenNhomMoi;
+        protected global::System.Web.UI.WebControls.TextBox txtTenDonVi;
+
+        /// <summary>
+        /// txtMoTaDonVi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMoTaDonVi;
 
         /// <summary>
         /// btnSave control.
