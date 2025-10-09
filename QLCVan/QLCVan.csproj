@@ -148,6 +148,7 @@
     <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\webodf.js" />
     <Content Include="Trangchu.aspx" />
     <Content Include="UserControl\HitCount.ascx" />
+    <Content Include="UserCreate.aspx" />
     <Content Include="ViewFile.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -253,6 +254,13 @@
     </Compile>
     <Compile Include="UserControl\HitCount.ascx.designer.cs">
       <DependentUpon>HitCount.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCreate.aspx.cs">
+      <DependentUpon>UserCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCreate.aspx.designer.cs">
+      <DependentUpon>UserCreate.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewFile.aspx.cs">
       <DependentUpon>ViewFile.aspx</DependentUpon>

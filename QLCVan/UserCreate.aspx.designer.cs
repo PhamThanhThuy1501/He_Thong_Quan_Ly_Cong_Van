@@ -11,8 +11,17 @@ namespace QLCVan
 {
 
 
-    public partial class QLnguoidung
+    public partial class UserCreate
     {
+
+        /// <summary>
+        /// txtMaND control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMaND;
 
         /// <summary>
         /// txtTenDN control.
@@ -24,6 +33,24 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.TextBox txtTenDN;
 
         /// <summary>
+        /// txtHoTen control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtHoTen;
+
+        /// <summary>
+        /// txtMatKhau control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMatKhau;
+
+        /// <summary>
         /// txtEmail control.
         /// </summary>
         /// <remarks>
@@ -31,6 +58,15 @@ namespace QLCVan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
+
+        /// <summary>
+        /// txtMatKhau2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMatKhau2;
 
         /// <summary>
         /// ddlDonVi control.
@@ -42,39 +78,39 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.DropDownList ddlDonVi;
 
         /// <summary>
-        /// ddlChucVuFilter control.
+        /// ddlChucVu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlChucVuFilter;
+        protected global::System.Web.UI.WebControls.DropDownList ddlChucVu;
 
         /// <summary>
-        /// btnSearch control.
+        /// rdbActive control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearch;
+        protected global::System.Web.UI.WebControls.RadioButton rdbActive;
 
         /// <summary>
-        /// btnAdd control.
+        /// rdbInactive control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdd;
+        protected global::System.Web.UI.WebControls.RadioButton rdbInactive;
 
         /// <summary>
-        /// gvUsers control.
+        /// btnSave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvUsers;
+        protected global::System.Web.UI.WebControls.Button btnSave;
     }
 }
