@@ -2,6 +2,7 @@
     CodeBehind="Trangchu.aspx.cs" Inherits="QLCVan.Trangchu" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
     <style>
         :root{
             --red:#c00;
@@ -199,6 +200,28 @@
   align-items:center;
   white-space:nowrap;       /* giữ 1 dòng */
 }
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,.4);
+  display: none;
+  z-index: 9999;
+}
+.modal-content {
+  background: #fff;
+  max-width: 600px;
+  margin: 5% auto;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+.modal-content h3 {text-align:center; color:#003366;}
+.modal-content label{display:block; margin-top:10px; font-weight:bold;}
+.modal-content .input, .modal-content .select{
+  width:100%; padding:6px 10px; border:1px solid #ccc; border-radius:5px;
+}
+.modal-content .btns{margin-top:14px; text-align:center;}
 
 .action-pill{
   display:inline-flex;
@@ -213,6 +236,7 @@
   border:1px solid rgba(0,0,0,.06);
   box-shadow:0 1px 2px rgba(0,0,0,.06); /* nhẹ nhàng */
 }
+
 
 .action-view { background:#28a745; color:#fff; }  /* Xem: xanh */
 .action-edit { background:#ffc107; color:#111; }  /* Sửa: vàng */
@@ -288,56 +312,56 @@
 
         <div class="cv-list-title">DANH SÁCH CÔNG VĂN</div>
 
-        <asp:UpdatePanel ID="UpdatePanel1" runat="server" ChildrenAsTriggers="true">
-            <ContentTemplate>
-                <div class="gridwrap">
-                    <asp:GridView ID="GridView1" runat="server" CssClass="gridview" AutoGenerateColumns="False"
-                        Width="100%" AllowPaging="True" PageSize="5"
-                        OnPageIndexChanging="GridView1_PageIndexChanging1"
-                        ShowFooter="False" GridLines="None">
-                        <Columns>
-                            <asp:TemplateField SortExpression="SoCV" HeaderText="Số CV">
-                                <ItemTemplate>
-                                    <a href='CTCV.aspx?id=<%#Eval("MaCV")%>'><%#Eval("SoCV") %></a>
-                                </ItemTemplate>
-                                <ItemStyle Width="120px" />
-                            </asp:TemplateField>
+<asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+    <ContentTemplate>
+        <div class="gridwrap">
+            <asp:GridView ID="GridView1" runat="server"
+                AutoGenerateColumns="False"
+                CssClass="table table-bordered"
+                AllowPaging="True"
+                PageSize="10"
+                OnRowCommand="GridView1_RowCommand">
+                <Columns>
+                    <asp:TemplateField HeaderText="Số CV">
+                        <ItemTemplate>
+                            <a href='CTCV.aspx?id=<%#Eval("MaCV")%>'><%#Eval("SoCV") %></a>
+                        </ItemTemplate>
+                        <ItemStyle Width="120px" />
+                    </asp:TemplateField>
 
-                            <asp:BoundField DataField="NgayGui" HeaderText="Ngày gửi" SortExpression="Ngaygui"
-                                DataFormatString="{0:dd/MM/yyyy}">
-                                <ItemStyle Width="120px" />
-                            </asp:BoundField>
+                    <asp:BoundField DataField="NgayGui" HeaderText="Ngày gửi"
+                        DataFormatString="{0:dd/MM/yyyy}">
+                        <ItemStyle Width="120px" />
+                    </asp:BoundField>
 
-                            <asp:TemplateField SortExpression="TrichYeuND" HeaderText="Trích yếu nội dung">
-                                <ItemTemplate>
-                                    <a href='CTCV.aspx?id=<%#Eval("MaCV")%>'><%#Eval("TrichYeuND") %></a>
-                                </ItemTemplate>
-                                <ItemStyle Width="100%" />
-                            </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Trích yếu nội dung">
+                        <ItemTemplate>
+                            <a href='CTCV.aspx?id=<%#Eval("MaCV")%>'><%#Eval("TrichYeuND") %></a>
+                        </ItemTemplate>
+                        <ItemStyle Width="100%" />
+                    </asp:TemplateField>
 
-                            <asp:TemplateField HeaderText="Thao tác">
-                                <ItemTemplate>
-                                    <div class="actions">
-                                        <a href='CTCV.aspx?id=<%# Eval("MaCV") %>' class="action-pill action-view">Xem</a>
-                                        <a href='SuaCV.aspx?id=<%# Eval("MaCV") %>' class="action-pill action-edit">Sửa</a>
-                                        <asp:LinkButton ID="lnk_Xoa" runat="server"
-                                            CssClass="action-pill action-del"
-                                            OnClick="lnk_Xoa_Click"
-                                            OnClientClick="return confirm('Bạn có chắc chắn muốn xóa công văn này không?')"
-                                            CommandArgument='<%# Eval("MaCV") %>'>Xóa</asp:LinkButton>
-                                    </div>
-                                </ItemTemplate>
-                                <ItemStyle Width="260px" HorizontalAlign="Center" />
-                            </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Thao tác">
+                      <ItemTemplate>
+                        <!-- Nếu muốn điều hướng trực tiếp sang trang chỉnh sửa -->
+                        <a class="action-pill action-edit"
+                           href='ChinhSuaCV.aspx?id=<%# Eval("MaCV") %>'>Sửa</a>
+                        &nbsp;
+                        <!-- Xóa bằng LinkButton server (đảm bảo handler lnk_Xoa_Click tồn tại) -->
+                        <asp:LinkButton ID="lnk_Xoa" runat="server"
+                            CssClass="action-pill action-del"
+                            OnClick="lnk_Xoa_Click"
+                            CommandArgument='<%# Eval("MaCV") %>'>Xóa</asp:LinkButton>
+                      </ItemTemplate>
+                    </asp:TemplateField>
 
-                        </Columns>
-                        <PagerStyle CssClass="pager" />
-                    </asp:GridView>
-                </div>
-            </ContentTemplate>
-            <Triggers>
-                <asp:AsyncPostBackTrigger ControlID="GridView1" />
-            </Triggers>
-        </asp:UpdatePanel>
-    </div>
+                </Columns>
+                <PagerStyle CssClass="pager" />
+            </asp:GridView>
+        </div>
+    </ContentTemplate>
+</asp:UpdatePanel>
+
+
 </asp:Content>
+

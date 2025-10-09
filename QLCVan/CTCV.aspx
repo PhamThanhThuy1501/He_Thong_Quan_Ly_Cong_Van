@@ -307,7 +307,7 @@
 
                     <!-- Nút chỉnh sửa ở giữa -->
                     <div class="center-btn">
-                        <a class="btn-primary" href='<%= "SuaCV.aspx?id=" + Request.QueryString["id"] %>'>Chỉnh sửa</a>
+                        <a class="btn-primary" href='<%= "ChinhSuaCV.aspx?id=" + Request.QueryString["id"] %>'>Chỉnh sửa</a>
                     </div>
 
                 </div> <!-- end detail-grid -->

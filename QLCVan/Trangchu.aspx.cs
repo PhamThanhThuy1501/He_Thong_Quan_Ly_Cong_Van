@@ -159,6 +159,22 @@ namespace QLCVan
             GridView1.DataSource = data;
             GridView1.DataBind();
         }
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            //chỉ cho phép Admin sửa
+            //string permisson = (Session["QuyenHan"] as string)?.Trim();
+            //if (!string.Equals(permisson, "Admin", StringComparison.OrdinalIgnoreCase))
+            //{
+            //return; // Không cho phép sửa
+            //}
+            if (e.CommandName == "EditCV")
+            {
+                string maCV = e.CommandArgument.ToString();
+                Response.Redirect("ChinhSuaCV.aspx?id=" + maCV);
+            }
+        }
+
+
 
     }
 }
