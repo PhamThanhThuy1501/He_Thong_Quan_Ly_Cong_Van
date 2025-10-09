@@ -91,8 +91,6 @@
     <Content Include="Images\edu.net.jpg" />
     <Content Include="Images\giaiphap.png" />
     <Content Include="Images\logoA.jpg" />
-    <Content Include="Images\News\box.jpg" />
-    <Content Include="Images\News\windows8.png" />
     <Content Include="Images\nhung-hinh-anh-dep-ve-thien-nhien-khi-mua-thu-toi-4.jpg" />
     <Content Include="Images\online.gif" />
     <Content Include="Images\Product\1.png" />
@@ -116,6 +114,7 @@
     <Content Include="NhapNDCV.aspx" />
     <Content Include="QLEmail.aspx" />
     <Content Include="QLnguoidung.aspx" />
+    <Content Include="ChucVu.aspx" />
     <Content Include="QLNhom.aspx" />
     <Content Include="Scripts\datepicker\jquery-1.10.2.js" />
     <Content Include="Scripts\datepicker\jquery-ui.css" />
@@ -233,6 +232,13 @@
     <Compile Include="QLnguoidung.aspx.designer.cs">
       <DependentUpon>QLnguoidung.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ChucVu.aspx.cs">
+      <DependentUpon>ChucVu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChucVu.aspx.designer.cs">
+      <DependentUpon>ChucVu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="QLNhom.aspx.cs">
       <DependentUpon>QLNhom.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -276,6 +282,7 @@
       <LastGenOutput>Info.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="jsconfig.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
