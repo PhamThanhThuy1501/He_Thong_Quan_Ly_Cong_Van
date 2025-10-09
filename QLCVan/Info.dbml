@@ -78,7 +78,6 @@
       <Column Name="QuyenHan" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
       <Column Name="TrangThai" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="HoTen" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-	<Column Name="ChucVu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="MaNhom" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Association Name="tblNguoiDung_tblNhomNguoiDung" Member="tblNhomNguoiDungs" ThisKey="MaNguoiDung" OtherKey="MaNguoiDung" Type="tblNhomNguoiDung" />
     </Type>
