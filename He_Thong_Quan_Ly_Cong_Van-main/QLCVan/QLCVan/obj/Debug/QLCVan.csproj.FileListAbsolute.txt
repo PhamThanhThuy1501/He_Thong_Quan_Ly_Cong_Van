@@ -1,0 +1,30 @@
+D:\Học Tập\QLCVan\QLCVan\bin\QLCVan.dll
+D:\Học Tập\QLCVan\QLCVan\bin\QLCVan.pdb
+D:\Học Tập\QLCVan\QLCVan\obj\Debug\ResolveAssemblyReference.cache
+D:\Học Tập\QLCVan\QLCVan\obj\Debug\QLCVan.dll
+D:\Học Tập\QLCVan\QLCVan\obj\Debug\QLCVan.pdb
+D:\Học Tập\Pj 03\QLCVan\QLCVan\bin\QLCVan.dll
+D:\Học Tập\Pj 03\QLCVan\QLCVan\bin\QLCVan.pdb
+D:\Học Tập\Pj 03\QLCVan\QLCVan\obj\Debug\ResolveAssemblyReference.cache
+D:\Học Tập\Pj 03\QLCVan\QLCVan\obj\Debug\QLCVan.dll
+D:\Học Tập\Pj 03\QLCVan\QLCVan\obj\Debug\QLCVan.pdb
+D:\Học Tập\Pj 03\QLCVan\QLCVan\QLCVan\bin\QLCVan.dll
+D:\Học Tập\Pj 03\QLCVan\QLCVan\QLCVan\bin\QLCVan.pdb
+D:\Học Tập\Pj 03\QLCVan\QLCVan\QLCVan\obj\Debug\ResolveAssemblyReference.cache
+D:\Học Tập\Pj 03\QLCVan\QLCVan\QLCVan\obj\Debug\QLCVan.dll
+D:\Học Tập\Pj 03\QLCVan\QLCVan\QLCVan\obj\Debug\QLCVan.pdb
+D:\Học Tập\Pj 03\QLCVan\QLCVan\QLCVan\QLCVan\bin\QLCVan.dll
+D:\Học Tập\Pj 03\QLCVan\QLCVan\QLCVan\QLCVan\bin\QLCVan.pdb
+D:\Học Tập\Pj 03\QLCVan\QLCVan\QLCVan\QLCVan\obj\Debug\ResolveAssemblyReference.cache
+D:\Học Tập\Pj 03\QLCVan\QLCVan\QLCVan\QLCVan\obj\Debug\QLCVan.dll
+D:\Học Tập\Pj 03\QLCVan\QLCVan\QLCVan\QLCVan\obj\Debug\QLCVan.pdb
+D:\HocTap\Project4\QLCVan\QLCVan\QLCVan\QLCVan\QLCVan\bin\QLCVan.dll
+D:\HocTap\Project4\QLCVan\QLCVan\QLCVan\QLCVan\QLCVan\bin\QLCVan.pdb
+D:\HocTap\Project4\QLCVan\QLCVan\QLCVan\QLCVan\QLCVan\obj\Debug\ResolveAssemblyReference.cache
+D:\HocTap\Project4\QLCVan\QLCVan\QLCVan\QLCVan\QLCVan\obj\Debug\QLCVan.dll
+D:\HocTap\Project4\QLCVan\QLCVan\QLCVan\QLCVan\QLCVan\obj\Debug\QLCVan.pdb
+D:\Data\Private\HocTap\Project4\QLCVan\QLCVan\QLCVan\QLCVan\QLCVan\bin\QLCVan.dll
+D:\Data\Private\HocTap\Project4\QLCVan\QLCVan\QLCVan\QLCVan\QLCVan\bin\QLCVan.pdb
+D:\Data\Private\HocTap\Project4\QLCVan\QLCVan\QLCVan\QLCVan\QLCVan\obj\Debug\ResolveAssemblyReference.cache
+D:\Data\Private\HocTap\Project4\QLCVan\QLCVan\QLCVan\QLCVan\QLCVan\obj\Debug\QLCVan.dll
+D:\Data\Private\HocTap\Project4\QLCVan\QLCVan\QLCVan\QLCVan\QLCVan\obj\Debug\QLCVan.pdb

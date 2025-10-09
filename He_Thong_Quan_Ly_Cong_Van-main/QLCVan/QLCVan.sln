@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLCVan", "QLCVan\QLCVan.csproj", "{96CAB4C9-FEBB-45A7-9289-BECD2B004858}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96CAB4C9-FEBB-45A7-9289-BECD2B004858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96CAB4C9-FEBB-45A7-9289-BECD2B004858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96CAB4C9-FEBB-45A7-9289-BECD2B004858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96CAB4C9-FEBB-45A7-9289-BECD2B004858}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4A16F46-A1A4-4B4B-BDE3-F6CE269DE1A5}
+	EndGlobalSection
+EndGlobal
