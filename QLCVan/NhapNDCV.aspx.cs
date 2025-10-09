@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Threading;
+using System.Windows.Forms;
 
 namespace QLCVan
 {
@@ -83,7 +85,6 @@ namespace QLCVan
                         ListBox1.DataTextField = "TenFile";
                         ListBox1.DataSource = cv1.tblFileDinhKems;
                         ListBox1.DataBind();
-                        RadioButtonList1.SelectedIndex = (int)cv1.GuiHayNhan;
                     }
                 }
 
@@ -109,7 +110,6 @@ namespace QLCVan
                     ListBox1.DataTextField = "TenFile";
                     ListBox1.DataSource = cv1.tblFileDinhKems;
                     ListBox1.DataBind();
-                    RadioButtonList1.SelectedIndex = (int)cv1.GuiHayNhan;
 
                 }
             }
@@ -119,6 +119,114 @@ namespace QLCVan
             Response.Redirect("~/NhapNDCV.aspx?MaCV=" + str);
 
         }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (ListBox1.GetSelectedIndices().Length == 0)
+            {
+                lblloi.Text = "Vui lòng chọn file để xóa!";
+                lblloi.CssClass = "text-danger small d-block";
+                return;
+            }
+
+            string uploadPath = Server.MapPath("~/Uploads/");
+            List<ListItem> toRemove = new List<ListItem>();
+
+            foreach (ListItem item in ListBox1.Items)
+            {
+                if (item.Selected)
+                {
+                    string filePath = Path.Combine(uploadPath, item.Text);
+                    try
+                    {
+                        if (File.Exists(filePath))
+                            File.Delete(filePath);
+
+                        toRemove.Add(item);
+                    }
+                    catch (Exception ex)
+                    {
+                        lblloi.Text = "Lỗi xóa file " + item.Text + ": " + ex.Message;
+                        lblloi.CssClass = "text-danger small d-block";
+                    }
+                }
+            }
+
+            foreach (ListItem item in toRemove)
+            {
+                ListBox1.Items.Remove(item);
+            }
+
+            if (toRemove.Count > 0)
+            {
+                lblloi.Text = "Xóa file thành công!";
+                lblloi.CssClass = "text-success small d-block";
+            }
+        }
+
+
+        protected void btnUpload_Click(object sender, EventArgs e)
+        {
+            if (!FileUpload1.HasFiles)
+            {
+                lblchuachonfile.Text = "Vui lòng chọn file để upload!";
+                lblchuachonfile.CssClass = "text-danger small ms-1";
+                return;
+            }
+
+            string uploadPath = Server.MapPath("~/Uploads/");
+            if (!Directory.Exists(uploadPath))
+                Directory.CreateDirectory(uploadPath);
+
+            List<string> uploadedFiles = new List<string>();
+
+            foreach (HttpPostedFile file in FileUpload1.PostedFiles)
+            {
+                string fileName = Path.GetFileName(file.FileName);
+                string fullPath = Path.Combine(uploadPath, fileName);
+
+                try
+                {
+                    file.SaveAs(fullPath);
+
+                    if (!ListBox1.Items.Contains(new ListItem(fileName)))
+                        ListBox1.Items.Add(fileName);
+
+                    uploadedFiles.Add(fileName);
+                }
+                catch (Exception ex)
+                {
+                    lblloi.Text = "Lỗi upload file " + fileName + ": " + ex.Message;
+                    lblloi.CssClass = "text-danger small d-block";
+                }
+            }
+
+            if (uploadedFiles.Count > 0)
+            {
+                lblchuachonfile.Text = "Upload thành công: " + string.Join(", ", uploadedFiles);
+                lblchuachonfile.CssClass = "text-success small ms-1";
+            }
+        }
+        private void LoadFileList()
+    {
+        string uploadPath = Server.MapPath("~/Uploads/");
+        if (!Directory.Exists(uploadPath))
+            return;
+
+        ListBox1.Items.Clear();
+        foreach (string file in Directory.GetFiles(uploadPath))
+        {
+            ListBox1.Items.Add(Path.GetFileName(file));
+        }
+    }
+
+
+
+
+
+
+
+
 
         protected void lnk_Xoa_Click(object sender, EventArgs e)
         {
@@ -164,12 +272,6 @@ namespace QLCVan
             {
                 cv1.TrangThai = true;
             }
-            if (RadioButtonList1.SelectedIndex == 0)
-            {
-                cv1.GuiHayNhan = 1;
-            }
-            else
-                cv1.GuiHayNhan = 0;
 
             db.tblNoiDungCVs.InsertOnSubmit(cv1);
             db.SubmitChanges();
@@ -238,16 +340,7 @@ namespace QLCVan
             System.IO.File.Delete(filename);
             ListBox1.Items.RemoveAt(index);
         }
-        protected void btnRemove_Click(object sender, EventArgs e)
-        {
 
-            RemoveFile(ListBox1.SelectedIndex);
-        }
-
-        protected void btnReAll_Click(object sender, EventArgs e)
-        {
-            while (ListBox1.Items.Count > 0) RemoveFile(0);
-        }
 
         protected void btnsua_Click(object sender, EventArgs e)
         {
@@ -287,13 +380,6 @@ namespace QLCVan
                     cv1.CoQuanBanHanh = txtcqbh.Text;
                     cv1.TrichYeuND = txttrichyeu.InnerText;
                     cv1.NgayBanHanh = ngayBanHanh;
-
-                    if (RadioButtonList1.SelectedIndex == 0)
-                    {
-                        cv1.GuiHayNhan = 1;
-                    }
-                    else
-                        cv1.GuiHayNhan = 0;
 
                     // ✅ XỬ LÝ FILE AN TOÀN
                     for (int i = 0; i < ListBox1.Items.Count; i++)

@@ -7,239 +7,72 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style type="text/css">
         body {
-            color: #000;
-            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
         }
 
-        /* ========== FORM NHẬP ========= */
-        .form-container {
-            margin: 28px auto 10px;
-            padding: 16px 18px;
-            max-width: 940px;
-            border: 1px solid #dcdcdc;
+    .welcome-banner {
+        background-color: #d60000; /* đỏ đậm */
+        width: 100%;
+        height: 36px;
+        font-weight: 500;
+    }
+
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card-header {
+            letter-spacing: 0.5px;
+        }
+
+        .table td {
+            vertical-align: middle;
+        }
+
+        .alert-info {
+            background-color: #e8f4ff;
+            border: 1px solid #b6e0ff;
+        }
+
+
+        .form-control,
+        .form-select {
             border-radius: 8px;
-            background: #fafafa;
         }
 
-            .form-container h3 {
-                text-align: center;
-                margin: 2px 0 14px;
-                color: #222;
-                letter-spacing: .5px;
-            }
-
-        .tbSend {
-            width: 100%;
-            border-collapse: collapse;
+        .input-group .btn {
+            border-radius: 0 8px 8px 0 !important;
         }
 
-            .tbSend tr {
-                border-bottom: 1px solid #eee;
-            }
-
-            .tbSend td {
-                padding: 8px;
-                vertical-align: middle;
-            }
-
-                .tbSend td.label {
-                    width: 180px;
-                    text-align: right;
-                    padding-right: 12px;
-                    color: #222;
-                    white-space: nowrap;
-                    font-weight: 600;
-                }
-
-            .tbSend .inputCell {
-                width: calc(100% - 180px);
-            }
-
-            .tbSend input[type="text"],
-            .tbSend textarea,
-            .tbSend select {
-                width: 100%;
-                box-sizing: border-box;
-                padding: 8px 10px;
-                border: 1px solid #bdbdbd;
-                border-radius: 6px;
-                background: #fff;
-            }
-
-            .tbSend textarea {
-                resize: vertical;
-                min-height: 76px;
-            }
-
-        .note-red {
-            color: #d32f2f;
+        .btn {
+            border-radius: 8px;
         }
 
-        /* ========== BUTTON ========= */
-        .btnRe,
-        .btnRe:link,
-        .btnRe:visited {
-            display: inline-block;
-            padding: 7px 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            border: 1px solid #0b57d0;
-            background: #0b57d0 !important;
-            color: #fff !important;
-            text-decoration: none !important;
+        .table-borderless td {
+            border: none;
         }
 
-            .btnRe:hover {
-                filter: brightness(1.06);
-            }
-
-            .btnRe:active {
-                background: #0949ae !important;
-                border-color: #0949ae;
-            }
-
-            .btnRe:disabled {
-                opacity: .6;
-                cursor: not-allowed;
-            }
-
-        .btnRe-sm {
-            padding: 5px 10px;
-            font-size: 12px;
+        .fw-semibold {
+            color: #212529;
+            font-weight: 600;
         }
 
-        .filebar,
-        .file-actions {
-            display: flex;
-            align-items: center;
-            gap: 12px;
+        .fa-solid {
+            color: #0d6efd;
         }
 
-        .file-buttons,
-        .form-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
+        textarea {
+            resize: none;
         }
-
-        /* ========== GRIDVIEW ========= */
-        .grid-wrap {
-            width: 100%;
-            margin: 18px auto 32px;
-        }
-
-        .grid-title {
-            text-align: center;
-            font-weight: 700;
-            font-size: 22px;
-            margin: 6px 0 12px;
-            letter-spacing: .8px;
-        }
-
-        #gvnhapcnden {
-            width: 100% !important;
-            border-collapse: collapse;
-            font-family: Arial, sans-serif;
-        }
-
-            #gvnhapcnden th {
-                background: #f4f6f8 !important;
-                font-weight: 700 !important;
-                text-transform: uppercase;
-                padding: 12px;
-                text-align: left;
-                font-size: 14px;
-                border-bottom: 2px solid #dcdcdc;
-                color: #333 !important;
-            }
-
-            #gvnhapcnden td {
-                padding: 16px 12px;
-                font-size: 14px;
-                vertical-align: top;
-                border-bottom: 1px solid #ececec;
-                color: #333;
-            }
-
-            /* Hover */
-            #gvnhapcnden tr:hover {
-                background: #f8f9fa;
-            }
-
-    /* Cột 1 và 2 */
-    #gvnhapcnden td:first-child {
-        width: 18%;
-        font-weight: 600;
-    }
-
-    #gvnhapcnden td:nth-child(2) {
-        width: 15%;
-    }
-
-    /* Cột trích yếu */
-    #gvnhapcnden td:nth-child(3) {
-        width: 67%;
-    }
-
-    .vb-summary {
-        margin-bottom: 6px;
-        line-height: 1.5;
-    }
-
-    .vb-attach {
-        font-size: 13px;
-        color: #0073e6;
-    }
-
-        .vb-attach i {
-            margin-right: 6px;
-            color: #d9534f;
-        }
-
-        .vb-attach a {
-            text-decoration: none;
-        }
-
-            .vb-attach a:hover {
-                text-decoration: underline;
-            }
-
-    /* ========== RESPONSIVE ========= */
-    @media (max-width:720px) {
-        .tbSend td.label {
-            display: block;
-            width: 100%;
-            text-align: left;
-            padding-bottom: 4px;
-        }
-
-        .tbSend td.inputCell {
-            display: block;
-            width: 100%;
-        }
-
-        .tbSend tr {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .file-buttons,
-        .form-buttons {
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .file-actions {
-            justify-content: stretch;
-        }
-    }
 </style>
 
     <script src="Scripts/datepicker/jquery-1.10.2.js" type="text/javascript"></script>
     <script src="Scripts/datepicker/jquery-ui.js" type="text/javascript"></script>
     <link href="Scripts/datepicker/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script type="text/javascript">
         jQuery(function ($) {
@@ -254,109 +87,148 @@
             };
             $.datepicker.setDefaults($.datepicker.regional['vi']);
             $('#<%= txtngayracv.ClientID %>').datepicker({ changeMonth: true, changeYear: true, yearRange: '2000:2040' });
-        $('#<%= txtngaynhancv.ClientID %>').datepicker({ changeMonth: true, changeYear: true, yearRange: '2000:2040' });
+            $('#<%= txtngaynhancv.ClientID %>').datepicker({ changeMonth: true, changeYear: true, yearRange: '2000:2040' });
         });
+        function confirmDelete() {
+            return confirm("Bạn có chắc chắn muốn xóa file đã chọn không?");
+        }
     </script>
-
+    <!-- test -->
     <!-- FORM -->
-    <div class="form-container">
-        <h3>
-            <asp:Label ID="lbl1" runat="server" Text="NHẬP NỘI DUNG CÔNG VĂN"></asp:Label></h3>
-        <table id="tableSoan" class="tbSend" runat="server" border="0" cellpadding="0" cellspacing="5">
-            <tr>
-                <td class="label">Tiêu đề :</td>
-                <td class="inputCell" colspan="3">
-                    <asp:TextBox ID="txttieude" CssClass="txtSoanCV" runat="server" placeholder="Nhập tiêu đề văn bản..." />
-                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txttieude" ErrorMessage="* Nhập tiêu đề" CssClass="note-red" />
-                </td>
-            </tr>
-            <tr>
-                <td class="label">Số công văn :</td>
-                <td class="inputCell">
-                    <asp:TextBox ID="txtsocv" CssClass="txtSoanCV" runat="server" placeholder="VD: 334/TB-ĐHSPKTHY" />
-                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtsocv" ErrorMessage="* Nhập số công văn" CssClass="note-red" />
-                </td>
-                <td class="label">Cơ quan ban hành :</td>
-                <td class="inputCell">
-                    <asp:TextBox ID="txtcqbh" CssClass="txtSoanCV" runat="server" placeholder="Tên cơ quan ban hành" />
-                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtcqbh" ErrorMessage="* Nhập cơ quan ban hành" CssClass="note-red" />
-                </td>
-            </tr>
-            <tr>
-                <td class="label">Loại công văn :</td>
-                <td class="inputCell">
-                    <asp:DropDownList ID="ddlLoaiCV" runat="server" AutoPostBack="True">
+<div class="container my-3">
+    <h5 class="fw-bold text-primary mb-3">NHẬP NỘI DUNG CÔNG VĂN</h5>
+
+    <div class="welcome-banner text-white px-4 d-flex justify-content-end align-items-center mb-4">
+        <span>Chào mừng bạn đến với hệ thống Quản lý Công Văn điện tử.</span>
+    </div>
+
+    <div class="card shadow-sm border-0 rounded-4">
+        <div class="card-header bg-danger text-white text-center fw-bold">
+            THÊM MỚI CÔNG VĂN
+        </div>
+        <div class="card-body px-4 py-4">
+
+            <!-- Tiêu đề -->
+            <div class="row mb-3 align-items-center">
+                <label class="col-md-2 fw-semibold text-nowrap">
+                    Tiêu đề
+                </label>
+                <div class="col-md-10">
+                    <asp:TextBox ID="txttieude" CssClass="form-control" runat="server" placeholder="Nhập tiêu đề văn bản..." />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txttieude" ErrorMessage="* Nhập tiêu đề" CssClass="text-danger small" />
+                </div>
+            </div>
+
+            <!-- Số công văn + Tên loại công văn -->
+            <div class="row mb-3 align-items-center">
+                <label class="col-md-2 fw-semibold text-nowrap">
+                    Số công văn
+                </label>
+                <div class="col-md-4">
+                    <asp:TextBox ID="txtsocv" CssClass="form-control" runat="server" placeholder="VD: 334/TB-ĐHSPKTHY" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtsocv" ErrorMessage="* Nhập số công văn" CssClass="text-danger small" />
+                </div>
+
+                <label class="col-md-2 fw-semibold text-nowrap">
+                    Tên loại công văn
+                </label>
+
+                <div class="col-md-4">
+                    <asp:TextBox ID="txtloaiCV" CssClass="form-control" runat="server" placeholder="Nhập loại công văn" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtloaiCV" ErrorMessage="* Nhập loại công văn" CssClass="text-danger small" />
+                </div>
+            </div>
+
+            <!-- Cơ quan ban hành + Loại công văn -->
+            <div class="row mb-3 align-items-center">
+                <label class="col-md-2 fw-semibold text-nowrap">
+                    Cơ quan ban hành
+                </label>
+                <div class="col-md-4">
+                    <asp:TextBox ID="txtcqbh" CssClass="form-control" runat="server" placeholder="Tên cơ quan ban hành" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtcqbh" ErrorMessage="* Nhập cơ quan ban hành" CssClass="text-danger small" />
+                </div>
+
+                <label class="col-md-2 fw-semibold text-nowrap">
+                    Loại công văn
+                </label>
+
+                <div class="col-md-4">
+                    <asp:DropDownList ID="ddlLoaiCV" CssClass="form-select" runat="server">
                         <asp:ListItem Text="-- Chọn loại --" Value="" />
                     </asp:DropDownList>
-                    <asp:RequiredFieldValidator runat="server" ControlToValidate="ddlLoaiCV" InitialValue="" ErrorMessage="* Chọn loại công văn" CssClass="note-red" />
-                </td>
-                <td class="label">Gửi hay nhận :</td>
-                <td class="inputCell">
-                    <div class="inline-flex">
-                        <div class="rbl">
-                            <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal">
-                                <asp:ListItem Selected="True" Value="Nhận">Nhận</asp:ListItem>
-                                <asp:ListItem Value="Gửi">Gửi</asp:ListItem>
-                            </asp:RadioButtonList>
-                        </div>
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="ddlLoaiCV" InitialValue="" ErrorMessage="* Chọn loại công văn" CssClass="text-danger small" />
+                </div>
+            </div>
+
+            <!-- Ngày ban hành + Ngày kết thúc -->
+            <div class="row mb-3 align-items-center">
+                <label class="col-md-2 fw-semibold text-nowrap">
+                    Ngày ban hành
+                </label>
+                <div class="col-md-4">
+                    <asp:TextBox ID="txtngayracv" CssClass="form-control" runat="server" placeholder="dd/mm/yyyy" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtngayracv" ErrorMessage="* Nhập ngày ban hành" CssClass="text-danger small" />
+                </div>
+
+                <label class="col-md-2 fw-semibold text-nowrap">
+                    Ngày kết thúc
+                </label>
+                <div class="col-md-4">
+                    <asp:TextBox ID="txtngaynhancv" CssClass="form-control" runat="server" placeholder="dd/mm/yyyy" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtngaynhancv" ErrorMessage="* Nhập ngày kết thúc" CssClass="text-danger small" />
+                </div>
+            </div>
+
+            <!-- Trích yếu -->
+            <div class="row mb-3 align-items-center">
+                <label class="col-md-2 fw-semibold text-nowrap">
+                    Trích yếu
+                </label>
+                <div class="col-md-10">
+                    <textarea id="txttrichyeu" runat="server" rows="4" class="form-control" placeholder="Tóm tắt nội dung văn bản..."></textarea>
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txttrichyeu" ErrorMessage="* Nhập trích yếu" CssClass="text-danger small" />
+                </div>
+            </div>
+
+            <!-- File nếu có -->
+            <div class="row mb-3 align-items-center">
+                <label class="col-md-2 fw-semibold text-nowrap">
+                    File (nếu có)
+                </label>
+                <div class="col-md-10">
+                    <div class="input-group">
+                        <asp:FileUpload ID="FileUpload1" CssClass="form-control" runat="server" AllowMultiple="true" />
+                        <asp:Button ID="btnUpload" runat="server" CssClass="btn btn-outline-primary" Text="Upload" OnClick="btnUpload_Click" CausesValidation="False" />
                     </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="label">Ngày ban hành :</td>
-                <td class="inputCell">
-                    <asp:TextBox ID="txtngayracv" runat="server" placeholder="dd/mm/yyyy" />
-                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtngayracv" ErrorMessage="* Nhập ngày ban hành" CssClass="note-red" />
-                </td>
-                <td class="label">Ngày hết hạn :</td>
-                <td class="inputCell">
-                    <asp:TextBox ID="txtngaynhancv" runat="server" placeholder="dd/mm/yyyy" />
-                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtngaynhancv" ErrorMessage="* Nhập ngày hết hạn" CssClass="note-red" />
-                </td>
-            </tr>
-            <tr>
-                <td class="label">Trích yếu :</td>
-                <td class="inputCell" colspan="3">
-                    <textarea id="txttrichyeu" runat="server" rows="4" placeholder="Tóm tắt nội dung văn bản..."></textarea>
-                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txttrichyeu" ErrorMessage="* Nhập trích yếu" CssClass="note-red" />
-                </td>
-            </tr>
-            <!-- Hàng 1: File (nếu có) -->
-            <tr>
-                <td class="label">File (nếu có) :</td>
-                <td class="inputCell" colspan="3">
-                    <div class="filebar">
-                        <asp:FileUpload ID="FileUpload1" runat="server" />
-                        <asp:Button ID="Button1" runat="server" CssClass="btnRe" Text="Upload" OnClick="btnUp_Click" CausesValidation="False" />
-                        <asp:Label ID="lblchuachonfile" runat="server" Text="" CssClass="note-gray"></asp:Label>
+                    <asp:Label ID="lblchuachonfile" runat="server" Text="" CssClass="text-secondary small ms-1"></asp:Label>
+                </div>
+            </div>
+
+            <!-- Danh sách file -->
+            <div class="row mb-3 align-items-center">
+                <label class="col-md-2 fw-semibold text-nowrap">
+                    Danh sách file
+                </label>
+                <div class="col-md-10">
+                    <asp:ListBox ID="ListBox1" runat="server" CssClass="form-control mb-2" Height="140px" SelectionMode="Multiple" />
+                    <div class="d-flex justify-content-end">
+                        <asp:Button ID="btnDelete" runat="server" CssClass="btn btn-danger btn-sm" Text="Xóa" OnClientClick="return confirm('Bạn có chắc muốn xóa file này không?');" OnClick="btnDelete_Click" CausesValidation="False" />
                     </div>
-                </td>
-            </tr>
-            <!-- Hàng 2: Danh sách file (gọn, canh phải nút) -->
-            <tr>
-                <td class="label">Danh sách file :</td>
-                <td class="inputCell" colspan="3">
-                    <div class="filelist">
-                        <asp:ListBox ID="ListBox1" runat="server" Width="100%" Height="140px" />
-                        <div class="file-actions">
-                            <asp:Button ID="btnRemove" runat="server" CssClass="btnRe btnRe-sm" Text="Xóa file" OnClick="btnRemove_Click" CausesValidation="False" />
-                            <asp:Button ID="btnReAll" runat="server" CssClass="btnRe btnRe-sm" Text="Xóa tất cả file" OnClick="btnReAll_Click" CausesValidation="False" />
-                        </div>
-                    </div>
-                    <asp:Label ID="lblloi" runat="server" Text="" CssClass="note-red" Style="display: block; margin-top: 6px;"></asp:Label>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4" style="text-align: center; padding-top: 14px;">
-                    <div class="form-buttons" style="justify-content: center;">
-                        <asp:Button ID="btnthem" runat="server" CssClass="btnRe" Text="Thêm" OnClick="btnthem_Click" CausesValidation="True" />
-                        <asp:Button ID="btnlammoi" runat="server" CssClass="btnRe" Text="Làm mới" OnClick="btnlammoi_Click" CausesValidation="False" />
-                        <asp:Button ID="btnsua" runat="server" CssClass="btnRe" Text="Lưu" OnClick="btnsua_Click" CausesValidation="True" />
-                    </div>
-                </td>
-            </tr>
-        </table>
+                    <asp:Label ID="lblloi" runat="server" Text="" CssClass="text-danger small mt-2 d-block"></asp:Label>
+                </div>
+            </div>
+
+            <!-- Nút hành động -->
+            <div class="d-flex justify-content-center gap-2 mt-3">
+                <asp:Button ID="btnthem" runat="server" CssClass="btn btn-success px-4" Text="Thêm" OnClick="btnthem_Click" />
+                <asp:Button ID="btnlammoi" runat="server" CssClass="btn btn-secondary px-4" Text="Làm mới" OnClick="btnlammoi_Click" CausesValidation="False" />
+                <asp:Button ID="btnsua" runat="server" CssClass="btn btn-primary px-4" Text="Lưu" OnClick="btnsua_Click" />
+            </div>
+
+        </div>
     </div>
+</div>
 
     <!-- GRID -->
     <div class="grid-wrap">
