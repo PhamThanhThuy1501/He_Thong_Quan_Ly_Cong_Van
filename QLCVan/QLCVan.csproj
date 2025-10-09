@@ -117,6 +117,7 @@
     <Content Include="QLEmail.aspx" />
     <Content Include="QLnguoidung.aspx" />
     <Content Include="QLNhom.aspx" />
+    <Content Include="QLNhomQuyen.aspx" />
     <Content Include="Scripts\datepicker\jquery-1.10.2.js" />
     <Content Include="Scripts\datepicker\jquery-ui.css" />
     <Content Include="Scripts\datepicker\jquery-ui.js" />
@@ -239,6 +240,13 @@
     </Compile>
     <Compile Include="QLNhom.aspx.designer.cs">
       <DependentUpon>QLNhom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QLNhomQuyen.aspx.cs">
+      <DependentUpon>QLNhomQuyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QLNhomQuyen.aspx.designer.cs">
+      <DependentUpon>QLNhomQuyen.aspx</DependentUpon>
     </Compile>
     <Compile Include="Trangchu.aspx.cs">
       <DependentUpon>Trangchu.aspx</DependentUpon>
