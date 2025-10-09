@@ -9,6 +9,7 @@
         body {
             background-color: #f8f9fa;
         }
+
     .welcome-banner {
         background-color: #d60000; /* đỏ đậm */
         width: 100%;
@@ -92,7 +93,7 @@
             return confirm("Bạn có chắc chắn muốn xóa file đã chọn không?");
         }
     </script>
-
+    <!-- test -->
     <!-- FORM -->
 <div class="container my-3">
     <h5 class="fw-bold text-primary mb-3">NHẬP NỘI DUNG CÔNG VĂN</h5>
