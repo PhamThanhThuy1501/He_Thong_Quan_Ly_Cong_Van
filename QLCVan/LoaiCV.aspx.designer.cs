@@ -15,6 +15,33 @@ namespace QLCVan
     {
 
         /// <summary>
+        /// txtSearchMaLoai control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSearchMaLoai;
+
+        /// <summary>
+        /// txtSearchTenLoai control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSearchTenLoai;
+
+        /// <summary>
+        /// btnSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSearch;
+
+        /// <summary>
         /// btnOpenAdd control.
         /// </summary>
         /// <remarks>
@@ -51,7 +78,6 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.GridView grvLoaiCV;
 
         /// <summary>
-        /// <summary>
         /// pnlPopup control.
         /// </summary>
         /// <remarks>
@@ -77,6 +103,15 @@ namespace QLCVan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTenLoaiCV;
+
+        /// <summary>
+        /// rblPheDuyet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rblPheDuyet;
 
         /// <summary>
         /// btnLuu control.
