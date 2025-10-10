@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace QLCVan
 {
@@ -10,130 +11,150 @@ namespace QLCVan
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            // Kiểm tra đăng nhập
             if (Session["TenDN"] == null)
             {
                 Response.Redirect("Dangnhap.aspx");
                 return;
             }
 
-            if (!IsPostBack)
+            // Kiểm tra quyền truy cập
+            if (Session["QuyenHan"] != null && Session["QuyenHan"].ToString().Trim() == "User")
             {
-                // load ddlLoaiCV
-                ddlLoaiCV.DataSource = db.tblLoaiCVs.OrderBy(x => x.TenLoaiCV).ToList();
+                Response.Write("<script>alert('Bạn không có quyền truy cập trang này!');window.location='Trangchu.aspx';</script>");
+                return;
+            }
+
+            if (!Page.IsPostBack)
+            {
+                btnsua.Visible = false;
+
+                // Nạp danh sách loại công văn
+                ddlLoaiCV.DataSource = db.tblLoaiCVs.ToList();
                 ddlLoaiCV.DataTextField = "TenLoaiCV";
                 ddlLoaiCV.DataValueField = "MaLoaiCV";
                 ddlLoaiCV.DataBind();
-                ddlLoaiCV.Items.Insert(0, new System.Web.UI.WebControls.ListItem("-- Chọn loại --", ""));
 
-                string id = Request.QueryString["id"];
-                if (!string.IsNullOrEmpty(id))
+                // Kiểm tra có id truyền vào không
+                if (Request.QueryString["id"] != null)
                 {
-                    LoadData(id.Trim());
-                }
-                else
-                {
-                    lblMsg.Text = "<span style='color:red'>Không có mã công văn truyền vào.</span>";
+                    string maCV = Request.QueryString["id"].ToString();
+                    tblNoiDungCV cv1 = db.tblNoiDungCVs.SingleOrDefault(t => t.MaCV.ToString() == maCV);
+
+                    if (cv1 != null)
+                    {
+                        txttieude.Text = cv1.TieuDeCV;
+                        txtngayracv.Text = cv1.NgayGui?.ToString("yyyy-MM-dd");
+                        txtcqbh.Text = cv1.CoQuanBanHanh;
+                        txtsocv.Text = cv1.SoCV;
+                        txttrichyeu.Text = cv1.TrichYeuND ?? "";
+                        ddlLoaiCV.SelectedValue = cv1.MaLoaiCV.ToString();
+                        RadioButtonList1.SelectedIndex = cv1.GuiHayNhan ?? 0;
+
+                        btnsua.Visible = true;
+
+                        // Hiển thị file đính kèm (nếu có)
+                        ListBox1.DataTextField = "TenFile";
+                        ListBox1.DataSource = cv1.tblFileDinhKems;
+                        ListBox1.DataBind();
+                    }
+                    else
+                    {
+                        lblchuachonfile.Text = "Không tìm thấy công văn cần sửa.";
+                    }
                 }
             }
         }
 
-        private void LoadData(string maCV)
-        {
-            try
-            {
-                // MaCV là string (GUID hoặc chuỗi)
-                var cv = db.tblNoiDungCVs.SingleOrDefault(x => (x.MaCV ?? "").Trim() == maCV);
-                if (cv == null)
-                {
-                    lblMsg.Text = "<span style='color:red'>Không tìm thấy công văn.</span>";
-                    return;
-                }
-
-                hdnMaCV.Value = cv.MaCV;
-                txtTieuDe.Text = cv.TieuDeCV ?? "";
-                txtSoCV.Text = cv.SoCV ?? "";
-                txtCQBH.Text = cv.CoQuanBanHanh ?? "";
-                txtTrichYeu.Text = cv.TrichYeuND ?? "";
-                txtNgayBH.Text = cv.NgayBanHanh.HasValue ? cv.NgayBanHanh.Value.ToString("yyyy-MM-dd") : "";
-                txtNgayGui.Text = cv.NgayGui.HasValue ? cv.NgayGui.Value.ToString("yyyy-MM-dd") : "";
-
-                // chọn ddl
-                if (cv.MaLoaiCV.HasValue)
-                {
-                    var it = ddlLoaiCV.Items.FindByValue(cv.MaLoaiCV.Value.ToString());
-                    if (it != null) ddlLoaiCV.SelectedValue = cv.MaLoaiCV.Value.ToString();
-                }
-
-                // binding file list (nếu cần)
-                var files = db.tblFileDinhKems.Where(f => (f.MaCV ?? "").Trim() == maCV).Select(f => new { f.TenFile, f.Url }).ToList();
-                rptFiles.DataSource = files;
-                rptFiles.DataBind();
-            }
-            catch (Exception ex)
-            {
-                lblMsg.Text = "<span style='color:red'>Lỗi khi tải dữ liệu: " + Server.HtmlEncode(ex.Message) + "</span>";
-            }
-        }
-
+        // ✅ Nút Lưu / Cập nhật
         protected void btnSave_Click(object sender, EventArgs e)
         {
-            try
+            if (Request.QueryString["id"] != null)
             {
-                string maCV = hdnMaCV.Value;
-                if (string.IsNullOrEmpty(maCV))
+                string maCV = Request.QueryString["id"].ToString();
+                tblNoiDungCV cv1 = db.tblNoiDungCVs.SingleOrDefault(t => t.MaCV.ToString() == maCV);
+
+                if (cv1 != null)
                 {
-                    lblMsg.Text = "<span style='color:red'>Không xác định mã công văn.</span>";
-                    return;
-                }
+                    cv1.TieuDeCV = txttieude.Text.Trim();
+                    cv1.NgayGui = DateTime.Parse(txtngayracv.Text);
+                    cv1.CoQuanBanHanh = txtcqbh.Text.Trim();
+                    cv1.SoCV = txtsocv.Text.Trim();
+                    cv1.TrichYeuND = txttrichyeu.Text.Trim();
+                    cv1.MaLoaiCV = int.Parse(ddlLoaiCV.SelectedValue);
+                    cv1.GuiHayNhan = RadioButtonList1.SelectedIndex;
 
-                var cv = db.tblNoiDungCVs.SingleOrDefault(x => (x.MaCV ?? "").Trim() == maCV.Trim());
-                if (cv == null)
+                    db.SubmitChanges();
+
+                    lblchuachonfile.Text = "✅ Đã cập nhật công văn thành công!";
+                    lblchuachonfile.ForeColor = System.Drawing.Color.Green;
+                }
+                else
                 {
-                    lblMsg.Text = "<span style='color:red'>Không tìm thấy công văn để cập nhật.</span>";
-                    return;
+                    lblchuachonfile.Text = "Không tìm thấy công văn cần cập nhật.";
+                    lblchuachonfile.ForeColor = System.Drawing.Color.Red;
                 }
-
-                // Cập nhật
-                cv.TieuDeCV = txtTieuDe.Text.Trim();
-                cv.SoCV = txtSoCV.Text.Trim();
-                cv.CoQuanBanHanh = txtCQBH.Text.Trim();
-                cv.TrichYeuND = txtTrichYeu.Text.Trim();
-
-                if (DateTime.TryParse(txtNgayBH.Text, out DateTime ngaybh))
-                    cv.NgayBanHanh = ngaybh;
-                else
-                    cv.NgayBanHanh = null;
-
-                if (DateTime.TryParse(txtNgayGui.Text, out DateTime ngaygui))
-                    cv.NgayGui = ngaygui;
-                else
-                    cv.NgayGui = null;
-
-                if (int.TryParse(ddlLoaiCV.SelectedValue, out int maloai))
-                    cv.MaLoaiCV = maloai;
-                else
-                    cv.MaLoaiCV = null;
-
-                db.SubmitChanges();
-
-                lblMsg.Text = "<span style='color:green'>Cập nhật thành công.</span>";
-
-                // Redirect về trang chi tiết hoặc trang chủ nếu muốn:
-                Response.Redirect("CTCV.aspx?id=" + Server.UrlEncode(maCV));
             }
-            catch (Exception ex)
+            else
             {
-                lblMsg.Text = "<span style='color:red'>Lỗi khi lưu: " + Server.HtmlEncode(ex.Message) + "</span>";
+                lblchuachonfile.Text = "Không có ID công văn để lưu.";
+                lblchuachonfile.ForeColor = System.Drawing.Color.Red;
             }
         }
 
+        // ✅ Nút Upload file
+        protected void btnUp_Click(object sender, EventArgs e)
+        {
+            if (FileUpload1.HasFile)
+            {
+                try
+                {
+                    string folderPath = Server.MapPath("~/Uploads/");
+
+                    // Tạo thư mục nếu chưa có
+                    if (!System.IO.Directory.Exists(folderPath))
+                    {
+                        System.IO.Directory.CreateDirectory(folderPath);
+                    }
+
+                    string fileName = System.IO.Path.GetFileName(FileUpload1.FileName);
+                    string filePath = System.IO.Path.Combine(folderPath, fileName);
+
+                    FileUpload1.SaveAs(filePath);
+
+                    lblchuachonfile.Text = "Tải lên thành công: " + fileName;
+                    lblchuachonfile.ForeColor = System.Drawing.Color.Green;
+                }
+                catch (Exception ex)
+                {
+                    lblchuachonfile.Text = "Lỗi khi tải file: " + ex.Message;
+                    lblchuachonfile.ForeColor = System.Drawing.Color.Red;
+                }
+            }
+            else
+            {
+                lblchuachonfile.Text = "Vui lòng chọn file trước khi upload.";
+                lblchuachonfile.ForeColor = System.Drawing.Color.OrangeRed;
+            }
+        }
+
+        void RemoveFile(int index)
+        {
+            if (index >= ListBox1.Items.Count) return;
+            string filename = ListBox1.Items[index].Value;
+            System.IO.File.Delete(filename);
+            ListBox1.Items.RemoveAt(index);
+        }
+        protected void btnRemove_Click(object sender, EventArgs e)
+        {
+
+            RemoveFile(ListBox1.SelectedIndex);
+        }
+
+        // ✅ Nút Hủy / Quay lại
         protected void btnCancel_Click(object sender, EventArgs e)
         {
-            string maCV = hdnMaCV.Value;
-            if (!string.IsNullOrEmpty(maCV))
-                Response.Redirect("CTCV.aspx?id=" + Server.UrlEncode(maCV));
-            else
-                Response.Redirect("Trangchu.aspx");
+            Response.Redirect("Trangchu.aspx");
         }
     }
 }
