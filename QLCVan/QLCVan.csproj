@@ -75,6 +75,7 @@
     <Content Include="CTCV.aspx" />
     <Content Include="Dangnhap.aspx" />
     <Content Include="DanhBaEmail.aspx" />
+    <Content Include="GanQuyenTruongKhoa.aspx" />
     <Content Include="Gioithieu.aspx" />
     <Content Include="Images\94471c42569cdcc2858d.jpg" />
     <Content Include="Images\avatar.jpg" />
