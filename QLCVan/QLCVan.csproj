@@ -117,6 +117,7 @@
     <Content Include="NhapNDCV.aspx" />
     <Content Include="QLEmail.aspx" />
     <Content Include="QLnguoidung.aspx" />
+    <Content Include="ChucVu.aspx" />
     <Content Include="QLNhom.aspx" />
     <Content Include="Scripts\datepicker\jquery-1.10.2.js" />
     <Content Include="Scripts\datepicker\jquery-ui.css" />
@@ -235,6 +236,13 @@
     </Compile>
     <Compile Include="QLnguoidung.aspx.designer.cs">
       <DependentUpon>QLnguoidung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChucVu.aspx.cs">
+      <DependentUpon>ChucVu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChucVu.aspx.designer.cs">
+      <DependentUpon>ChucVu.aspx</DependentUpon>
     </Compile>
     <Compile Include="QLNhom.aspx.cs">
       <DependentUpon>QLNhom.aspx</DependentUpon>
