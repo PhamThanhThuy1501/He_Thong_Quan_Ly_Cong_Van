@@ -11,26 +11,35 @@ namespace QLCVan
 {
 
 
-    public partial class QLNguoiDung
+    public partial class SuaNguoiDung
     {
 
         /// <summary>
-        /// txtSearchTenDN control.
+        /// txtMaNguoiDung control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearchTenDN;
+        protected global::System.Web.UI.WebControls.TextBox txtMaNguoiDung;
 
         /// <summary>
-        /// txtSearchEmail control.
+        /// txtHoTen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearchEmail;
+        protected global::System.Web.UI.WebControls.TextBox txtHoTen;
+
+        /// <summary>
+        /// txtEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
         /// ddlDonVi control.
@@ -42,6 +51,51 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.DropDownList ddlDonVi;
 
         /// <summary>
+        /// rbKichHoat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rbKichHoat;
+
+        /// <summary>
+        /// rbChuaKichHoat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rbChuaKichHoat;
+
+        /// <summary>
+        /// txtTenDN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTenDN;
+
+        /// <summary>
+        /// txtMatKhau control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMatKhau;
+
+        /// <summary>
+        /// txtXacNhanMK control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtXacNhanMK;
+
+        /// <summary>
         /// ddlChucVu control.
         /// </summary>
         /// <remarks>
@@ -51,39 +105,12 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.DropDownList ddlChucVu;
 
         /// <summary>
-        /// btnSearch control.
+        /// btnSua control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearch;
-
-        /// <summary>
-        /// gvNguoiDung control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvNguoiDung;
-
-        /// <summary>
-        /// hdnDeleteUser control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdnDeleteUser;
-
-        /// <summary>
-        /// btnConfirmDelete control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnConfirmDelete;
+        protected global::System.Web.UI.WebControls.Button btnSua;
     }
 }

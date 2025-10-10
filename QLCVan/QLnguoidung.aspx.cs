@@ -1,141 +1,146 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace QLCVan
 {
-    public partial class QLnguoidung : System.Web.UI.Page
+    public partial class QLNguoiDung : System.Web.UI.Page
     {
-        InfoDataContext db = new InfoDataContext();
+        public class NguoiDung
+        {
+            public string TenDangNhap { get; set; }
+            public string Email { get; set; }
+            public string DonVi { get; set; }
+            public string ChucVu { get; set; }
+            public bool DangKichHoat { get; set; }
+        }
+
+        private List<NguoiDung> GetDanhSachNguoiDung()
+        {
+            if (Session["DanhSachNguoiDung"] == null)
+            {
+                Session["DanhSachNguoiDung"] = new List<NguoiDung>
+                {
+                    new NguoiDung { TenDangNhap = "duchm", Email = "duchm@gmail.com", DonVi = "Khoa Binh chủng hợp thành", ChucVu = "Giáo viên", DangKichHoat = true },
+                    new NguoiDung { TenDangNhap = "hungnh", Email = "hungnh@gmail.com", DonVi = "Khoa Binh chủng hợp thành", ChucVu = "Giáo viên", DangKichHoat = false }
+                };
+            }
+            return (List<NguoiDung>)Session["DanhSachNguoiDung"];
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!(Session["TenDN"] != null))
+            if (!IsPostBack)
             {
-                Response.Redirect("Dangnhap.aspx");
-            }
-            if (Session["QuyenHan"].ToString().Trim() == "User")
-            {
-                Response.Write("<script type='text/javascript'>");
-                Response.Write("alert('Bạn không có quyền truy cập trang này !');");
-                Response.Write("document.location.href='Trangchu.aspx';");
-                Response.Write("</script>");
-            }
-            if (IsPostBack != true)
-            {
-                cbl1.DataSource = db.tblNhoms;
-                cbl1.DataTextField = "mota";
-                cbl1.DataValueField = "manhom";
-                cbl1.DataBind();
+                LoadNguoiDung();
             }
         }
 
-        protected void btnThem_Click(object sender, EventArgs e)
+        private void LoadNguoiDung()
         {
-            // Kiểm tra các trường bắt buộc
-            if (txtMaNguoiDung.Text == "")
-            {
-                lblAlert.Text = "Mã người dùng không được để trống";
-                return;
-            }
-            if (txtHoTen.Text == "")
-            {
-                lblAlert.Text = "Họ tên không được để trống";
-                return;
-            }
-            if (txtTenDN.Text == "")
-            {
-                lblAlert.Text = "Tên đăng nhập không được để trống";
-                return;
-            }
-            if (txtMatkhau.Text == "")
-            {
-                lblAlert.Text = "Bạn chưa điền mật khẩu";
-                return;
-            }
-            if (txtMatkhau.Text != txtMatkhau1.Text)
-            {
-                lblAlert.Text = "Mật khẩu không khớp";
-                return;
-            }
-
-            // Lưu thông tin người dùng
-            tblNguoiDung nd = new tblNguoiDung();
-            nd.MaNguoiDung = txtMaNguoiDung.Text;
-            nd.HoTen = txtHoTen.Text;
-            nd.Email = txtEmail.Text;
-            nd.QuyenHan = ddlQuyen.SelectedItem.ToString();
-            nd.TenDN = txtTenDN.Text;
-            nd.MatKhau = txtMatkhau.Text;  // Lưu mật khẩu
-            nd.TrangThai = rblTrangThai.SelectedIndex == 0 ? 0 : 1;  // Kiểm tra trạng thái
-
-            // Thêm người dùng vào bảng tblNguoiDungs
-            db.tblNguoiDungs.InsertOnSubmit(nd);
-            db.SubmitChanges();
-
-            // Lưu nhóm người dùng (nếu có)
-         /*   foreach (ListItem item in cbl1.Items)
-            {
-                if (item.Selected)  // Kiểm tra nếu nhóm đã được chọn
-                {
-                    tblNguoiDungNhom ndNhom = new tblNguoiDungNhom
-                    {
-                        MaNguoiDung = txtMaNguoiDung.Text,  // Mã người dùng
-                        MaNhom = int.Parse(item.Value)  // Mã nhóm đã chọn
-                    };
-                    db.tblNguoiDungNhom.InsertOnSubmit(ndNhom);  // Thêm vào bảng liên kết
-                }
-            }*/
-
-            // Lưu thay đổi vào cơ sở dữ liệu
-            db.SubmitChanges();
-
-            // Thông báo thành công
-            lblAlert.Text = "Thông tin người dùng đã được thêm thành công!";
-
-            // Reset form sau khi thêm thành công
-            ResetForm();
+            gvNguoiDung.DataSource = GetDanhSachNguoiDung();
+            gvNguoiDung.DataBind();
         }
 
-        private void ResetForm()
+       public static void ThemNguoiDungMoi(string ten, string email, string donvi, string chucvu, bool kichHoat)
+{
+    var ds = (List<NguoiDung>)System.Web.HttpContext.Current.Session["DanhSachNguoiDung"];
+    if (ds == null)
+        ds = new List<NguoiDung>();
+
+    ds.Add(new NguoiDung
+    {
+        TenDangNhap = ten,
+        Email = email,
+        DonVi = donvi,
+        ChucVu = chucvu,
+        DangKichHoat = kichHoat
+    });
+
+    System.Web.HttpContext.Current.Session["DanhSachNguoiDung"] = ds;
+}
+
+
+        protected void btnSearch_Click(object sender, EventArgs e)
         {
-            // Reset các trường
-            txtMaNguoiDung.Text = "";
-            txtHoTen.Text = "";
-            txtEmail.Text = "";
-            txtTenDN.Text = "";
-            txtMatkhau.Text = "";
-            txtMatkhau1.Text = "";
+            string keywordTen = txtSearchTenDN.Text.Trim().ToLower();
+            string keywordEmail = txtSearchEmail.Text.Trim().ToLower();
 
-            // Deselect checkbox
-            foreach (ListItem item in cbl1.Items)
-            {
-                item.Selected = false;
-            }
+            var ds = GetDanhSachNguoiDung();
+            var ketQua = ds.Where(u =>
+                (string.IsNullOrEmpty(keywordTen) || u.TenDangNhap.ToLower().Contains(keywordTen)) &&
+                (string.IsNullOrEmpty(keywordEmail) || u.Email.ToLower().Contains(keywordEmail))
+            ).ToList();
 
-            // Reset radio button
-            rblTrangThai.ClearSelection();
-            ddlQuyen.SelectedIndex = 0;  // Set quyền mặc định là User
+            gvNguoiDung.DataSource = ketQua;
+            gvNguoiDung.DataBind();
         }
 
-
-        //private string encryptpass(string pass)
-        //{
-        //    System.Security.Cryptography.SHA1 sha = System.Security.Cryptography.SHA1.Create();
-        //    string hashade = System.Convert.ToBase64String(sha.ComputeHash(System.Text.UnicodeEncoding.Unicode.GetBytes(pass)));
-        //    return hashade.Length > 49 ? hashade.Substring(0, 49) : hashade;
-        //}
-
-        protected void btnTaoMoi_Click(object sender, EventArgs e)
+        protected void gvNguoiDung_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            txtMaNguoiDung.Text = "";
-            txtHoTen.Text = "";
-            txtEmail.Text = "";
-            txtTenDN.Text = "";
-            txtMatkhau.Text = "";
-            txtMatkhau1.Text = "";
+            gvNguoiDung.PageIndex = e.NewPageIndex;
+            LoadNguoiDung();
+        }
+
+        protected void rowEditing(object sender, GridViewEditEventArgs e)
+        {
+            gvNguoiDung.EditIndex = e.NewEditIndex;
+            LoadNguoiDung();
+        }
+
+        protected void rowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        {
+            gvNguoiDung.EditIndex = -1;
+            LoadNguoiDung();
+        }
+
+        protected void rowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            var ds = GetDanhSachNguoiDung();
+            string ten = gvNguoiDung.DataKeys[e.RowIndex].Value.ToString();
+
+            TextBox txtEmail = (TextBox)gvNguoiDung.Rows[e.RowIndex].FindControl("txtEmail");
+            TextBox txtDonVi = (TextBox)gvNguoiDung.Rows[e.RowIndex].FindControl("txtDonVi");
+            TextBox txtChucVu = (TextBox)gvNguoiDung.Rows[e.RowIndex].FindControl("txtChucVu");
+
+            var user = ds.FirstOrDefault(u => u.TenDangNhap == ten);
+            if (user != null)
+            {
+                user.Email = txtEmail.Text.Trim();
+                user.DonVi = txtDonVi.Text.Trim();
+                user.ChucVu = txtChucVu.Text.Trim();
+            }
+
+            gvNguoiDung.EditIndex = -1;
+            LoadNguoiDung();
+        }
+
+        protected void rowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            var ds = GetDanhSachNguoiDung();
+            string ten = gvNguoiDung.DataKeys[e.RowIndex].Value.ToString();
+
+            var user = ds.FirstOrDefault(u => u.TenDangNhap == ten);
+            if (user != null)
+            {
+                ds.Remove(user);
+            }
+
+            LoadNguoiDung();
+        }
+        protected void btnConfirmDelete_Click(object sender, EventArgs e)
+        {
+            string ten = hdnDeleteUser.Value; // Lấy tên đăng nhập từ hidden field
+            var ds = GetDanhSachNguoiDung();  // Lấy danh sách từ Session
+
+            var user = ds.FirstOrDefault(u => u.TenDangNhap == ten);
+            if (user != null)
+                ds.Remove(user);
+
+            Session["DanhSachNguoiDung"] = ds; // Cập nhật lại Session
+            LoadNguoiDung(); // Load lại bảng sau khi xóa
         }
 
     }

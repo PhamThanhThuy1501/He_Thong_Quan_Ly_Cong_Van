@@ -15,7 +15,7 @@
         body{background:var(--bg); color:var(--ink); font-family:Arial, sans-serif}
 
         /* khung trang */
-        .cv{max-width:1240px; margin:0 auto; padding:12px}
+        .cv{max-width:1440px; margin:0 auto; padding:12px}
 
         /* tiêu đề + gạch đỏ ngang */
         .cv-head{
