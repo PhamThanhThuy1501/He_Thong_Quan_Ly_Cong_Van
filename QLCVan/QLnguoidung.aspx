@@ -1,228 +1,307 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/QLCV.Master" AutoEventWireup="true"
-    CodeBehind="QLnguoidung.aspx.cs" Inherits="QLCVan.QLnguoidung" %>
+    CodeBehind="QLNguoiDung.aspx.cs" Inherits="QLCVan.QLNguoiDung" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    :root{
-      --primary:#0b57d0;
-      --primary-press:#0949ae;
-      --border:#e6e6e6;
-      --ink:#0f172a;
-      --gridHead:#c62828;
+    body { background:#f3f4f6; }
+
+    .page { background:transparent; padding:0; margin:0; }
+
+    /* Tiêu đề chính */
+    .main-title{
+      text-transform:uppercase;
+      font-weight:700;
+      font-size:20px;
+      color:#444;
+      margin:0 0 6px 0;
     }
 
-    .page{ max-width:1100px; margin:24px auto 28px; padding:0 14px; }
-    .page-title{ text-align:center; font-size:26px; letter-spacing:.6px; margin:2px 0 18px; color:var(--ink); }
-
-    .form-card{
-      display:grid; grid-template-columns:1fr 1fr; gap:22px;
-      background:#fafafa; border:1px solid var(--border); border-radius:12px; padding:18px 20px;
+    /* Thanh chạy chữ */
+    .marquee {
+      background:#c00;
+      color:#fff;
+      border-radius:3px;
+      padding:4px 8px;
+      margin:0 0 18px 0;
+      font-weight:600;
     }
-    .formTable{ width:100%; border-collapse:separate; border-spacing:0 10px; }
-    .formTable td{ vertical-align:middle; }  /* GIỮ NGANG HÀNG */
-    .formTable .lbl{ width:180px; text-align:right; color:var(--ink); font-weight:700; padding:0 12px 0 0; white-space:nowrap; }
+    .marquee marquee { font-size:15px; font-weight:600; }
 
-    /* NEW: dùng cho hàng “Nhóm:” để dính với dòng checkbox đầu */
-    .lbl-group{ padding-top:6px; }  /* tùy UI có thể chỉnh 4–8px */
-
-    .input-lg{
-      width:100%; box-sizing:border-box; height:42px; padding:9px 12px;
-      border:1px solid #cfd3da; border-radius:10px; background:#fff; color:var(--ink);
-      transition:border-color .15s ease;
+    /* Tiêu đề danh sách */
+    .page-title {
+      font-weight:700;
+      font-size:22px;
+      text-align:center;
+      color:#111827;
+      margin:18px 0 12px 0;
     }
-    .input-lg:focus{ outline:none; border-color:var(--primary); box-shadow:0 0 0 2px rgba(11,87,208,.15); }
-    .req{ color:#dc2626; }
 
-    /* CheckBoxList 2 cột gọn */
-    .cbl-2col{ border-collapse:separate !important; border-spacing:0 8px !important; }
-    .cbl-2col td{ padding:4px 28px 4px 0; }
-    .cbl-2col input{ margin-right:8px; }
-
-    /* Nút: canh GIỮA */
-    .actions{ display:flex; gap:12px; margin-top:6px; justify-content:center; }
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:8px;
-      height:44px; padding:0 18px; border-radius:10px; font-size:14px; cursor:pointer;
-      border:1px solid #d1d5db; background:#f3f4f6; color:#111827; text-decoration:none;
+    /* Nút thêm người dùng */
+    .btn-add {
+      background:#0d6efd;
+      color:#fff;
+      border:none;
+      padding:8px 18px;
+      font-weight:600;
+      border-radius:6px;
     }
-    .btn:hover{ filter:brightness(.98); }
-    .btn-primary{ border-color:var(--primary); background:var(--primary); color:#fff; }
-    .btn-primary:active{ background:var(--primary-press); border-color:var(--primary-press); }
-    .btn-outline{ background:#fff; color:var(--primary); border-color:var(--primary); }
-    .btn-outline:hover{ background:rgba(11,87,208,.06); }
+    .btn-add:hover { background:#0948a0; }
 
-    .gridWrapper{ width:100vw; margin-left:calc(50% - 50vw); margin-top:22px; }
-    .gridInner{ max-width:1100px; margin:0 auto; padding:0 14px; }
-    .grid{ width:100%; border-collapse:collapse; table-layout:fixed; }
-    .grid-header th{ background:var(--gridHead); color:#fff; font-weight:800; padding:12px 10px; text-align:left; border:1px solid var(--border); }
-    .grid-row td, .grid-alt td{ padding:12px 10px; border:1px solid var(--border); color:#0f172a; word-wrap:break-word; }
-    .grid-alt{ background:#fafafa; }
-    .grid-footer{ background:var(--gridHead); color:#fff; }
+.search-bar, .table-wrapper {
+  max-width: 1200px;
+  margin: 0 auto 40px auto; /* tạo thêm khoảng cách phía dưới */
+}
 
-    .iconBtn{ display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:10px; border:1px solid var(--border); background:#fff; }
-    .iconBtn:hover{ background:#f3f4f6; }
-    .icon-edit{ color:var(--primary); }
-    .icon-del{ color:#dc2626; }
+/* Riêng table-wrapper: thêm padding hoặc khoảng cách cho rõ ràng hơn */
+.table-wrapper {
+  padding-bottom: 500px; /* đẩy footer xuống thêm */
+}
 
-    @media (max-width:880px){
-      .form-card{ grid-template-columns:1fr; }
-      .formTable .lbl{ text-align:left; display:block; padding:0 0 6px; }
-      .gridInner{ padding:0 10px; }
+
+/* Thanh tìm kiếm */
+.search-bar {
+  background: #f8f9fa;
+  border: 1px solid #ddd; /* viền mảnh hơn */
+  border-radius: 5px;     /* bo nhẹ góc */
+  padding: 15px 18px;     /* thu nhỏ phần đệm */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* bóng nhẹ để nổi bật */
+}
+
+    .search-label {
+      font-weight:400;
+      font-size:15px;
+      margin-bottom:15px;
     }
-    /* ===== Nhóm: canh ngang checkbox đầu tiên ===== */
-.lbl-group{ vertical-align: top;  } /* chữ "Nhóm:" dính với dòng checkbox đầu */
 
-/* CheckBoxList 2 cột gọn gàng */
-.cbl-2col{ border-collapse:separate !important; border-spacing:0 8px !important; }
-.cbl-2col td{ padding:4px 28px 4px 0; }
-.cbl-2col input{ margin-right:8px; }
+    /* Căn đều các cột trong tìm kiếm */
+   .search-group {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap:12px 18px;
+  align-items:end;
+  max-width:1050px; /* Giới hạn độ rộng tổng */
+  margin:auto; /* Căn giữa khối tìm kiếm */
+}
 
-/* Nút hành động ở GIỮA */
-.actions{ display:flex; gap:12px; margin-top:8px; justify-content:center; }
+   .action-bar {
+  max-width: 1200px;      /* bằng khung tìm kiếm & bảng */
+  margin: 0 auto 20px auto;
+}
 
-/* ===== Grid full width bằng banner ===== */
-.gridWrapper{ width:100vw; margin-left:calc(50% - 50vw); margin-top:22px; }
-.gridInner{ max-width:1100px; margin:0 auto; padding:0 14px; } /* khớp .page ở trên */
-.grid{ width:100%; border-collapse:collapse; table-layout:fixed; }
-.grid-header th{ background:#c62828; color:#fff; font-weight:800; padding:12px 10px; text-align:left; border:1px solid #e6e6e6; }
-.grid-row td, .grid-alt td{ padding:12px 10px; border:1px solid #e6e6e6; }
-.grid-alt{ background:#fafafa; }
-.grid-footer{ background:#c62828; color:#fff; }
+    .field {
+      display:flex;
+      flex-direction:column;
+    }
 
+   .field label {
+  font-size:15px;       /* to hơn một chút */
+  font-weight:700;      /* đậm hơn */
+  color:#333;           /* màu đậm hơn nhẹ */
+  margin-bottom:6px;    /* giãn thêm khoảng cách dưới */
+  text-transform:none;  /* giữ nguyên chữ thường */
+}
+
+   .form-control, .form-select {
+  height:36px;
+  font-size:13.5px;
+  max-width:190px; /* Giới hạn chiều rộng từng ô */
+}
+.btn-search {
+  height:36px;
+  font-size:13.5px;
+}
+
+
+    /* Bảng */
+    .table thead {
+      background:#c00;
+      color:#fff;
+      text-align:center;
+    }
+    .table td, .table th {
+      vertical-align:middle;
+      text-align:center;
+    }
+
+    /* Trạng thái */
+    .badge-status {
+      display:inline-flex;
+      justify-content:center;
+      align-items:center;
+      width:140px;
+      padding:8px 12px;
+      border-radius:12px;
+      color:#fff;
+      font-weight:600;
+      font-size:14px;
+    }
+    .badge-active { background:#28a745; }
+    .badge-locked { background:#dc3545; }
+
+    /* Hành động */
+    .btn-action { border:none; background:none; color:#0d6efd; margin:0 3px; }
+    .btn-action:hover { color:#063b8f; }
+    .btn-delete { color:#dc3545; }
+    .btn-delete:hover { color:#a61c1c; }
+
+    /* Pager */
+    .grid-pager {
+      text-align:center;
+      padding:10px 0;
+    }
+    .grid-pager a, .grid-pager span {
+      display:inline-block;
+      margin:0 4px;
+      padding:6px 10px;
+      border:1px solid #e5e7eb;
+      border-radius:6px;
+      background:#fff;
+      text-decoration:none;
+    }
+    .grid-pager span {
+      background:#0d6efd;
+      color:#fff;
+      border-color:#0d6efd;
+    }
   </style>
 </asp:Content>
 
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   <div class="page">
-    <h3 class="page-title"><b>QUẢN LÝ NGƯỜI DÙNG</b></h3>
 
-    <!-- FORM -->
-    <div class="form-card">
-      <!-- Cột trái -->
-      <div>
-        <table class="formTable">
-          <tr>
-            <td class="lbl">Mã ND<span class="req">*</span>:</td>
-            <td><asp:TextBox ID="txtMaNguoiDung" runat="server" CssClass="input-lg" /></td>
-          </tr>
-          <tr>
-            <td class="lbl">Họ tên<span class="req">*</span>:</td>
-            <td><asp:TextBox ID="txtHoTen" runat="server" CssClass="input-lg" /></td>
-          </tr>
-          <tr>
-            <td class="lbl">Email:</td>
-            <td><asp:TextBox ID="txtEmail" runat="server" CssClass="input-lg" /></td>
-          </tr>
-          <tr>
-            <td class="lbl">Quyền:</td>
-            <td>
-              <asp:DropDownList ID="ddlQuyen" runat="server" CssClass="input-lg">
-                <asp:ListItem>User</asp:ListItem>
-                <asp:ListItem>Admin</asp:ListItem>
-              </asp:DropDownList>
-            </td>
-          </tr>
-         <tr>
- <tr>
-  <td class="lbl lbl-group">Nhóm:</td>
-  <td>
-    <asp:CheckBoxList ID="cbl1" runat="server"
-        RepeatLayout="Table"
-        RepeatDirection="Vertical"
-        RepeatColumns="2"
-        CssClass="cbl-2col" />
-  </td>
-</tr>
+    <!-- Tiêu đề -->
+    <div class="main-title">QUẢN LÝ NGƯỜI DÙNG</div>
 
-        </table>
-      </div>
-
-      <!-- Cột phải -->
-      <div>
-        <table class="formTable">
-          <tr>
-            <td class="lbl">Tên đăng nhập:</td>
-            <td><asp:TextBox ID="txtTenDN" runat="server" CssClass="input-lg" /></td>
-          </tr>
-          <tr>
-            <td class="lbl">Mật khẩu<span class="req">*</span>:</td>
-            <td><asp:TextBox ID="txtMatkhau" runat="server" TextMode="Password" CssClass="input-lg" /></td>
-          </tr>
-          <tr>
-            <td class="lbl">Xác nhận mật khẩu<span class="req">*</span>:</td>
-            <td><asp:TextBox ID="txtMatkhau1" runat="server" TextMode="Password" CssClass="input-lg" /></td>
-          </tr>
-          <tr>
-            <td class="lbl">Trạng thái:</td>
-            <td>
-              <asp:RadioButtonList ID="rblTrangThai" runat="server" RepeatDirection="Horizontal" CssClass="rbl">
-                <asp:ListItem Value="0">Hiệu lực</asp:ListItem>
-                <asp:ListItem Value="1">Chưa hiệu lực</asp:ListItem>
-              </asp:RadioButtonList>
-            </td>
-          </tr>
-        </table>
-
-        <div class="actions">
-          <asp:Button ID="btnThem"   runat="server" Text="Thêm"   OnClick="btnThem_Click"   CssClass="btn btn-primary" />
-          <asp:Button ID="btnTaoMoi" runat="server" Text="Tạo mới" OnClick="btnTaoMoi_Click" CssClass="btn btn-outline" />
-        </div>
-
-        <div class="msg"><asp:Literal ID="lblAlert" runat="server"></asp:Literal></div>
-      </div>
+    <!-- Chạy chữ -->
+    <div class="marquee">
+      <marquee behavior="scroll" direction="left" scrollamount="6">
+        Chào mừng bạn đến với hệ thống Quản lý Công Văn điện tử.
+      </marquee>
     </div>
 
-    <!-- GRID -->
-    <div class="gridWrapper">
-      <div class="gridInner"><!-- giữ đúng bề rộng như form/banner -->
-        <asp:UpdatePanel ID="UpdatePanel1" runat="server" ChildrenAsTriggers="true">
-          <ContentTemplate>
-            <asp:GridView ID="GridView2" runat="server"
-                          AutoGenerateColumns="False"
-                          AllowPaging="True"
-                          DataKeyNames="MaNguoiDung"
-                          DataSourceID="LinqDataSource2"
-                          CssClass="grid">
-              <Columns>
-                <asp:BoundField DataField="TenDN" HeaderText="Tên đăng nhập" />
-                <asp:BoundField DataField="Email" HeaderText="Email" />
-                <asp:BoundField DataField="MaNhom" HeaderText="Nhóm" />
-                <asp:TemplateField HeaderText="Trạng thái">
-                  <ItemTemplate><%# (Eval("TrangThai")+"")=="0" ? "Hiệu lực" : "Chưa hiệu lực" %></ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Thao tác" ItemStyle-Width="120px" ItemStyle-HorizontalAlign="Center">
-                  <ItemTemplate>
-                    <asp:LinkButton ID="btnEdit" runat="server" CommandName="Edit"
-                                    CommandArgument='<%# Eval("MaNguoiDung") %>' CssClass="iconBtn" ToolTip="Sửa">
-                      <i class="fa fa-pen icon-edit"></i>
-                    </asp:LinkButton>
-                    <asp:LinkButton ID="btnDelete" runat="server" CommandName="Delete"
-                                    CommandArgument='<%# Eval("MaNguoiDung") %>'
-                                    OnClientClick="return confirm('Bạn có chắc muốn xoá?');"
-                                    CssClass="iconBtn" ToolTip="Xóa">
-                      <i class="fa fa-trash icon-del"></i>
-                    </asp:LinkButton>
-                  </ItemTemplate>
-                </asp:TemplateField>
-              </Columns>
-              <HeaderStyle CssClass="grid-header" />
-              <RowStyle CssClass="grid-row" />
-              <AlternatingRowStyle CssClass="grid-alt" />
-              <FooterStyle CssClass="grid-footer" />
-            </asp:GridView>
+    <!-- Tiêu đề danh sách -->
+    <h3 class="page-title">DANH SÁCH NGƯỜI DÙNG</h3>
 
-            <asp:LinqDataSource ID="LinqDataSource2" runat="server"
-                                ContextTypeName="QLCVan.InfoDataContext"
-                                EnableDelete="True" EnableInsert="True" EnableUpdate="True"
-                                TableName="tblNguoiDungs" />
-          </ContentTemplate>
-          <Triggers>
-            <asp:AsyncPostBackTrigger ControlID="GridView2" />
-          </Triggers>
-        </asp:UpdatePanel>
+    <!-- Nút thêm người dùng -->
+<div class="action-bar text-end mb-3">
+  <a href="ThemNguoiDung.aspx" class="btn btn-add">
+    <i class="fa fa-user-plus"></i> Thêm người dùng
+  </a>
+</div>
+
+
+    <!-- Thanh tìm kiếm -->
+    <div class="search-bar">
+      <div class="search-label">Tìm kiếm</div>
+
+      <div class="search-group">
+        <div class="field">
+          <label for="txtSearchTenDN">Tên đăng nhập:</label>
+          <asp:TextBox ID="txtSearchTenDN" runat="server" CssClass="form-control" placeholder="Nhập tên đăng nhập" />
+        </div>
+
+        <div class="field">
+          <label for="txtSearchEmail">Email:</label>
+          <asp:TextBox ID="txtSearchEmail" runat="server" CssClass="form-control" placeholder="Nhập email" />
+        </div>
+
+        <div class="field">
+          <label for="ddlDonVi">Đơn vị:</label>
+          <asp:DropDownList ID="ddlDonVi" runat="server" CssClass="form-select">
+            <asp:ListItem Text="Đơn vị" />
+            <asp:ListItem Text="Khoa Binh chủng hợp thành" />
+            <asp:ListItem Text="Khoa Chiến thuật" />
+          </asp:DropDownList>
+        </div>
+
+        <div class="field">
+          <label for="ddlChucVu">Chức vụ:</label>
+          <asp:DropDownList ID="ddlChucVu" runat="server" CssClass="form-select">
+            <asp:ListItem Text="Chức vụ" />
+            <asp:ListItem Text="Giáo viên" />
+            <asp:ListItem Text="Trợ giảng" />
+          </asp:DropDownList>
+        </div>
+
+        <div class="field">
+          <label>&nbsp;</label>
+          <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-danger btn-search" Text="Tìm kiếm" OnClick="btnSearch_Click" />
+        </div>
+      </div>
+    </div>
+<!-- Bảng -->
+<div class="table-wrapper">
+  <asp:GridView ID="gvNguoiDung" runat="server" AutoGenerateColumns="False"
+    CssClass="table table-bordered table-hover"
+    HeaderStyle-CssClass="table-danger"
+    DataKeyNames="TenDangNhap"
+    OnRowDeleting="rowDeleting"
+    OnRowEditing="rowEditing"
+    OnRowUpdating="rowUpdating"
+    OnRowCancelingEdit="rowCancelingEdit"
+    AllowPaging="True" PageSize="5"
+    OnPageIndexChanging="gvNguoiDung_PageIndexChanging"
+    PagerStyle-CssClass="grid-pager">
+
+    <PagerSettings Mode="Numeric" Position="Bottom" PageButtonCount="5" />
+
+    <Columns>
+      <asp:BoundField DataField="TenDangNhap" HeaderText="Tên đăng nhập" ReadOnly="true" />
+      <asp:BoundField DataField="Email" HeaderText="Email" />
+      <asp:BoundField DataField="DonVi" HeaderText="Đơn vị" />
+      <asp:BoundField DataField="ChucVu" HeaderText="Chức vụ" />
+      <asp:TemplateField HeaderText="Trạng thái">
+        <ItemTemplate>
+          <%# (bool)Eval("DangKichHoat")
+              ? "<span class='badge-status badge-active'>Đang kích hoạt</span>"
+              : "<span class='badge-status badge-locked'>Đã khóa</span>" %>
+        </ItemTemplate>
+      </asp:TemplateField>
+      <asp:TemplateField HeaderText="Thao tác">
+            <ItemTemplate>
+              <a href='<%# "SuaNguoiDung.aspx?TenDangNhap=" + Eval("TenDangNhap") %>' class="btn-action" title="Sửa">
+                <i class="fa fa-pen"></i>
+              </a>
+              <button type="button" class="btn btn-delete" data-bs-toggle="modal"
+                      data-bs-target="#confirmDeleteModal"
+                      onclick="setDeleteUser('<%# Eval("TenDangNhap") %>')">
+                <i class="fa fa-trash"></i>
+              </button>
+            </ItemTemplate>
+          </asp:TemplateField>
+        </Columns>
+      </asp:GridView>
+    </div>
+
+    <!-- Modal xác nhận xoá -->
+    <div class="modal fade" id="confirmDeleteModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Xác nhận xóa người dùng</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>Bạn có chắc muốn xóa người dùng này không?</p>
+            <asp:HiddenField ID="hdnDeleteUser" runat="server" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+            <asp:Button ID="btnConfirmDelete" runat="server" CssClass="btn btn-danger"
+                        Text="Xóa" OnClick="btnConfirmDelete_Click" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+  <script>
+    function setDeleteUser(username) {
+        document.getElementById('<%= hdnDeleteUser.ClientID %>').value = username;
+      }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </asp:Content>
+   
