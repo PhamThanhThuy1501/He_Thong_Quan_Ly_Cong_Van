@@ -75,7 +75,11 @@
     <Content Include="CTCV.aspx" />
     <Content Include="Dangnhap.aspx" />
     <Content Include="DanhBaEmail.aspx" />
+<<<<<<< HEAD
+    <Content Include="PhanQuyen.aspx" />
+=======
     <Content Include="GanQuyenTruongKhoa.aspx" />
+>>>>>>> origin/main
     <Content Include="Gioithieu.aspx" />
     <Content Include="Images\94471c42569cdcc2858d.jpg" />
     <Content Include="Images\Anhlogo.png" />
@@ -115,6 +119,7 @@
     <Content Include="LoaiCV.aspx" />
     <Content Include="Main.css" />
     <Content Include="NhapNDCV.aspx" />
+    <Content Include="PhanQuyenTK.aspx" />
     <Content Include="QLEmail.aspx" />
     <Content Include="QLnguoidung.aspx" />
     <Content Include="ChucVu.aspx" />
@@ -184,6 +189,10 @@
     <Compile Include="DanhBaEmail.aspx.designer.cs">
       <DependentUpon>DanhBaEmail.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PhanQuyen.aspx.cs">
+      <DependentUpon>PhanQuyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Gioithieu.aspx.cs">
       <DependentUpon>Gioithieu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -215,6 +224,16 @@
     </Compile>
     <Compile Include="NhapNDCV.aspx.designer.cs">
       <DependentUpon>NhapNDCV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhanQuyen.aspx.designer.cs">
+      <DependentUpon>PhanQuyen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhanQuyenTK.aspx.cs">
+      <DependentUpon>PhanQuyenTK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhanQuyenTK.aspx.designer.cs">
+      <DependentUpon>PhanQuyenTK.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLCV.Master.cs">
@@ -297,12 +316,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Account\" />
+    <Folder Include="App_Code\" />
     <Folder Include="Upload\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="QLCV.Master" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".editorconfig" />
     <None Include="Images\Images.rar" />
     <Content Include="Info.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
