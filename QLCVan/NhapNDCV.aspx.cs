@@ -21,15 +21,17 @@ namespace QLCVan
             if (Session["QuyenHan"].ToString().Trim() == "User")
             {
                 Response.Write("<script type='text/javascript'>");
-                Response.Write("alert('Bạn không có quyền truy cập trang này !');");
+                Response.Write("alert('Bạn không có quyền truy cập trang này !');");
                 Response.Write("document.location.href='Trangchu.aspx';");
                 Response.Write("</script>");
             }
 
             if (!Page.IsPostBack)
             {
+                // Dòng này đã được loại bỏ vì nút btnsua không còn tồn tại
+                // btnsua.Visible = false;
 
-                btnsua.Visible = false;
+                // Thêm các trường mới vào dropdownlist nếu cần
                 var cboLoaiCongvans = from d in db.tblLoaiCVs
                                       where d.MaLoaiCV.ToString() != null
                                       select d.TenLoaiCV;
@@ -67,6 +69,11 @@ namespace QLCVan
                 ddlLoaiCV.DataValueField = "MaLoaiCV";
                 ddlLoaiCV.DataBind();
 
+                // Cập nhật tên TextBox cho Datepicker
+                txtngaybanhanh.Attributes["placeholder"] = "dd/mm/yyyy";
+                txtngaygui.Attributes["placeholder"] = "dd/mm/yyyy";
+
+
                 if (Request.QueryString["macv"] != null)
                 {
                     tblNoiDungCV cv1 = db.tblNoiDungCVs.SingleOrDefault(t => t.MaCV.ToString() == (Request.QueryString["macv"].ToString()));
@@ -74,16 +81,25 @@ namespace QLCVan
                     if (cv1 != null)
                     {
                         txttieude.Text = cv1.TieuDeCV;
-                        txtngayracv.Text = cv1.NgayGui.ToString();
+                        // Sửa tên biến để khớp với giao diện mới
+                        txtngaybanhanh.Text = cv1.NgayGui.ToString();
+                        txtngaygui.Text = cv1.NgayBanHanh.ToString();
                         txtcqbh.Text = cv1.CoQuanBanHanh;
                         txtsocv.Text = cv1.SoCV;
-                        txttrichyeu.InnerText = cv1.TrichYeuND;
-                        btnthem.Visible = false;
-                        btnsua.Visible = true;
+                        txttrichyeu.Text = cv1.TrichYeuND;
+                        // Nút "Thêm" đã được hiển thị, không cần ẩn đi
+                        // btnthem.Visible = false;
+                        // Nút "Lưu" đã được thay bằng "Quay lại"
+                        // btnsua.Visible = true;
                         ListBox1.DataTextField = "TenFile";
                         ListBox1.DataSource = cv1.tblFileDinhKems;
                         ListBox1.DataBind();
                         RadioButtonList1.SelectedIndex = (int)cv1.GuiHayNhan;
+
+                        // Cập nhật các trường mới
+                        txtNguoiKy.Text = cv1.NguoiKy;
+                        txtGhiChu.Text = cv1.GhiChu;
+                        // Các trường khác tương tự...
                     }
                 }
 
@@ -99,13 +115,13 @@ namespace QLCVan
                 {
 
                     txttieude.Text = cv1.TieuDeCV;
-                    txtngayracv.Text = cv1.NgayGui.ToString();
-
+                    txtngaybanhanh.Text = cv1.NgayGui.ToString();
+                    txtngaygui.Text = cv1.NgayBanHanh.ToString();
                     txtcqbh.Text = cv1.CoQuanBanHanh;
                     txtsocv.Text = cv1.SoCV;
-                    txttrichyeu.InnerText = cv1.TrichYeuND;
-                    btnthem.Visible = false;
-                    btnsua.Visible = true;
+                    txttrichyeu.Text = cv1.TrichYeuND;
+                    // btnthem.Visible = false;
+                    // btnsua.Visible = true;
                     ListBox1.DataTextField = "TenFile";
                     ListBox1.DataSource = cv1.tblFileDinhKems;
                     ListBox1.DataBind();
@@ -148,13 +164,13 @@ namespace QLCVan
             tblNoiDungCV cv1 = new tblNoiDungCV();
             cv1.MaCV = MaCongVan.ToString();
             cv1.SoCV = txtsocv.Text;
-            DateTime ngayguicv = DateTime.ParseExact(txtngayracv.Text.ToString(), "dd/MM/yyyy", null);
+            DateTime ngayguicv = DateTime.ParseExact(txtngaybanhanh.Text.ToString(), "dd/MM/yyyy", null);
             cv1.NgayGui = ngayguicv;
             cv1.TieuDeCV = txttieude.Text;
             cv1.MaLoaiCV = int.Parse(ddlLoaiCV.SelectedValue.ToString());
             cv1.CoQuanBanHanh = txtcqbh.Text;
-            cv1.TrichYeuND = txttrichyeu.InnerText;
-            DateTime ngaybancv = DateTime.ParseExact(txtngaynhancv.Text.ToString(), "dd/MM/yyyy", null);
+            cv1.TrichYeuND = txttrichyeu.Text;
+            DateTime ngaybancv = DateTime.ParseExact(txtngaygui.Text.ToString(), "dd/MM/yyyy", null);
             cv1.NgayBanHanh = ngaybancv;
             if ((Session["TenDN"].ToString().Equals("quyen")))
             {
@@ -259,22 +275,22 @@ namespace QLCVan
                     // ✅ XỬ LÝ NGÀY KIỂU dd/MM/yyyy AN TOÀN
                     DateTime ngayGui, ngayBanHanh;
                     if (!DateTime.TryParseExact(
-                        txtngayracv.Text.Trim(),
+                        txtngaybanhanh.Text.Trim(),
                         "dd/MM/yyyy",
                         System.Globalization.CultureInfo.InvariantCulture,
                         System.Globalization.DateTimeStyles.None,
-                        out ngayGui))
+                        out ngayBanHanh))
                     {
                         // Nếu lỗi format ngày thì không lưu
                         return;
                     }
 
                     if (!DateTime.TryParseExact(
-                        txtngaynhancv.Text.Trim(),
+                        txtngaygui.Text.Trim(),
                         "dd/MM/yyyy",
                         System.Globalization.CultureInfo.InvariantCulture,
                         System.Globalization.DateTimeStyles.None,
-                        out ngayBanHanh))
+                        out ngayGui))
                     {
                         return;
                     }
@@ -285,7 +301,7 @@ namespace QLCVan
                     cv1.TieuDeCV = txttieude.Text;
                     cv1.MaLoaiCV = int.Parse(ddlLoaiCV.SelectedValue.ToString());
                     cv1.CoQuanBanHanh = txtcqbh.Text;
-                    cv1.TrichYeuND = txttrichyeu.InnerText;
+                    cv1.TrichYeuND = txttrichyeu.Text;
                     cv1.NgayBanHanh = ngayBanHanh;
 
                     if (RadioButtonList1.SelectedIndex == 0)
@@ -335,8 +351,8 @@ namespace QLCVan
                     }
 
                     Response.Redirect("NhapNDCV.aspx");
-                    btnthem.Visible = true;
-                    btnsua.Visible = false;
+                    // btnthem.Visible = true;
+                    // btnsua.Visible = false;
                 }
             }
         }
@@ -345,12 +361,14 @@ namespace QLCVan
         protected void btnlammoi_Click(object sender, EventArgs e)
         {
             txtcqbh.Text = "";
-            txtngaynhancv.Text = "";
-            txtngayracv.Text = "";
+            txtngaygui.Text = "";
+            txtngaybanhanh.Text = "";
             txtsocv.Text = "";
             txttieude.Text = "";
-            txttrichyeu.InnerText = "";
-
+            txttrichyeu.Text = "";
+            txtNguoiKy.Text = "";
+            txtNguoiDuyet.Text = "";
+            txtGhiChu.Text = "";
 
         }
 
@@ -405,7 +423,5 @@ namespace QLCVan
             pr = db.tblNoiDungCVs.SingleOrDefault(p => p.NguoiKy == nguoikimoi);
             e.Item.Value = pr.MaLoaiCV.ToString();
         }
-
-
     }
 }
