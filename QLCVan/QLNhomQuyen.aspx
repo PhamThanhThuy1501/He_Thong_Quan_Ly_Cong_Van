@@ -34,12 +34,15 @@
             padding: 8px 0;
             text-align: center;
         }
+        .nowrap-header {
+            white-space: nowrap;
+        }
     </style>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="cv">
-        <div class="cv-head">QUẢN LÝ NHÓM QUYỀN</div>
+        <div class="cv-head">QUẢN LÝ NGƯỜI DÙNG</div>
 
         <div class="marquee">
             <marquee behavior="scroll" direction="left" scrollamount="5">
@@ -48,94 +51,84 @@
         </div>
 
         <center>
-            <h3 class="section-title"><b>DANH SÁCH NHÓM QUYỀN</b></h3>
+<div class="mt-4">
+    <h4 class="fw-bold text-uppercase text-dark">DANH SÁCH NHÓM QUYỀN</h4>
+    <!-- Các phần tìm kiếm và bảng nằm bên dưới -->
+</div>
 
-            <asp:HiddenField ID="hdfIDQuyen" runat="server" />
+<!-- Khối tìm kiếm -->
+<div class="card p-3 border-0 mb-4" style="width: 60%;">
+    <div class="d-flex flex-wrap align-items-center gap-2">
+        <span class="fw-bold">Tìm kiếm</span>
 
-            <!-- Khu vực tìm kiếm -->
-            <div class="mb-4" style="width:48%; margin: 0 auto;">
-                <div class="card p-3 border-0">
-                    <h5 class="mb-3 text-danger fw-bold">Tìm kiếm</h5>
-                    <div class="row g-2">
-                        <div class="col-md-6">
-                            <asp:TextBox ID="txtSearchMa" runat="server" CssClass="form-control" placeholder="Nhập mã quyền..." />
-                        </div>
-                        <div class="col-md-6">
-                            <asp:TextBox ID="txtSearchTen" runat="server" CssClass="form-control" placeholder="Nhập tên quyền..." />
-                        </div>
-                        <div class="col-12 text-end mt-2">
-                            <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-danger px-4" Text="Tìm kiếm" OnClick="btnSearch_Click" />
-                            <i class="fa fa-search text-white ms-2"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <asp:TextBox ID="txtSearchMa" runat="server" CssClass="form-control" placeholder="Nhập mã nhóm quyền..." style="width: 28%;" />
+        <asp:TextBox ID="txtSearchTen" runat="server" CssClass="form-control" placeholder="Nhập tên nhóm quyền..." style="width: 28%;" />
 
-            <!-- Nút mở modal -->
-            <div class="mb-3 text-end" style="width:48%">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addQuyenModal">
-                    <i class="fa fa-plus"></i> Thêm nhóm quyền
-                </button>
-            </div>
+        <!-- Nút tìm kiếm -->
+        <asp:LinkButton ID="btnSearch" runat="server" CssClass="btn btn-danger d-flex justify-content-center align-items-center" Style="height: 38px; width: 38px;" OnClick="btnSearch_Click">
+            <i class="fa fa-search"></i>
+        </asp:LinkButton>
 
-            <!-- GridView hiển thị danh sách quyền -->
-            <asp:GridView ID="gvQuyen" runat="server" AutoGenerateColumns="False"
-                CssClass="table table-bordered table-striped table-hover"
-                HeaderStyle-CssClass="grid-header-red"
-                Width="48%" CellPadding="4" ForeColor="#333333"
-                DataKeyNames="MaQuyen"
-                OnRowDeleting="gvQuyen_RowDeleting"
-                OnRowCancelingEdit="gvQuyen_RowCancelingEdit"
-                OnRowEditing="gvQuyen_RowEditing"
-                OnRowUpdating="gvQuyen_RowUpdating"
-                AllowPaging="True" PageSize="5"
-                OnPageIndexChanging="gvQuyen_PageIndexChanging">
+        <!-- Nút thêm nhóm quyền -->
+        <button type="button" class="btn btn-primary ms-auto d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#addQuyenModal">
+             Thêm nhóm quyền
+        </button>
+    </div>
+</div>
 
-                <PagerSettings Mode="Numeric" Position="Bottom" PageButtonCount="5" />
-                <PagerStyle CssClass="pager" HorizontalAlign="Center" />
+<!-- Bảng danh sách nhóm quyền -->
+<asp:GridView ID="gvQuyen" runat="server" AutoGenerateColumns="False"
+    CssClass="table table-bordered table-hover"
+    HeaderStyle-CssClass="bg-danger text-white text-center"
+    RowStyle-CssClass="text-center"
+    Width="60%" CellPadding="4" ForeColor="#333333"
+    DataKeyNames="MaQuyen"
+    AllowPaging="True" PageSize="5"
+    OnPageIndexChanging="gvQuyen_PageIndexChanging"
+    OnRowDeleting="gvQuyen_RowDeleting"
+    OnRowEditing="gvQuyen_RowEditing"
+    OnRowUpdating="gvQuyen_RowUpdating"
+    OnRowCancelingEdit="gvQuyen_RowCancelingEdit">
 
-                <Columns>
-                    <asp:TemplateField HeaderText="Mã quyền">
-                        <HeaderStyle HorizontalAlign="Center" />
-                        <ItemTemplate>
-                            <asp:Label ID="lblMaQuyen" runat="server" Text='<%# Eval("MaQuyen") %>'></asp:Label>
-                        </ItemTemplate>
-                    </asp:TemplateField>
+    <Columns>
 
-                    <asp:TemplateField HeaderText="Tên quyền">
-                        <HeaderStyle HorizontalAlign="Center" />
-                        <ItemTemplate>
-                            <asp:Label ID="lblTenQuyen" runat="server" Text='<%# Eval("TenQuyen") %>'></asp:Label>
-                        </ItemTemplate>
-                        <EditItemTemplate>
-                            <asp:TextBox ID="txtTenQuyen" runat="server" CssClass="form-control"
-                                Text='<%# Eval("TenQuyen") %>'></asp:TextBox>
-                        </EditItemTemplate>
-                    </asp:TemplateField>
+    <asp:TemplateField HeaderText="Mã nhóm quyền">
+        <HeaderStyle Width="11%" CssClass="bg-danger text-white text-center nowrap" />
+        <ItemStyle Width="11%" CssClass="text-center nowrap" />
+        <ItemTemplate>
+            <asp:Label ID="lblMaQuyen" runat="server" Text='<%# Eval("MaQuyen") %>' />
+        </ItemTemplate>
+    </asp:TemplateField>
 
-                    <asp:TemplateField HeaderText="Thao tác">
-                        <HeaderStyle HorizontalAlign="Center" />
-                        <EditItemTemplate>
-                            <asp:LinkButton ID="btnUpdateQuyen" runat="server" CommandName="Update" CssClass="btn btn-success btn-sm">
-                                <i class="fa fa-check"></i>
-                            </asp:LinkButton>
-                            <asp:LinkButton ID="btnCancelQuyen" runat="server" CommandName="Cancel" CssClass="btn btn-secondary btn-sm">
-                                <i class="fa fa-times"></i>
-                            </asp:LinkButton>
-                        </EditItemTemplate>
-                        <ItemTemplate>
-                            <asp:LinkButton ID="btnEditQuyen" runat="server" CommandName="Edit" CssClass="btn btn-warning btn-sm">
-                                <i class="fa fa-edit"></i>
-                            </asp:LinkButton>
-                            <asp:LinkButton ID="btnDeleteQuyen" runat="server" CommandName="Delete"
-                                CssClass="btn btn-danger btn-sm"
-                                OnClientClick="return confirm('Bạn có chắc muốn xóa quyền này không?');">
-                                <i class="fa fa-trash"></i>
-                            </asp:LinkButton>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                </Columns>
-            </asp:GridView>
+    <asp:TemplateField HeaderText="Tên nhóm quyền">
+        <HeaderStyle Width="30%" CssClass="bg-danger text-white text-center nowrap" />
+        <ItemStyle Width="30%" CssClass="text-center nowrap" />
+        <ItemTemplate>
+            <asp:Label ID="lblTenQuyen" runat="server" Text='<%# Eval("TenQuyen") %>' />
+        </ItemTemplate>
+    </asp:TemplateField>
+
+
+    <asp:TemplateField HeaderText="Thao tác">
+        <HeaderStyle Width="21%" CssClass="bg-danger text-white text-center nowrap" />
+        <ItemStyle Width="21%" CssClass="text-center nowrap" />
+        <ItemTemplate>
+            <asp:LinkButton ID="btnGanQuyen" runat="server" CssClass="btn btn-primary btn-sm me-1">
+                Gán quyền
+            </asp:LinkButton>
+            <asp:LinkButton ID="btnEdit" runat="server" CommandName="Edit" CssClass="btn btn-outline-primary btn-sm me-1">
+                <i class="fa fa-pencil-alt"></i>
+            </asp:LinkButton>
+            <asp:LinkButton ID="btnDelete" runat="server" CommandName="Delete"
+                CssClass="btn btn-outline-danger btn-sm"
+                OnClientClick="return confirm('Bạn có chắc muốn xóa nhóm quyền này không?');">
+                <i class="fa fa-trash"></i>
+            </asp:LinkButton>
+        </ItemTemplate>
+    </asp:TemplateField>
+    </Columns>
+</asp:GridView>
+
         </center>
 
         <!-- Modal thêm quyền -->
@@ -148,7 +141,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="mb-3">
-                            <asp:TextBox ID="txtTenQuyenMoi" runat="server" CssClass="form-control" placeholder="Nhập tên quyền..." />
+                            <asp:TextBox ID="txtTenQuyenMoi" runat="server" CssClass="form-control" placeholder="tên quyền..." />
                         </div>
                     </div>
                     <div class="modal-footer">
