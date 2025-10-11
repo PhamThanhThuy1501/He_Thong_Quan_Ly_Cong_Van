@@ -51,7 +51,14 @@ namespace QLCVan
         }
         protected void btnSaveQuyen_Click(object sender, EventArgs e)
         {
+            string maQuyen = txtMaQuyenMoi.Text.Trim();
             string tenQuyen = txtTenQuyenMoi.Text.Trim();
+
+            if (string.IsNullOrEmpty(maQuyen))
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Vui lòng nhập mã quyền!');", true);
+                return;
+            }
 
             if (string.IsNullOrEmpty(tenQuyen))
             {
@@ -60,32 +67,31 @@ namespace QLCVan
             }
 
             var danhSach = GetDanhSachQuyen();
+
+            // Kiểm tra trùng mã quyền
+            if (danhSach.Any(q => q.MaQuyen.Equals(maQuyen, StringComparison.OrdinalIgnoreCase)))
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Mã quyền đã tồn tại!');", true);
+                return;
+            }
+
+            // Kiểm tra trùng tên quyền
             if (danhSach.Any(q => q.TenQuyen.Equals(tenQuyen, StringComparison.OrdinalIgnoreCase)))
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Tên quyền đã tồn tại!');", true);
                 return;
             }
 
-            string maQuyen = "Q" + (danhSach.Count + 1);
             danhSach.Add(new Quyen { MaQuyen = maQuyen, TenQuyen = tenQuyen });
 
+            txtMaQuyenMoi.Text = "";
             txtTenQuyenMoi.Text = "";
             load_Quyen();
 
             ScriptManager.RegisterStartupScript(this, this.GetType(), "HideModal", "$('#addQuyenModal').modal('hide');", true);
         }
 
-        protected void gvQuyen_RowEditing(object sender, GridViewEditEventArgs e)
-        {
-            gvQuyen.EditIndex = e.NewEditIndex;
-            load_Quyen();
-        }
 
-        protected void gvQuyen_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
-        {
-            gvQuyen.EditIndex = -1;
-            load_Quyen();
-        }
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
@@ -103,21 +109,42 @@ namespace QLCVan
             gvQuyen.DataBind();
         }
 
+
+        protected void gvQuyen_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            gvQuyen.EditIndex = e.NewEditIndex;
+            gvQuyen.DataSource = GetDanhSachQuyen(); // hoặc từ DB
+            gvQuyen.DataBind();
+        }
+
+        // Khi nhấn nút Cancel
+        protected void gvQuyen_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        {
+            gvQuyen.EditIndex = -1;
+            gvQuyen.DataSource = GetDanhSachQuyen();
+            gvQuyen.DataBind();
+        }
+
+        // Khi nhấn nút Update
         protected void gvQuyen_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            var danhSach = GetDanhSachQuyen();
-            string maQuyen = gvQuyen.DataKeys[e.RowIndex].Value.ToString();
-            TextBox txtTenQuyen = (TextBox)gvQuyen.Rows[e.RowIndex].FindControl("txtTenQuyen");
+            GridViewRow row = gvQuyen.Rows[e.RowIndex];
+            string tenQuyenMoi = ((TextBox)row.FindControl("txtEditTenQuyen")).Text.Trim();
 
-            var quyen = danhSach.FirstOrDefault(q => q.MaQuyen == maQuyen);
-            if (quyen != null)
+            var danhSach = GetDanhSachQuyen();
+
+            // Giả sử vị trí dòng trong danh sách tương ứng với e.RowIndex
+            if (e.RowIndex < danhSach.Count)
             {
-                quyen.TenQuyen = txtTenQuyen.Text.Trim();
+                danhSach[e.RowIndex].TenQuyen = tenQuyenMoi;
             }
 
             gvQuyen.EditIndex = -1;
-            load_Quyen();
+            gvQuyen.DataSource = danhSach;
+            gvQuyen.DataBind();
         }
+
+
 
         protected void gvQuyen_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {

@@ -78,56 +78,45 @@
 
 <!-- Bảng danh sách nhóm quyền -->
 <asp:GridView ID="gvQuyen" runat="server" AutoGenerateColumns="False"
-    CssClass="table table-bordered table-hover"
-    HeaderStyle-CssClass="bg-danger text-white text-center"
-    RowStyle-CssClass="text-center"
-    Width="60%" CellPadding="4" ForeColor="#333333"
-    DataKeyNames="MaQuyen"
-    AllowPaging="True" PageSize="5"
-    OnPageIndexChanging="gvQuyen_PageIndexChanging"
-    OnRowDeleting="gvQuyen_RowDeleting"
-    OnRowEditing="gvQuyen_RowEditing"
-    OnRowUpdating="gvQuyen_RowUpdating"
-    OnRowCancelingEdit="gvQuyen_RowCancelingEdit">
+                CssClass="table table-bordered table-hover"
+                HeaderStyle-CssClass="bg-danger text-white text-center"
+                RowStyle-CssClass="text-center"
+                Width="60%" CellPadding="4" ForeColor="#333333"
+                AllowPaging="True" PageSize="5"
+                OnPageIndexChanging="gvQuyen_PageIndexChanging"
+                OnRowDeleting="gvQuyen_RowDeleting"
+                OnRowEditing="gvQuyen_RowEditing"
+                OnRowUpdating="gvQuyen_RowUpdating"
+                OnRowCancelingEdit="gvQuyen_RowCancelingEdit">
 
-    <Columns>
+                <Columns>
+                    <asp:TemplateField HeaderText="Mã nhóm quyền">
+                        <ItemTemplate>
+                            <asp:Label ID="lblMaQuyen" runat="server" Text='<%# Eval("MaQuyen") %>' />
+                        </ItemTemplate>
+                        <EditItemTemplate>
+                            <asp:TextBox ID="txtEditMaQuyen" runat="server" Text='<%# Bind("MaQuyen") %>' CssClass="form-control" />
+                        </EditItemTemplate>
+                    </asp:TemplateField>
 
-    <asp:TemplateField HeaderText="Mã nhóm quyền">
-        <HeaderStyle Width="11%" CssClass="bg-danger text-white text-center nowrap" />
-        <ItemStyle Width="11%" CssClass="text-center nowrap" />
-        <ItemTemplate>
-            <asp:Label ID="lblMaQuyen" runat="server" Text='<%# Eval("MaQuyen") %>' />
-        </ItemTemplate>
-    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Tên nhóm quyền">
+                        <ItemTemplate>
+                            <asp:Label ID="lblTenQuyen" runat="server" Text='<%# Eval("TenQuyen") %>' />
+                        </ItemTemplate>
+                        <EditItemTemplate>
+                            <asp:TextBox ID="txtEditTenQuyen" runat="server" Text='<%# Bind("TenQuyen") %>' CssClass="form-control" />
+                        </EditItemTemplate>
+                    </asp:TemplateField>
 
-    <asp:TemplateField HeaderText="Tên nhóm quyền">
-        <HeaderStyle Width="30%" CssClass="bg-danger text-white text-center nowrap" />
-        <ItemStyle Width="30%" CssClass="text-center nowrap" />
-        <ItemTemplate>
-            <asp:Label ID="lblTenQuyen" runat="server" Text='<%# Eval("TenQuyen") %>' />
-        </ItemTemplate>
-    </asp:TemplateField>
-
-
-    <asp:TemplateField HeaderText="Thao tác">
-        <HeaderStyle Width="21%" CssClass="bg-danger text-white text-center nowrap" />
-        <ItemStyle Width="21%" CssClass="text-center nowrap" />
-        <ItemTemplate>
-            <asp:LinkButton ID="btnGanQuyen" runat="server" CssClass="btn btn-primary btn-sm me-1">
-                Gán quyền
-            </asp:LinkButton>
-            <asp:LinkButton ID="btnEdit" runat="server" CommandName="Edit" CssClass="btn btn-outline-primary btn-sm me-1">
-                <i class="fa fa-pencil-alt"></i>
-            </asp:LinkButton>
-            <asp:LinkButton ID="btnDelete" runat="server" CommandName="Delete"
-                CssClass="btn btn-outline-danger btn-sm"
-                OnClientClick="return confirm('Bạn có chắc muốn xóa nhóm quyền này không?');">
-                <i class="fa fa-trash"></i>
-            </asp:LinkButton>
-        </ItemTemplate>
-    </asp:TemplateField>
-    </Columns>
-</asp:GridView>
+                    <asp:TemplateField HeaderText="Thao tác">
+<ItemTemplate> <asp:LinkButton ID="btnGanQuyen" runat="server" CssClass="btn btn-primary btn-sm me-1"> Gán quyền </asp:LinkButton> <asp:LinkButton ID="btnEdit" runat="server" CommandName="Edit" CssClass="btn btn-outline-primary btn-sm me-1"> <i class="fa fa-pencil-alt"></i> </asp:LinkButton> <asp:LinkButton ID="btnDelete" runat="server" CommandName="Delete" CssClass="btn btn-outline-danger btn-sm" OnClientClick="return confirm('Bạn có chắc muốn xóa nhóm quyền này không?');"> <i class="fa fa-trash"></i> </asp:LinkButton> </ItemTemplate>
+                        <EditItemTemplate>
+                            <asp:LinkButton ID="btnUpdate" runat="server" CommandName="Update" CssClass="btn btn-success btn-sm me-1">Lưu</asp:LinkButton>
+                            <asp:LinkButton ID="btnCancel" runat="server" CommandName="Cancel" CssClass="btn btn-secondary btn-sm">Hủy</asp:LinkButton>
+                        </EditItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
+            </asp:GridView>
 
         </center>
 
@@ -141,7 +130,10 @@
                     </div>
                     <div class="modal-body">
                         <div class="mb-3">
-                            <asp:TextBox ID="txtTenQuyenMoi" runat="server" CssClass="form-control" placeholder="tên quyền..." />
+                            <asp:TextBox ID="txtMaQuyenMoi" runat="server" CssClass="form-control" placeholder="Thêm mã quyền nhóm" />
+                        </div>
+                         <div class="mb-3">
+                            <asp:TextBox ID="txtTenQuyenMoi" runat="server" CssClass="form-control" placeholder="Thêm tên quyền nhóm" />
                         </div>
                     </div>
                     <div class="modal-footer">
