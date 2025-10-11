@@ -80,6 +80,7 @@
     <Content Include="GanQuyenTruongKhoa.aspx" />
     <Content Include="Gioithieu.aspx" />
     <Content Include="Images\94471c42569cdcc2858d.jpg" />
+    <Content Include="Images\Anhlogo.png" />
     <Content Include="Images\avatar.jpg" />
     <Content Include="Images\banner01.gif" />
     <Content Include="Images\Car.png" />
@@ -93,7 +94,6 @@
     <Content Include="Images\Design\Slide.jpg" />
     <Content Include="Images\edu.net.jpg" />
     <Content Include="Images\giaiphap.png" />
-    <Content Include="Images\logoA.jpg" />
     <Content Include="Images\News\box.jpg" />
     <Content Include="Images\News\windows8.png" />
     <Content Include="Images\nhung-hinh-anh-dep-ve-thien-nhien-khi-mua-thu-toi-4.jpg" />
@@ -120,7 +120,9 @@
     <Content Include="NhapNDCV.aspx" />
     <Content Include="QLEmail.aspx" />
     <Content Include="QLnguoidung.aspx" />
+    <Content Include="ChucVu.aspx" />
     <Content Include="QLNhom.aspx" />
+    <Content Include="QuanLyQuyen.aspx" />
     <Content Include="Scripts\datepicker\jquery-1.10.2.js" />
     <Content Include="Scripts\datepicker\jquery-ui.css" />
     <Content Include="Scripts\datepicker\jquery-ui.js" />
@@ -150,6 +152,8 @@
     <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\text_layer_builder.js" />
     <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\ui_utils.js" />
     <Content Include="Scripts\viewerjs-0.5.8\ViewerJS\webodf.js" />
+    <Content Include="SuaNguoiDung.aspx" />
+    <Content Include="ThemNguoidung.aspx" />
     <Content Include="Trangchu.aspx" />
     <Content Include="UserControl\HitCount.ascx" />
     <Content Include="ViewFile.aspx" />
@@ -238,12 +242,36 @@
     <Compile Include="QLnguoidung.aspx.designer.cs">
       <DependentUpon>QLnguoidung.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ChucVu.aspx.cs">
+      <DependentUpon>ChucVu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChucVu.aspx.designer.cs">
+      <DependentUpon>ChucVu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="QLNhom.aspx.cs">
       <DependentUpon>QLNhom.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="QLNhom.aspx.designer.cs">
       <DependentUpon>QLNhom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyQuyen.aspx.cs">
+      <DependentUpon>QuanLyQuyen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyQuyen.aspx.designer.cs">
+      <DependentUpon>QuanLyQuyen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuaNguoiDung.aspx.cs">
+      <DependentUpon>SuaNguoiDung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuaNguoiDung.aspx.designer.cs">
+      <DependentUpon>SuaNguoiDung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemNguoidung.aspx.cs">
+      <DependentUpon>ThemNguoidung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemNguoidung.aspx.designer.cs">
+      <DependentUpon>ThemNguoidung.aspx</DependentUpon>
     </Compile>
     <Compile Include="Trangchu.aspx.cs">
       <DependentUpon>Trangchu.aspx</DependentUpon>
