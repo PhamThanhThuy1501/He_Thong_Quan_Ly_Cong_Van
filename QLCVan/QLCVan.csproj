@@ -71,8 +71,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\SQLQuery1.sql" />
+    <Content Include="ChinhSuaCTCV_Duyet.aspx" />
     <Content Include="Counter.txt" />
     <Content Include="CTCV.aspx" />
+    <Content Include="DaDuyetCTCV_Duyet.aspx" />
     <Content Include="Dangnhap.aspx" />
     <Content Include="DanhBaEmail.aspx" />
     <Content Include="GanQuyenTruongKhoa.aspx" />
@@ -112,6 +114,7 @@
     <Content Include="Images\tintuc.png" />
     <Content Include="Images\violet.jpg" />
     <Content Include="Images\vnpt.jpg" />
+    <Content Include="KoDuyetCTCV_Duyet.aspx" />
     <Content Include="LoaiCV.aspx" />
     <Content Include="Main.css" />
     <Content Include="NhapNDCV.aspx" />
@@ -157,6 +160,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="XemCTCV_Duyet.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CTCV.aspx.cs">
