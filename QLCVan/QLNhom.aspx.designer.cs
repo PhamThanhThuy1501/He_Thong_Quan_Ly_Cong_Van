@@ -24,6 +24,15 @@ namespace QLCVan
         protected global::System.Web.UI.WebControls.HiddenField hdfID;
 
         /// <summary>
+        /// hdfDeleteKey control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hdfDeleteKey;
+
+        /// <summary>
         /// txtSearchMa control.
         /// </summary>
         /// <remarks>
@@ -121,5 +130,14 @@ namespace QLCVan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEditSave;
+
+        /// <summary>
+        /// btnConfirmDelete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnConfirmDelete;
     }
 }

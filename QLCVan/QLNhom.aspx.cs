@@ -6,9 +6,9 @@ using System.Web.UI.WebControls;
 
 namespace QLCVan
 {
-    public partial class QLNhom : System.Web.UI.Page
+    public partial class QLNhom : Page
     {
-        // Lớp đại diện cho đơn vị
+        // ===== Model mock =====
         public class DonVi
         {
             public string MaDonVi { get; set; }
@@ -16,20 +16,22 @@ namespace QLCVan
             public string MoTa { get; set; }
         }
 
+        private const string SessionKey = "DanhSachDonVi";
+
         // Lấy danh sách đơn vị từ Session (mock data)
         private List<DonVi> GetDanhSachDonVi()
         {
-            if (Session["DanhSachDonVi"] == null)
+            if (Session[SessionKey] == null)
             {
-                Session["DanhSachDonVi"] = new List<DonVi>
+                Session[SessionKey] = new List<DonVi>
                 {
-                    new DonVi { MaDonVi = "BCHT",   TenDonVi = "Binh chủng hợp thành",         MoTa = "Bộ chỉ huy tổng hợp" },
-                    new DonVi { MaDonVi = "QSDP",   TenDonVi = "Quân sự địa phương",            MoTa = "Cơ sở đào tạo" },
-                    new DonVi { MaDonVi = "KHXH_NV",TenDonVi = "Khoa học xã hội nhân văn",       MoTa = "Khoa lý luận nghiệp vụ" },
-                    new DonVi { MaDonVi = "BTN",    TenDonVi = "Ban tuyển huấn",                 MoTa = "Tuyển sinh và huấn luyện" }
+                    new DonVi { MaDonVi = "BCHT",    TenDonVi = "Binh chủng hợp thành",      MoTa = "Bộ chỉ huy tổng hợp" },
+                    new DonVi { MaDonVi = "QSDP",    TenDonVi = "Quân sự địa phương",         MoTa = "Cơ sở đào tạo" },
+                    new DonVi { MaDonVi = "KHXH_NV", TenDonVi = "Khoa học xã hội nhân văn",   MoTa = "Khoa lý luận nghiệp vụ" },
+                    new DonVi { MaDonVi = "BTN",     TenDonVi = "Ban tuyển huấn",              MoTa = "Tuyển sinh và huấn luyện" }
                 };
             }
-            return (List<DonVi>)Session["DanhSachDonVi"];
+            return (List<DonVi>)Session[SessionKey];
         }
 
         private void BindGrid(IEnumerable<DonVi> data = null)
@@ -40,13 +42,10 @@ namespace QLCVan
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                BindGrid();
-            }
+            if (!IsPostBack) BindGrid();
         }
 
-        // Thêm đơn vị (modal "Thêm")
+        // ===== Thêm đơn vị (modal "Thêm") =====
         protected void btnSave_Click(object sender, EventArgs e)
         {
             string ten = txtTenDonVi.Text.Trim();
@@ -54,20 +53,22 @@ namespace QLCVan
 
             if (string.IsNullOrEmpty(ten) || string.IsNullOrEmpty(mota))
             {
-                ScriptManager.RegisterStartupScript(this, GetType(), "alert",
-                    "alert('Vui lòng nhập đầy đủ thông tin đơn vị!');", true);
+                Alert("Vui lòng nhập đầy đủ thông tin đơn vị!");
                 return;
             }
 
             var danhSach = GetDanhSachDonVi();
             if (danhSach.Any(p => p.TenDonVi.Equals(ten, StringComparison.OrdinalIgnoreCase)))
             {
-                ScriptManager.RegisterStartupScript(this, GetType(), "alert2",
-                    "alert('Tên đơn vị đã tồn tại!');", true);
+                Alert("Tên đơn vị đã tồn tại!");
                 return;
             }
 
-            string ma = "DV" + (danhSach.Count + 1);
+            // Sinh mã đơn vị đơn giản, đảm bảo không trùng
+            string ma;
+            int i = danhSach.Count + 1;
+            do { ma = "DV" + i++; } while (danhSach.Any(x => x.MaDonVi.Equals(ma, StringComparison.OrdinalIgnoreCase)));
+
             danhSach.Add(new DonVi { MaDonVi = ma, TenDonVi = ten, MoTa = mota });
 
             txtTenDonVi.Text = "";
@@ -76,10 +77,10 @@ namespace QLCVan
 
             // Đóng modal theo Bootstrap 5
             ScriptManager.RegisterStartupScript(this, GetType(), "hideAddModal",
-                "var el=document.getElementById('addModal'); if(el){var m=bootstrap.Modal.getInstance(el)||new bootstrap.Modal(el); m.hide();}", true);
+                "var el=document.getElementById('addModal');if(el){var m=bootstrap.Modal.getInstance(el)||new bootstrap.Modal(el);m.hide();}", true);
         }
 
-        // Tìm kiếm
+        // ===== Tìm kiếm =====
         protected void btnSearch_Click(object sender, EventArgs e)
         {
             string keywordMa = txtSearchMa.Text.Trim().ToLower();
@@ -87,18 +88,42 @@ namespace QLCVan
 
             var danhSach = GetDanhSachDonVi();
             var ketQua = danhSach.Where(dv =>
-                 (string.IsNullOrEmpty(keywordMa) || (dv.MaDonVi ?? "").ToLower().Contains(keywordMa)) &&
-                 (string.IsNullOrEmpty(keywordTen) || (dv.TenDonVi ?? "").ToLower().Contains(keywordTen))
-            ).ToList();
+                (string.IsNullOrEmpty(keywordMa) || (dv.MaDonVi ?? "").ToLower().Contains(keywordMa)) &&
+                (string.IsNullOrEmpty(keywordTen) || (dv.TenDonVi ?? "").ToLower().Contains(keywordTen))
+            );
 
-            BindGrid(ketQua);
+            BindGrid(ketQua.ToList());
         }
 
-        // Phân trang
+        // ===== Phân trang =====
         protected void gvQLNhom_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             gvQLNhom.PageIndex = e.NewPageIndex;
             BindGrid();
+        }
+
+        // ===== XÓA qua modal xác nhận =====
+        protected void btnConfirmDelete_Click(object sender, EventArgs e)
+        {
+            var ma = hdfDeleteKey.Value;
+            if (!string.IsNullOrWhiteSpace(ma))
+            {
+                if (DeleteDonVi(ma)) BindGrid();
+                else Alert("Không tìm thấy đơn vị để xóa!");
+            }
+            else
+            {
+                Alert("Thiếu mã đơn vị cần xóa!");
+            }
+        }
+
+        private bool DeleteDonVi(string ma)
+        {
+            var danhSach = GetDanhSachDonVi();
+            var dv = danhSach.FirstOrDefault(x => x.MaDonVi.Equals(ma, StringComparison.OrdinalIgnoreCase));
+            if (dv == null) return false;
+            danhSach.Remove(dv);
+            return true;
         }
 
         /* ====== SỬA BẰNG MODAL (không edit inline) ====== */
@@ -106,24 +131,20 @@ namespace QLCVan
         // Bấm nút Sửa trong GridView -> mở modal & fill dữ liệu
         protected void rowEditing(object sender, GridViewEditEventArgs e)
         {
-            // Chặn chế độ edit inline
-            e.Cancel = true;
+            e.Cancel = true; // không dùng edit inline
 
-            // Lấy row & dữ liệu đang chọn
             GridViewRow row = gvQLNhom.Rows[e.NewEditIndex];
             string ma = ((Label)row.FindControl("lblMaDonVi"))?.Text?.Trim();
             string ten = ((Label)row.FindControl("lblTenDonVi"))?.Text?.Trim();
 
-            // Đổ vào control trong modal
             hdfID.Value = ma;
-            txtEditMaDonVi.Text = ma;        // readonly trong .aspx
+            txtEditMaDonVi.Text = ma;      // readonly trong .aspx
             txtEditTenDonVi.Text = ten ?? "";
 
-            // Mở modal (JS function đã khai báo trong .aspx)
             ScriptManager.RegisterStartupScript(this, GetType(), "showEditModal", "showEditModal();", true);
         }
 
-        // Nút "Sửa" trong modal -> lưu & đóng
+        // Nút "Sửa" trong modal -> lưu
         protected void btnEditSave_Click(object sender, EventArgs e)
         {
             string ma = hdfID.Value;
@@ -131,8 +152,7 @@ namespace QLCVan
 
             if (string.IsNullOrEmpty(ma))
             {
-                ScriptManager.RegisterStartupScript(this, GetType(), "alert3",
-                    "alert('Thiếu mã đơn vị!');", true);
+                Alert("Thiếu mã đơn vị!");
                 return;
             }
 
@@ -140,28 +160,24 @@ namespace QLCVan
             var dv = danhSach.FirstOrDefault(x => x.MaDonVi == ma);
             if (dv == null)
             {
-                ScriptManager.RegisterStartupScript(this, GetType(), "alert4",
-                    "alert('Không tìm thấy đơn vị để cập nhật!');", true);
+                Alert("Không tìm thấy đơn vị để cập nhật!");
                 return;
             }
 
-            // Kiểm tra trùng tên (ngoại trừ chính nó)
             if (danhSach.Any(x => !x.MaDonVi.Equals(ma, StringComparison.OrdinalIgnoreCase)
                                   && x.TenDonVi.Equals(tenMoi, StringComparison.OrdinalIgnoreCase)))
             {
-                ScriptManager.RegisterStartupScript(this, GetType(), "alert5",
-                    "alert('Tên đơn vị đã tồn tại!');", true);
+                Alert("Tên đơn vị đã tồn tại!");
                 return;
             }
 
             dv.TenDonVi = tenMoi;
             BindGrid();
 
-            // Đóng modal
             ScriptManager.RegisterStartupScript(this, GetType(), "hideEditModal", "hideEditModal();", true);
         }
 
-        /* ====== CÁC HÀM DƯ THỪA DO EDIT INLINE (để trống/không dùng) ====== */
+        /* ====== Các handler cũ của edit inline (giữ cho an toàn) ====== */
         protected void rowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
         {
             gvQLNhom.EditIndex = -1;
@@ -170,32 +186,54 @@ namespace QLCVan
 
         protected void rowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            // Không dùng nữa vì đã chuyển sang modal edit.
-            e.Cancel = true;
+            e.Cancel = true; // không dùng
             gvQLNhom.EditIndex = -1;
             BindGrid();
         }
 
-        // Xóa
+        // Nếu còn bắt sự kiện Delete của GridView (trường hợp không dùng modal)
         protected void rowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            var danhSach = GetDanhSachDonVi();
             string ma = gvQLNhom.DataKeys[e.RowIndex].Value.ToString();
-
-            var dv = danhSach.FirstOrDefault(x => x.MaDonVi == ma);
-            if (dv != null)
-                danhSach.Remove(dv);
-
-            BindGrid();
+            if (DeleteDonVi(ma)) BindGrid();
         }
 
         protected void rowCommand(object sender, GridViewCommandEventArgs e)
         {
-            // Không bắt buộc; giữ lại nếu bạn có CommandName khác cần xử lý
             if (e.CommandName.Equals("Edit"))
             {
                 hdfID.Value = Convert.ToString(e.CommandArgument);
             }
+        }
+
+        // ===== Gán JS mở modal xoá cho từng dòng =====
+        protected void gvQLNhom_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                var data = e.Row.DataItem as DonVi;
+                var btn = e.Row.FindControl("btnDelete") as LinkButton;
+                if (btn != null && data != null)
+                {
+                    // Escape nháy đơn nếu có trong mã
+                    string ma = (data.MaDonVi ?? string.Empty).Replace("'", "\\'");
+                    btn.Attributes["onclick"] = "return openDeleteModal('" + ma + "');";
+                }
+            }
+        }
+
+        // ===== Helper =====
+        private void Alert(string msg)
+        {
+            // Trả về chuỗi đã escape và có kèm dấu ngoặc kép
+            string encoded = System.Web.HttpUtility.JavaScriptStringEncode(msg, true);
+            ScriptManager.RegisterStartupScript(
+                this,
+                GetType(),
+                Guid.NewGuid().ToString(),
+                "alert(" + encoded + ");",
+                true
+            );
         }
     }
 }
