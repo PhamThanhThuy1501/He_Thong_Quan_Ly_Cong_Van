@@ -244,6 +244,7 @@
     </Compile>
     <Compile Include="ChucVu.aspx.cs">
       <DependentUpon>ChucVu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ChucVu.aspx.designer.cs">
       <DependentUpon>ChucVu.aspx</DependentUpon>
@@ -257,18 +258,21 @@
     </Compile>
     <Compile Include="QuanLyQuyen.aspx.cs">
       <DependentUpon>QuanLyQuyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="QuanLyQuyen.aspx.designer.cs">
       <DependentUpon>QuanLyQuyen.aspx</DependentUpon>
     </Compile>
     <Compile Include="SuaNguoiDung.aspx.cs">
       <DependentUpon>SuaNguoiDung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="SuaNguoiDung.aspx.designer.cs">
       <DependentUpon>SuaNguoiDung.aspx</DependentUpon>
     </Compile>
     <Compile Include="ThemNguoidung.aspx.cs">
       <DependentUpon>ThemNguoidung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ThemNguoidung.aspx.designer.cs">
       <DependentUpon>ThemNguoidung.aspx</DependentUpon>
