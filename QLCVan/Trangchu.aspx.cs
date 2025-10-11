@@ -24,7 +24,6 @@ namespace QLCVan
 
         private void LoadData()
         {
-            // Không lọc gì, chỉ lấy mới nhất
             var q = from g in db.tblNoiDungCVs
                     join h in db.tblLoaiCVs on g.MaLoaiCV equals h.MaLoaiCV
                     select new { g, h };
@@ -44,8 +43,8 @@ namespace QLCVan
                     x.g.NguoiKy,
                     x.g.NoiNhan,
                     TrichYeuND = x.g.TrichYeuND.Length > 200 ? x.g.TrichYeuND.Substring(0, 200) + "..." : x.g.TrichYeuND,
-                    x.g.TrangThai,
-                    x.g.GuiHayNhan
+                    x.g.TrangThai,         // bool
+                    x.g.GuiHayNhan         // int (0: đi, 1: đến)
                 });
 
             GridView1.DataSource = data;
@@ -61,13 +60,9 @@ namespace QLCVan
                 LinkButton lnk = sender as LinkButton;
                 string maCv = lnk.CommandArgument;
 
-                // Xóa file đính kèm
                 foreach (tblFileDinhKem item in db.tblFileDinhKems.Where(f => f.MaCV == maCv))
-                {
                     db.tblFileDinhKems.DeleteOnSubmit(item);
-                }
 
-                // Xóa nội dung công văn
                 tblNoiDungCV cv = db.tblNoiDungCVs.SingleOrDefault(t => t.MaCV == maCv);
                 if (cv != null)
                 {
@@ -76,30 +71,46 @@ namespace QLCVan
                     LoadData();
                 }
             }
-            // Không phải Admin -> bỏ qua (tránh NullReference)
         }
 
         protected void GridView1_PageIndexChanging1(object sender, GridViewPageEventArgs e)
         {
             GridView1.PageIndex = e.NewPageIndex;
-            LoadData(); // đơn giản: chuyển trang dùng danh sách mặc định
+            LoadData();
         }
 
+        // DÙNG LẠI: nếu cần text đơn giản
         public string kttrangthai(object obj)
         {
             bool trangthai = bool.Parse(obj.ToString());
             return trangthai ? "Đã duyệt" : "Chưa duyệt";
         }
 
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        // **TRẠNG THÁI HIỂN THỊ DẠNG BADGE – CỐ ĐỊNH THEO 3 GIÁ TRỊ**
+        // - true  -> "Đã gửi" (xanh đặc)
+        // - false + GuiHayNhan = 0 -> "Không duyệt" (đỏ viền)
+        // - false + GuiHayNhan != 0 -> "Đang trình" (cam viền)
+        public string GetTrangThai(object oTrangThai, object oGuiHayNhan)
         {
+            bool trangThai = false;
+            int guiHayNhan = -1;
+            if (oTrangThai != null) bool.TryParse(oTrangThai.ToString(), out trangThai);
+            if (oGuiHayNhan != null) int.TryParse(oGuiHayNhan.ToString(), out guiHayNhan);
+
+            if (trangThai)
+                return "<span class='badge badge--success'>Đã gửi</span>";
+
+            if (guiHayNhan == 0)
+                return "<span class='badge badge--danger'>Không duyệt</span>";
+
+            return "<span class='badge badge--warning'>Đang trình</span>";
         }
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            string keyword = TextBox1.Text.Trim();     // Số CV
-            string tieuDe = txtTieuDe.Text.Trim();     // Tiêu đề
-            string loai = ddlLoai.SelectedValue;       // 1: đến, 0: đi, 2: dự thảo, 3: nội bộ (= tất cả)
+            string keyword = TextBox1.Text.Trim();
+            string tieuDe = txtTieuDe.Text.Trim();
+            string loai = ddlLoai.SelectedValue;
             DateTime fromDate, toDate;
 
             var q = from g in db.tblNoiDungCVs
@@ -116,17 +127,15 @@ namespace QLCVan
             {
                 if (loai == "2")
                 {
-                    // Dự thảo
-                    q = q.Where(x => x.g.TrangThai == false);
+                    q = q.Where(x => x.g.TrangThai == false); // Dự thảo
                 }
                 else if (loai == "3")
                 {
-                    // Nội bộ -> không lọc thêm (giữ đúng ý "tất cả")
+                    // Nội bộ -> không lọc thêm
                 }
                 else
                 {
-                    // 1: Công văn đến, 0: Công văn đi
-                    int loaiCV = int.Parse(loai);
+                    int loaiCV = int.Parse(loai); // 1: đến, 0: đi
                     q = q.Where(x => x.g.GuiHayNhan == loaiCV);
                 }
             }
@@ -159,6 +168,5 @@ namespace QLCVan
             GridView1.DataSource = data;
             GridView1.DataBind();
         }
-
     }
 }

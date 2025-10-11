@@ -244,7 +244,7 @@ namespace QLCVan
                 }
             else
             {
-                lblchuachonfile.Text = "Bạn chưa chọn file!";
+               /* lblchuachonfile.Text = "Bạn chưa chọn file!";*/
             }
         }
         void RemoveFile(int index)
